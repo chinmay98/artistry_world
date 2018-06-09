@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Juan Gris</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Reference to CSS and fonts-->
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+	    <!--Reference to JQuery Library-->
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <script>
+		$(document).ready(function(){
+		    //JavaScript for Image Gallery
+		    $('#artworks a').click(function(){
+		        var galleryHref = $(this).attr('href');
+		        var galleryAlt = $(this).attr('title');
+		        var gallerynfo = $(this).children('img').attr('sec-content');
+		        $('figure').css('display','none');
+		        $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		        $('figcaption').html(galleryAlt);
+		        $('figure').fadeToggle(1000);
+		        $('#painting_info').html(gallerynfo);
+		        return false;
+		      });
+		});
+</script>
+
+	</head>
+	<body>
+	   <div id="wrapper">
+			<header>
+				<!--Top Header(Logo and site name)-->
+				<div id="top_header">
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+					<h1>ARTISTRY WORLD</h1>
+				</div>
+	            <!--Top Header Ends-->
+	            <!--Painter Name-->
+	           
+             	<div class="mySlides2 fade">
+             		<div  class="slideshow2">
+             			<img src="images/cubist/juan_gris/portrait.jpg" alt="portrait">
+	             		<div class="slide_content">
+	             			<h1>Juan Gris</h1>
+	             			<blockquote>"You are lost the moment you know what the result will be."</blockquote>
+	             		</div>
+             		</div>
+             	</div>
+	          
+	            <!--Painter name-->
+	           
+				<!--Sticky Navigation Bar-->
+	            <div id="artist_nav">
+				    <ul>
+		                <li><a href="#overview">Overview</a></li>
+		                <li><a href="#career">Career</a></li>
+		                <li><a href="#legacy">Legacy</a></li>
+		                <li><a href="#onview">On View</a></li>
+		                <li id="desktop_only"><a id="artworks_open">Artworks</a></li>
+		                <li id="tablet_only"><a href="#artworks_mobile">Artworks</a></li>
+	            	</ul>
+	            </div>
+	            <!--Navigation Bar Ends-->
+	           
+			</header>
+			 <!--JavaScript for Navigation Bar-->
+            <script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("artist_nav");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<!--JavaScript for Navigation Bar Ends-->
+			<main>
+				<!--Content Section-->
+				<div id="content_artist">
+					<!--Overview-->
+				    <section class="artist_section" id="overview">
+						<dl>
+							<dt>Overview</dt>
+		                    <dd>
+		                    	<p><strong>Rembrandt</strong>  was a Spanish painter and sculptor born in Madrid who lived and worked in France most of his life. Closely connected to the innovative artistic genre Cubism, his works are among the movement's most distinctive.</p>
+		                    	<p>Gris was born in Madrid. He later studied engineering at Madrid's School of Arts and Sciences. There, from 1902 to 1904, he contributed drawings to local periodicals. From 1904 to 1905, he studied painting with the academic artist José Moreno Carbonero. It was in 1905 that José Victoriano González adopted the more distinctive name Juan Gris.</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Career-->
+		            <section class="artist_section" id="career">
+						<dl>
+		                    <dt>Career</dt>
+		                    <dd>
+		                    	<ul>
+		                    	   <li>In 1906, he fled his country to avoid being called up for military service and moved to Paris, then the go to place for artists,. In Paris, Gris became acquainted with artists like Henri Matisse, Fernand Leger and the young Pablo Picasso.<br></li>
+		                    	   
+		                    	   <li>In his early years in Paris, Gris sent his paintings to publications in Paris like Le Rire, Le Charivari and others for publication. The theme was dark humour.<br></li> 
+		                    	   
+		                           <li>After working for different magazines and publications in Paris for a few years; Juan Gris decided to devote more time to painting in his personal capacity, in 1910, and started developing his ideas in cubism.<br></li>
+		                           
+		                           <li>In 1911, he produced the painting titled ‘Tea Time’ and the following year his painting ‘Hommage a Pablo Picasso’ was part of the exhibition at Salon des Independants.<br></li>
+		                           
+		                           <li>In 1912, Juan Gris’ work was exhibited at some of the better known exhibition galleries in Europe which included Der Sturm in Berlin among others. Gris’ work was also appreciated at the Societe Normande de Peinture Moderne in Rouen. It was around this time that the elite art dealer Daniel-Henry Kahnweiler signed him up on an exclusive contract.<br></li>
+		                          
+		                           <li>Juan Gris developed newer styles of cubist painting around 1913 as he floated the idea of synthetic cubism and started using it in his own paintings. Over the subsequent years, Juan Gris’ work further evolved into a distinct style that borrowed a lot from the different geometrical theories and shapes. The painting ‘Woman with Mandolin after, Corot’ is one of his paintings that represents that change in approach.<br></li>
+		                          
+		                           <li>Juan Gris also started applying his mind to design in 1924 when he created the ballet sets as well as the costumes for the famous Russian ballet promoter Sergei Diaghilev. In the same year, Gris delivered a lecture at the Sorbonne titled ‘Des possibilites de la peinture’ and at the same time his paintings continued to be exhibited at some of the better galleries in Europe. Some of his famous works like ‘The Red Book’, ‘The Checked Tablecloth’ and ‘Woman With a Basket’ were produced during this period.</li>
+		                           
+		                        </ul>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Legacy-->
+		            <section class="artist_section" id="legacy">
+						<dl>
+		                    <dt>Legacy</dt>
+		                    <dd>
+		                    	<p>He established himself as one of the most distinctive figures in Cubism during his relatively short life. His paintings combine different viewpoints of a subject in one image, calling attention to the limitations of traditional perspective and striving toward a new way of seeing that reflects the complexity of the modern age. </p>
+		                    	<p>Though primarily associated with painting, Cubism also exerted a profound influence on 20th-century sculpture and architecture. The liberating formal concepts initiated by Cubism also had far-reaching consequences for Surrealism, Dada, and the rise of midcentury Abstract Expressionism. While Picasso and Braque are most often credited with creating the new visual language of Cubism, his distinctive interpretation of the style directly influenced artists such as Salvador Dali, Joseph Cornell, and Diego Rivera, among many others.</p>
+		                    	<p>In The Secret Life, Dali writes, "my first cubist paintings... were directly and intentionally influenced by Juan Gris." His incorporation of brand logos and newspaper typography also anticipates the Pop art movement in the years following the Second World War, particularly in the works of artists such as Andy Warhol and Roy Lichtenstein.</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--On View-->
+		            <section class="artist_section" id="onview">
+						<dl>
+		                    <dt>On View</dt>
+		                    <dd>
+		                        <ul>
+		                        	<li>National Gallery of Art East Building, Washington D.C.</li>
+		                        	<li>Art Institute of Chicago</li>
+		                        	<li>The Phillips Collection, Washington D.C.</li>
+		                        	<li>Museum of Fine Arts, Houston</li>
+		                        	<li>Museo Nacional Centro de Arte Reina SOfia, Madrid</li>
+		                        	<li>Museum of Modern Art, New York City</li>
+		                        	<li>San Francisco Museum of Modern Art</li>
+		                        	<li>National Gallery of Australia, Canberra</li>
+		                        	<li>Musee National d'Art Moderne, Paris</li>
+		                        	<li>NElson-Atkins Museum of Art, Kansas City</li>
+		                        	<li>Columbus Mueum of Art, Columbus</li>
+		                        	<li>Kroller-Muller Museum, Otterlo</li>
+		                        	<li>Virginia Museum of Fine Arts, Richmond</li>
+		                        	<li>Palau Nacional, Barcelone</li>
+		                        </ul>
+		                    </dd>
+		                </dl>     
+					</section>
+					<section class="artist_section" id="artworks_mobile">
+						<h2>ArtWorks</h2>
+						<br>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							  <img src="images/cubist/juan_gris/Harlequin-with-Guitar-Artista.jpg" alt="Harlequin with Guitar Artista">
+							  <div class="content_image">
+							  	<h4>Harlequin with Guitar Artista</h4>
+							  	<br>
+							  	<span> Harlequin was a stock character in the commedia dell'arte and a trickster figure with a tendency to act on whim and passion. Here, his background as an illustrator is visible in the cartoonish eyes and mouth, and the bright graphic lines that trace the figure and its costume. Warm color tones and a familiar subject lend the piece a reassuring stability, undermined somewhat by the slippage in details such as the knotholes, which appear to sliding off the table, and the fingers of Harlequin's right hand, which double as the contour of the guitar.
+							  	</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/juan_gris/Jar_Bottle_and_Glass.jpg" alt="Jar Bottle and Glass">
+							  <div class="content_image">
+							  	<h4>Jar Bottle and Glass</h4>
+							  	<br>
+							  	<span>Owner/Location:	Museum of Modern Art - New York  (United States - New York City)<br>  
+									Dates:1911<br>
+									Artist age:	Approximately 24 years old.<br>
+									Dimensions:	Height: 59.7 cm (23.5 in.), Width: 50.2 cm (19.76 in.)<br>
+									Medium:	Painting - oil on canvas 
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/juan_gris/Portrait-of-Pablo-Picasso.jpg" alt="Portrait of Pablo Picasso">
+							  <div class="content_image">
+							  	<h4>Portrait of Pablo Picasso</h4>
+							  	<br>
+							  	<span>A clever tribute to his mentor, his portrait depicts Picasso (founder of Cubism) in the Cubist style. Palette at the ready, Picasso is literally larger than life (taking up most of the space on the canvas). Working primarily in cool hues of blue, gray, and brown, he fractures the sitter's face into a prism of planes and geometric shapes that resolve into the parallel lines in the background. All parts of this picture seem to be in motion.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/juan_gris/still-life-with-a-poem.jpg" alt="Still Life with a Poem">
+							  <div class="content_image">
+							  	<h4>Still Life with a Poem</h4>
+							  	<br>
+							  	<span>
+								This is painted entirely in oils, it imitates a collage in the convincing faux-wood grain of the table and the fictive scrap of paper that appears pinned to the bottom of the composition. This detail betrays Gris’s admiration for the seventeenth-century Spanish paintings he would have seen on childhood visits to the Prado. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/juan_gris/still-life-with-flowers.jpg" alt="Still Life with Flowers">
+							  <div class="content_image">
+							  	<h4>Still Life with Flowers</h4>
+							  	<br>
+							  	<span>
+							  		Date: 1912<br>
+									Style: Analytical Cubism<br>
+									Genre: still life<br>
+									Media: oil, canvas<br>
+									Location: Museum of Modern Art (MoMA), New York City, NY, US<br>
+									Dimensions: 112.1 x 70.2 cm<br>
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/juan_gris/the-sunblind.jpeg" alt="The Sunblind">
+							  <div class="content_image">
+							  	<h4>The Sunblind</h4>
+							  	<br>
+							  	<span>It features a partly closed venetian blind, through which light illuminates a wine glass and casts its shadow onto the surface of a wooden table. Flat planes of black and grey indicate areas of shadow and light playing across the surface of the glass. Light blue and white chalk has been used to highlight further passages of light and shadow down the edges of the blind, the right-hand side of the glass and around the table form. The stem of the glass has been loosely sketched in white chalk to give a sense of form, and the carefully rendered slats of the blind provide a diagonal movement from left to right, which is mirrored by the table. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/juan_gris/Violin-And-Checkerboard.jpg" alt="Violin And Checkerboard">
+							  <div class="content_image">
+							  	<h4>Violin And Checkerboard</h4>
+							  	<br>
+							  	<span>Photograph of Violin and Checkerboard, 1913, oil on canva</span>
+							  </div>
+							</div>
+
+							<div id="indicators">
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+							</div>
+						</div>
+						<!--Slideshow HTML ends-->
+						<!--JavaScript for Slideshow-->
+						<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							    var i;
+							    var slides = document.getElementsByClassName("mySlides");
+							    var dots = document.getElementsByClassName("dot");
+							    for (i = 0; i < slides.length; i++) {
+							       slides[i].style.display = "none";  
+							    }
+							    slideIndex++;
+							    if (slideIndex > slides.length) {slideIndex = 1}    
+							    for (i = 0; i < dots.length; i++) {
+							        dots[i].className = dots[i].className.replace("active", "");
+							    }
+							    slides[slideIndex-1].style.display = "block";  
+							    dots[slideIndex-1].className += " active";
+							    setTimeout(showSlides, 5000); // Change image every 2 seconds
+							}
+						</script>
+						<!--JavaScript for Slideshow ends-->
+						
+					</section>
+				</div>
+				<!--Image Gallery Modal =-->
+				<div id="artworks" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+					    	<span class="close">&times;</span>
+					      	<h2>GALLERY</h2>
+					    </div>
+					    <div class="modal-body">
+					      	<ul>
+								<li>
+									<a href="images/cubist/juan_gris/Harlequin-with-Guitar-Artista.jpg" title="Harlequin with Guitar Artista"><img
+									src="images/cubist/juan_gris/Harlequin-with-Guitar-Artista.jpg" width="100" height="75" alt="Harlequin with Guitar Artista" sec-content=" Harlequin was a stock character in the commedia dell'arte and a trickster figure with a tendency to act on whim and passion. Here, his background as an illustrator is visible in the cartoonish eyes and mouth, and the bright graphic lines that trace the figure and its costume. Warm color tones and a familiar subject lend the piece a reassuring stability, undermined somewhat by the slippage in details such as the knotholes, which appear to sliding off the table, and the fingers of Harlequin's right hand, which double as the contour of the guitar."></a>
+								</li>
+								<li>
+									<a href="images/cubist/juan_gris/Jar_Bottle_and_Glass.jpg" title="Jar Bottle and Glass"><img
+									src="images/cubist/juan_gris/Jar_Bottle_and_Glass.jpg" width="100" height="75" alt="Jar Bottle and Glass" sec-content="Owner/Location:Museum of Modern Art - New York  (United States - New York City)<br>     
+									Dates:	1911<br>
+									Artist age:	Approximately 24 years old.<br>
+									Dimensions:	Height: 59.7 cm (23.5 in.), Width: 50.2 cm (19.76 in.)<br>
+									Medium:	Painting - oil on canvas ">
+									</a>
+								</li>
+								
+								<li>
+									<a href="images/cubist/juan_gris/still-life-with-a-poem.jpg" title="Still Life with a Poem"><img
+									src="images/cubist/juan_gris/still-life-with-a-poem.jpg" width="100" height="75" alt="Still Life with a Poem" sec-content="This is painted entirely in oils, it imitates a collage in the convincing faux-wood grain of the table and the fictive scrap of paper that appears pinned to the bottom of the composition. This detail betrays Gris’s admiration for the seventeenth-century Spanish paintings he would have seen on childhood visits to the Prado. " ></a>
+								</li>
+								<li>
+									<a href="images/cubist/juan_gris/still-life-with-flowers.jpg" title="Still Life with Flowers"><img
+									src="images/cubist/juan_gris/still-life-with-flowers.jpg" width="100" height="75" alt="Still Life with Flowers" sec-content="Date: 1912<br>
+									Style: Analytical Cubism<br>
+									Genre: still life<br>
+									Media: oil, canvas<br>
+									Location: Museum of Modern Art (MoMA), New York City, NY, US<br>
+									Dimensions: 112.1 x 70.2 cm">
+									</a>
+								</li>
+								<li>
+									<a href="images/cubist/juan_gris/the-sunblind.jpeg" title="The Sunblind"><img
+									src="images/cubist/juan_gris/the-sunblind.jpeg" width="100" height="75" alt="The Sunblind" sec-content="It features a partly closed venetian blind, through which light illuminates a wine glass and casts its shadow onto the surface of a wooden table. Flat planes of black and grey indicate areas of shadow and light playing across the surface of the glass. Light blue and white chalk has been used to highlight further passages of light and shadow down the edges of the blind, the right-hand side of the glass and around the table form. The stem of the glass has been loosely sketched in white chalk to give a sense of form, and the carefully rendered slats of the blind provide a diagonal movement from left to right, which is mirrored by the table. "></a>
+								</li>
+								<li>
+									<a href="images/cubist/juan_gris/Violin-And-Checkerboard.jpg" title="Violin And Checkerboard"><img
+									src="images/cubist/juan_gris/Violin-And-Checkerboard.jpg" width="100" height="75" alt="Violin And Checkerboard" sec-content="Photograph of Violin and Checkerboard, 1913, oil on canva"></a>
+								</li>
+							</ul>
+							<figure>
+								<img src="images/cubist/juan_gris/the-sunblind.jpeg" alt="The Sunblind">
+								<figcaption>The Sunblind</figcaption>
+							</figure>
+							<span id="painting_info">
+								It features a partly closed venetian blind, through which light illuminates a wine glass and casts its shadow onto the surface of a wooden table. Flat planes of black and grey indicate areas of shadow and light playing across the surface of the glass. Light blue and white chalk has been used to highlight further passages of light and shadow down the edges of the blind, the right-hand side of the glass and around the table form. The stem of the glass has been loosely sketched in white chalk to give a sense of form, and the carefully rendered slats of the blind provide a diagonal movement from left to right, which is mirrored by the table. 
+							</span>
+					    </div>
+					    <div class="modal-footer">
+					      	<h3>JUAN GRIS</h3>
+					    </div>
+					</div>
+				</div>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById('artworks');
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("artworks_open");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					    modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					    modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					    if (event.target == modal) {
+					        modal.style.display = "none";
+					    }
+					}
+				</script>
+				
+				<!--SideBar-->
+				<div class="side_content">
+					<ul>
+						<li><a href="https://10mosttoday.com/10-most-famous-paintings-in-the-world/" target="_blank"><strong>Top 5 Paintings</strong></a></li>
+						<li><strong>Top 5 Painters</strong></li>
+						<div id="small-only">
+							<br>
+							<ol>
+								<li><a href="leonardo_da_vinci.html">Leonardo Da Vinci</a></li>
+								<li><a href="rembrandt.html">Rembrandt</a></li>
+								<li><a href="michelangelo.html">Michelangelo</a></li>
+								<li><a href="pablo_picasso.html">Pablo Picasso</a></li>
+								<li><a href="raphael.html">Raphael</a></li>
+							</ol>
+						</div>
+					</ul>
+					<div id="top_artist_list">
+						<div>
+							<a href="leonardo_da_vinci.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/leonardo_da_vinci/portrait.jpg" alt="leonardo_da_vinci">
+									<span>
+										<strong>Leonardo Da Vinci</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>
+							<a href="rembrandt.html">
+								<div class="horizontal_card">
+									<img src="images/baroque/rembrandt/portrait.jpg" alt="rembrandt">
+									<span>
+										<strong>Rembrandt</strong>
+										<br>
+										Dutch
+										<br>
+										Realist Painter
+									</span>
+								</div>
+							</a>
+							<a href="michelangelo.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/michelangelo/portrait.jpg" alt="michelangelo">
+									<span>
+										<strong>Michelangelo</strong>
+										<br>
+										French
+										<br>
+										Impressionist Painter
+									</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="pablo_picasso.html">
+								<div class="horizontal_card">
+									<img src="images/cubist/pablo_picasso/portrait.jpg" alt="pablo_picasso">
+									<span>
+										<strong>Pablo Picasso</strong>
+										<br>
+										Spanish
+										<br>
+										Cubist Painter
+									</span>
+								</div>
+							</a>
+							<a href="raphael.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/raphael/portrait.jpg" alt="raphael">
+									<span>
+										<strong>Raphael</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!--Sidebar Ends-->
+			</main>
+			<!--Footer Section-->
+			<footer style="background-color: #311B92;">
+				<a href="index.html">Home</a> | <a href="abstract_painters.html">Abstract Painters</a> | <a href="baroque_painters.html">Baroque Painters</a> | <a href="cubist_painters.html">Cubist Painters</a> | <a href="realist_painters.html">Realist Painters</a> | <a href="renaissance_painters.html">Renaissance Painters</a>
+				<br><br>
+				Copyright 2018 by Artistry World, May 2018, <a href="mailto:gilber.njq@gmail.com"><u>gilber.njq@gmail.com</u></a>
+			</footer>
+			<!--Footer Section ends-->
+		</div>
+	</body>
+</html>

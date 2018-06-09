@@ -1,0 +1,748 @@
+/*Common styling*/
+body{
+	background-color: #D1C4E9;
+	overflow-x: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+#wrapper{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*HEADER SECTION*/
+
+#top_header{
+	background-color: #B39DDB;
+	padding: 1px;
+	vertical-align: middle;
+}
+#top_header img{
+	float: left;
+	width: 10%;
+	vertical-align: middle;
+}
+#top_header h1{
+	font-size: 30px;
+	margin-left:15%;
+	width:90%;
+	font-family:'Nosifer'; 
+	color: #fff;
+	font-weight: bolder;
+}
+
+/*SLIDESHOW INDEX PAGE*/
+
+/* Slideshow container */
+.slideshow-container {
+	width: 100%;
+    height: 500px;
+    position: relative;
+    margin: auto;
+}
+.mySlides {
+	position: relative;
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+.mySlides img{
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+.mySlides h1{
+	position: absolute;
+	top: 10%;
+	left:10%;
+	font-size: 50px;
+	color: #1A237E;
+	font-weight: bolder;
+}
+/* Caption text */
+.text {
+	position: absolute;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+/* The dots/bullets/indicators */
+#indicators{
+	margin-top: -40px;
+	margin-left: 45%;
+}
+.dot {
+	height: 15px;
+  	width: 15px;
+  	margin: 0 2px;
+  	background-color: #bbb;
+  	border-radius: 50%;
+  	display: inline-block;
+  	transition: background-color 0.6s ease;
+}
+.active {
+	background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration:4s;
+	animation-name: fade;
+	animation-duration:4s;
+}
+@-webkit-keyframes fade {
+	from {opacity: .4} 
+ 	to {opacity: 1}
+}
+@keyframes fade {
+	from {opacity: .4} 
+  	to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/*SLIDESHOW INDEX PAGE ENDS*/
+/*HEADER SECTION ENDS*/
+
+/*MAIN SECTION*/
+main{
+	display: flex;
+}
+#style_nav{
+	flex: 2;
+	background-color: #9575CD;
+}
+.content_section{
+	flex: 6;
+	background-color: #D1C4E9;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+.side_content{
+	flex: 2;
+	background-color: #9575CD;
+	color: #fff;
+	padding-bottom: 10px;
+	font-size: 15px;
+	padding-left: 10px;
+}
+#small-only{
+	display:none;
+}
+/*INDEX PAGE NAVBAR*/
+#style_nav ul{
+	width: 100%;
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+}
+#style_nav ul li{
+	padding: 10px;
+	border-bottom:2px solid #000;
+	text-align: center;
+	color: #fff;
+	font-weight: bold;
+}
+#style_nav ul li:hover{
+	background-color: #4527A0;
+}
+table{
+	border-spacing: 5px;
+	width: 80%;
+	border: 1px solid black;
+}
+td{
+	padding: 15px;
+	border: 1px solid black;
+}
+/*CONTENT SECTION*/
+.content_section h1{
+	text-transform: uppercase;
+}
+thead{
+	text-align: center;
+	font-weight: bolder;
+}
+form{
+	display: flex;
+}
+.form_col{
+	flex: 5;
+}
+label{
+	font-weight: bolder;
+	line-height: 20px;
+}
+input{
+	height: 50px;
+	width: 80%;
+	padding-left: 20px;
+}
+button{
+	height: 30px;
+	width: 60px;
+	font-weight: bold;
+	font-size: 15px;
+}
+/*SIDE CONTENT*/
+.horizontal_card{
+	display: flex;
+	width: 90%;
+	background-color: #ffb74d;
+	color: #000;
+	height: 120px;
+	margin-left:5px;
+	margin-bottom: 10px;
+	border-radius: 20px;
+
+}
+.horizontal_card img{
+	flex: 4;
+	height: 100%;
+	width: 40%;
+}
+.horizontal_card span{
+	padding: 5px;
+	flex: 6;
+	height: 100%;
+	line-height:20px; 
+}
+
+/*Footer section*/
+footer{
+	background-color:#B39DDB;
+	padding:10px;
+	color: #fff;
+	text-align: center;
+}
+
+/*PAINTING STYLE PAGE CSS*/
+
+/*BANNER*/
+.container {
+    position: relative;
+    color: white;
+    height: 450px;
+}
+
+.container img{
+	width: 100%;
+	height: 100%;
+}
+.container h1 {
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+    margin-bottom:10px;
+    font-size: 60px;
+    font-weight: 500;
+    font-family:'Aclonica';
+}
+/*BANNER ENDS*/
+
+/*NAVIGATION BAR*/
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #311B92;
+    
+    font-size: 21px; 
+    font-family: 'Aclonica';
+}
+#nav li {
+    float: left;
+}
+#nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+#nav li a:hover {
+    background-color: #880EAF;
+}
+.current{
+    background-color: #C51162;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width:89%;
+}
+
+/*NAVIGATION BAR ENDS*/
+
+/*CONTENT SECTION*/
+#style_content_section{
+	background-color: #B39DDB;
+}
+.artist_list{
+	display: flex;
+}
+.col1{
+	flex: 3;
+}
+.card {
+    width: 70%;
+}
+.card img{
+	width:90%; 
+	border:5px solid #fff; 
+	border-radius: 50%;
+	height:180px;
+	vertical-align: middle;
+}
+.card img:hover {
+    box-shadow: 0px 0px 10px 10px rgba(0,0, 0,0.2);
+}
+.contain {
+    padding: 5px;
+   
+    font-family: 'Aclonica';
+    line-height: 0px;
+    color: #fff;
+}
+/*CONTENT SECTION ENDS*/
+/*PAINTING STYLE PAGE CSS ENDS*/
+
+/*ARTIST PAGE*/
+/*SLIDESHOW*/
+.mySlides2{
+	height: 500px;
+}
+.slideshow2 {
+	display: flex;
+	height: 100%;
+}
+.slideshow2 img{
+	flex: 4;
+	height: 100%;
+	width: 40%;
+	vertical-align: middle;
+}
+.slide_content{
+	flex: 6;
+	position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.slide_content:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("images/henripainting.jpg");
+    opacity: .4;
+}
+.slide_content h1 {
+	font-size: 50px;
+	color: #1A237E;
+	font-weight: bolder;
+	font-family: 'Aclonica';
+}
+.slide_content blockquote {
+	font-size: 30px;
+	font-weight: bolder;
+	vertical-align: middle;
+}
+/*SLIDESHOW ENDS*/
+
+/*NAVIGATION BAR*/
+#artist_nav ul {
+	text-align: center;
+	display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #311B92;
+    font-size: 21px; 
+    font-family: 'Aclonica';
+}
+#artist_nav li {
+    float: none;
+	flex: 2;
+}
+#artist_nav li a {
+    display: block;
+    color: white;
+        padding: 14px 18px;
+    text-decoration: none;
+}
+#artist_nav li a:hover {
+    background-color: #880EAF;
+}
+
+/*NAVIGATION BAR ENDS*/
+
+/*CONTENT SECTION*/
+#content_artist{
+	flex: 6;
+	background-color: #B39DDB;
+	padding-bottom: 10px;
+}
+#content_artist h2{
+	text-transform: uppercase;
+}
+.artist_section {
+    padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.artist_section:before { 
+    display: block; 
+    content: " "; 
+    height:80px;      /* Give height of your fixed element */
+    margin-top:-80px; /* Give negative margin of your fixed element */    
+    visibility: hidden; 
+}
+.artist_section dt{
+	font-size: 20px;
+	font-weight: bold;
+}
+.center{
+	margin: 0 auto;
+	width: 100%;
+}
+video{
+	width: 50%;
+	height: 100%;
+}
+/*CONTENT SECTION ENDS*/
+
+/*ARTWORKS*/
+.modal{
+	display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20px;
+    padding-bottom: 20px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 90%; /* Full height */
+    overflow:hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */	
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+.modal-header {
+    padding: 2px 16px;
+    background-color:#B39DDB;
+    color: white;
+    height: 10%;
+}
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-body{
+	display: flex;
+	z-index: 1;
+	left: 0;
+	padding: 2px 16px;
+	background-color: #000;
+	color: #fff;
+	height: 80%;
+}
+
+.modal-body ul{
+	flex: 3;
+	list-style-type: none;
+	float: left;
+	text-align: center;
+}
+.modal-body li{
+	display: inline;
+	float: left;
+	padding: 16px;
+}
+.modal-body figure{
+	flex: 4;
+	text-align: center;
+	margin: 100px 0px;
+}
+.modal-body figure img{
+	width:70%;
+	height: 70%;
+	border:5px solid #fff;
+}
+.modal-body figcaption{
+	font-weight: bolder;
+	font-size: 1.5em;
+}
+.modal-body #painting_info{
+	flex: 3;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 20px;
+	border:5px solid #fff;
+	height: 300px;
+}
+.modal-footer {
+    padding: 2px 16px;
+    background-color:#B39DDB;
+    color: white;
+    height: 10%;
+}
+#artworks_mobile{
+	display: none;
+}
+#artworks_mobile .slideshow-container{
+		height:600px;
+		background-color: #000;
+		color: #fff;
+	}
+	#artworks_mobile .slideshow-container .mySlides img{
+		height: 40%;
+	}
+	#artworks_mobile .slideshow-container .mySlides .content_image{
+		height: 60%;
+		padding: 10px;
+	}
+	#artworks_mobile .slideshow-container #indicators{
+		margin-left:auto;
+		margin-right: auto;
+		text-align: center;
+	}
+#desktop_only{
+	display: block;
+}
+#tablet_only{
+	display: none;
+}
+/*ARTIST PAGE CSS ENDS*/
+
+/*Mobile View Coding*/
+@media only screen and (max-width:768px){
+	body{
+		width: 100%;
+		margin: 0px;
+	}
+	h1, h2, h3, h4, h5, h6{
+		margin-top: 0em;
+		margin-bottom: 0em;
+  	}
+	h1{
+		font-size: 20px;
+	}
+	#wrapper{
+		width: 100%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	#top_header{
+		height: 60px;
+	}
+	#top_header img{
+		width: 50px;
+		height: 50px;
+	}
+	#top_header h1{
+		width: 70%;
+		font-size: 20px;
+		margin-left:60px;
+	}
+	.side_content{
+		padding-top: 10px;
+	}
+	#small-only{
+		display: block;
+	}
+	#top_artist_list{
+		display: none;
+	}
+	/*Index Page*/
+	.slideshow-container{
+		height: 250px;
+	}
+	.mySlides{
+		text-align: center;
+	}
+	main{
+		display: block;
+	}
+	form{
+		display: block;
+	}
+
+	/*StylePAge*/
+	.container{
+		height: 250px;
+		text-align: center;
+	}
+	.sticky{
+		position: absolute;
+	}
+	#nav li{
+		width: 100%;
+	}
+	.content_section{
+		padding-top: 10px;
+	}
+	.contain{
+		line-height: 20px;
+	}
+	.card img{
+		height: 70px;
+	}
+
+	/*ArtistPage*/
+	.mySlides2{
+		height: 250px;
+	}
+	.slideshow2 img{
+		width: 50%;
+	}
+	.slide_content{
+		padding-top: 20px;
+	}
+	.slide_content h1{
+		font-size: 20px;
+	}
+	.slide_content blockquote{
+		font-size: 15px;
+	}
+	#artist_nav{
+		display: none;
+	}
+	#artist_nav ul{
+		display: block;
+	}
+	.artist_section{
+		margin-top: 0px;
+	}
+	.artist_section:before{
+		margin-top: 0px;
+		height: 10px;
+	}
+	video{
+		width: 80%;
+		height: 100%;
+	}
+	#artworks_mobile{
+		display:block;
+	}
+	
+}
+
+/*Tablet */
+@media only screen and (max-width: 1024px) and (min-width:769px) {
+	#wrapper{
+		width: 100%;
+	}
+	body{
+		font-size: 25px;
+		margin: 0;
+	}
+	.content_section{
+		flex: 5;
+	}
+	.side_content{
+		flex: 3;
+		font-size: 22px;
+	}
+	.horizontal_card{
+		height: 150px;
+	}
+
+	/*Style Page*/
+	.sticky{
+		display: none;
+	}
+	#nav li{
+		display: block;
+		width: 100%;
+	}
+	.contain{
+		line-height: 30px;
+	}
+	#desktop_only{
+		display: none;
+	}
+	#tablet_only{
+		display: block;
+	}
+	#artworks_mobile{
+		display: block;
+	}
+	#artworks_mobile .slideshow-container{
+		height: 700px;
+	}
+	video{
+		width: 80%;
+		height: 100%;
+	}
+
+} 
+
+@media only screen and (width:768px){
+	body{
+		overflow-x: hidden;
+		font-size: 20px;
+	}
+	.slide_content blockquote{
+		font-size: 20px;
+	}
+	.side_content{
+		font-size: 20px;
+	}
+	#small-only{
+		display: none;
+	}
+	.card img{
+		height: 140px;
+	}
+	#top_artist_list{
+		display: flex;
+	}
+	#top_artist_list div{
+		flex: 6;
+	}
+	#artworks_mobile .slideshow-container{
+		width: 80%;
+	}
+}

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Arshile Gorky</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Reference to CSS and fonts-->
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+	    <!--Reference to JQuery Library-->
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <script>
+		$(document).ready(function(){
+		    //JavaScript for Image Gallery
+		    $('#artworks a').click(function(){
+		        var galleryHref = $(this).attr('href');
+		        var galleryAlt = $(this).attr('title');
+		        var gallerynfo = $(this).children('img').attr('sec-content');
+		        $('figure').css('display','none');
+		        $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		        $('figcaption').html(galleryAlt);
+		        $('figure').fadeToggle(1000);
+		        $('#painting_info').html(gallerynfo);
+		        return false;
+		      });
+		});
+</script>
+
+	</head>
+	<body>
+	   <div id="wrapper">
+			<header>
+				<!--Top Header(Logo and site name)-->
+				<div id="top_header">
+					<a href="index.html"><img src="images/logo.png" width="100" alt="logo"></a>
+					<h1>ARTISTRY WORLD</h1>
+				</div>
+	            <!--Top Header Ends-->
+	            <!--Painter Name-->
+	           
+             	<div class="mySlides2 fade">
+             		<div  class="slideshow2">
+             			<img src="images/abstract/Arshile_Gorky/portrait.jpg" alt="portrait">
+	             		<div class="slide_content">
+	             			<h1>Arshile Gorky</h1>
+	             			<blockquote>"Abstraction allows man to see with his mind what he cannot see physically with his eyes."</blockquote>
+	             		</div>
+             		</div>
+             	</div>
+	          
+	            <!--Painter name-->
+	           
+				<!--Sticky Navigation Bar-->
+	            <div id="artist_nav">
+				    <ul>
+		                <li><a href="#overview">Overview</a></li>
+		                <li><a href="#career">Career</a></li>
+		                <li><a href="#legacy">Legacy</a></li>
+		                <li><a href="#onview">On View</a></li>
+		                <li id="desktop_only"><a id="artworks_open">Artworks</a></li>
+		                <li id="tablet_only"><a href="#artworks_mobile">Artworks</a></li>
+	            	</ul>
+	            </div>
+	            <!--Navigation Bar Ends-->
+	           
+			</header>
+			 <!--JavaScript for Navigation Bar-->
+            <script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("artist_nav");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<!--JavaScript for Navigation Bar Ends-->
+			<main>
+				<!--Content Section-->
+				<div id="content_artist">
+					<!--Overview-->
+				    <section class="artist_section" id="overview">
+						<dl>
+							<dt>Overview</dt>
+		                    <dd>
+		                    	<p><strong>Arshile Gorky</strong>
+									born April 15, 1904 – July 21, 1948) was an Armenian-American painter, who had a seminal influence on Abstract Expressionism. He spent most his life as a national of the United States. Along with Mark Rothko, Jackson Pollock and Willem de Kooning, Gorky has been hailed as one of the most powerful American painters of the 20th century. As such, his works were often speculated to have been informed by the suffering and loss he experienced in the Armenian Genocide.
+		                    	</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Career-->
+		            <section class="artist_section" id="career">
+						<dl>
+		                    <dt>Career</dt>
+		                    <dd>
+		                    	<ul>
+		                    	   <li>Arshile Gorky settled in New York in 1924, and enrolled in the National Academy of Design and the Grand Central School of Art. Later, by 1925 he became an instructor at the Grand Central School of Art and taught there till 1931.<br></li>
+		                    	   
+		                    	   <li>He received minimal formal training and was primarily self- taught, observing works at museums, galleries and reading magazines and books on art. By doing so he became accustomed to the avant-garde European art and went on to learn more about its pioneers such as Pablo Picasso, Paul Cézanne, and Joan Miró.<br></li> 
+		                    	   
+		                           <li>At the beginning of his career, he was influenced by the works of ‘Impressionists’. But towards the end of the 1920s his art style shifted to be more ‘postimpressionist’.<br></li>
+		                           
+		                           <li>Most noted works during this period were ‘Landscape, Staten Island’ (1927–1928), ‘Landscape in the Manner of Cézanne’ (1927). Towards the end of the 1920s and beginning of the next decade, he began experimenting with cubism and later moving on to surrealism.<br></li>
+		                           
+		                           <li>He faced criticism from his peers who said his work lacked originality. Nevertheless, Arshile Gorky emphasized the significance of preserving and carrying forward tradition and stated that any artist can grow only after a period of apprenticeship.<br></li>
+		                           
+		                           <li>In 1931, his works were exhibited and sold at the Down Town Gallery in New York. Two years later, in 1933, he was among the initial artists to be hired by Works Progress Administration Federal Art Project. Other artists like mark Rothko, Jackson Pollock, Lee Krasner and Alice Neel were later employed in the project.<br></li>
+		                           
+		                           <li>In 1935, he signed a 3 year deal with the Guild Art gallery, which was cofounded by Margaret Lefranc and Anna Walinska. The gallery arranged his debut solo exhibition for his work ‘Abstract Drawings by Arshile Gorky’. Among the paintings he worked during this phase include the works ‘Nighttime, Enigma, Nostalgia’ (1930–1934), which were a series of paintings.<br></li>
+		                           
+		                           <li>During the early 1940s, he was well-known in the artistic scene at New York and this gave him the opportunity to get acquainted with members of the Surrealist Group of artists; a group of artists who were on exile from Europe.<br></li>
+		                           <li>
+		                           	He was very much influenced by the works of his friend André Breton along with other surrealist artists such as Roberto Matta, who helped in nurturing his mature style by encouraging him to work with biomorphic patterns. Roberto Matta also introduced him to the technique of automatic drawing. These influences are visible in many paintings created by him during the early 1940s especially in ‘The Liver is the Cock's Comb’.<br>
+		                           </li>
+		                        </ul>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Legacy-->
+		            <section class="artist_section" id="legacy">
+						<dl>
+		                    <dt>Legacy</dt>
+		                    <dd>
+		                    	<p> Arshile Gorky was known to have proposed his muse, artist Corinne Michelle West multiple times for marriage but she refused.</p>
+		                    	<p>In 1941, he married Agnes Magruder, daughter of Admiral John H. Magruder. The couple had two daughters, Maro and Yalda. Yalda was later renamed Natasha. In 1946, Agnes Magruder was romantically involved with artist Roberto Matta and two years later she left with her kids and married British writer Xan Fielding.</p>
+		                    	<p>Arshile Gorky faced multiple catastrophes in 1946, when his studio was burnt down, and the same year he had to undergo a painful colostomy surgery for rectal cancer. Two years later, he met with an accident, which temporarily paralyzed his painting arm.</p>
+		                        <p>On July 21, 1948, Arshile Gorky hanged himself to death at Sherman, Connecticut. He was 44 years when he died.
+								In 2005, his family formed a non-profit corporation named the ‘Arshile Gorky Foundation’ to talk about the life, achievements and works of the artist.</p>
+		                        
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--On View-->
+		            <section class="artist_section" id="onview">
+						<dl>
+		                    <dt>On View</dt>
+		                    <dd>
+		                        <ul>
+		                           
+		                            <li>Museum of Modern Art, New York City</li>
+		                            <li>San Francisco Museum of Modern Art, San Francisco</li>
+		                        </ul>
+		                    </dd>
+		                </dl>     
+					</section>
+					<section class="artist_section" id="artworks_mobile">
+						<h2>ArtWorks</h2>
+						<br>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							  <img src="images/abstract/Arshile_Gorky/Aritst-and-his-mother.jpg" alt="Aritst and his Mother">
+							  <div class="content_image">
+							  	<h4>Aritst and his Mother</h4>
+							  	<br>
+							  	<span>
+							  		This portrait of Arshile Gorky and his mother is based on a photograph taken in his native Armenia in 1912, when the artist was just a child. In 1926, he began work on this and another version now in the National Gallery of Art. Gorky, however, did not simply copy the photograph, but painted a meditation on remembrance. The figures’ searching gazes lend the composition psychological intensity, eliciting sympathy yet avoiding outright pathos or sentimentality.
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/Arshile_Gorky/Garden-in-Sochi.jpg" alt="Garden in Sochi">
+							  <div class="content_image">
+							  	<h4>Garden in Sochi</h4>
+							  	<br>
+							  	<span>Gorky created three paintings titled Garden in Sochi. Like the others, this, the earliest example, features an abstract composition inspired by the artist’s childhood memories of his native Armenia. Gorky wrote to the Museum explaining the imagery: “My father had a little garden with a few apple trees which had retired from giving fruit. There was a ground constantly in shade where grew incalculable amounts of wild carrots, and porcupines had made their nests.”
+							  	</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/Arshile_Gorky/how-my-mothers-embroidered-apron-unfolds-upon-my-life.jpg" alt="How my Mothers Embroidered apron unfolds upon my life">
+							  <div class="content_image">
+							  	<h4>How my Mothers Embroidered apron unfolds upon my life</h4>
+							  	<br>
+							  	<span>Exhibited in 1945 at the Julien Levy Gallery during his first solo-show in New York City, this painting forms an important bridge between art movements. The Levy Gallery was known for representing European Surrealist artists but Gorky’s work fused ideas derived from Cubism as well as Surrealism into a new visual proposal. Gorky’s drips and fluidity infuse this painting with great movement. This new technique helped to define the energy of what came to be known as abstract expressionism.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/Arshile_Gorky/nighttime-engima-and-nostalgia.jpg" alt="Nighttime Engima and Nostalgia">
+							  <div class="content_image">
+							  	<h4>Nighttime Engima and Nostalgia</h4>
+							  	<br>
+							  	<span>A somber still-life abstraction, Nighttime, Enigma and Nostalgia has long been recognized as among Arshile Gorky’s masterpieces. The juxtaposition of textured and flat surfaces, and matte and glossy passages, imparts a great liveliness to the surface, creating a perfect counterbalance to the dark tones of the painting. This work is the only painting and final piece in a series of more than 40 drawings Gorky produced from 1930 to 1934. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/Arshile_Gorky/one-year-the-milkweed.jpg" alt="One Year the Milkweed">
+							  <div class="content_image">
+							  	<h4>One Year the Milkweed</h4>
+							  	<br>
+							  	<span>
+								In One Year the Milkweed, one of several so-called color veil paintings Gorky made in 1944, films of paint have been washed unevenly across the canvas, and evocative but indistinct forms have been brushed in. Overall green and brown hues suggest a landscape, but there are no identifiable landscape forms and no spatial recession. Instead, vertical drips and the alternation of light and deep tones create a shifting, shimmering effect across the entire picture surface."</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/Arshile_Gorky/golden-brown-painting.jpg" alt="Golden Brown Painting">
+							  <div class="content_image">
+							  	<h4>Golden Brown Painting</h4>
+							  	<br>
+							  	<span>Golden Brown Painting combines references to Gorky’s childhood with oblique allusions to the landscape surrounding an abandoned silica mill on the Housatonic River in Connecticut. In this work Gorky experimented with thin washes of oil paint to create transparent veils of autumnal color, evoking an otherworldly landscape. Highly abstracted figures are scattered throughout the composition. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/Arshile_Gorky/the-betrothal-ii.jpg" alt="The Betrothal II<">
+							  <div class="content_image">
+							  	<h4>The Betrothal II</h4>
+							  	<br>
+							  	<span> Painted one year before the artist’s death, The Betrothal, II features a lyrical assortment of odd, organic shapes against an overall field of soft luminous color. Although the painting appears spontaneous, Gorky actually made a number of studies for it, exploring over and over again the same fluid, biomorphic forms that suggest, along with the title, narratives of sexuality and procreation. Indeed, the attenuated shapes that emerge from the ocher background appear on the verge of metamorphosis.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/Arshile_Gorky/the-liver-is-the-cock-s-comb.jpg" alt="The Liver is the Cock's Comb">
+							  <div class="content_image">
+							  	<h4>The Liver is the Cock's Comb</h4>
+							  	<br>
+							  	<span>By means of his unique approach to color and form, Arshile Gorky aimed to communicate both his painful childhood experience of the Armenian Genocide and the close affinity he felt with nature, especially the landscape. It reflects both the artist’s physical surroundings as well as his memories of the gardens of his homeland. The complexities and contradictions Gorky felt were present in his own life are built into the layers of this painting. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/Arshile_Gorky/water-of-the-flowery-mill.jpg" alt="Water of the Flowery Mill">
+							  <div class="content_image">
+							  	<h4>Water of the Flowery Mill</h4>
+							  	<br>
+							  	<span>Water of the Flowery Mill is part of a group of landscape-inspired works that Gorky produced during the last six years of his life. Based on his study of an old mill and bridge on the Housatonic River in Connecticut, it also evokes the artist’s nostalgia for Armenia, from which he and his family had fled some twenty years earlier.</span>
+							  </div>
+							</div>
+
+							<div id="indicators">
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+							</div>
+						</div>
+						<!--Slideshow HTML ends-->
+						<!--JavaScript for Slideshow-->
+						<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							    var i;
+							    var slides = document.getElementsByClassName("mySlides");
+							    var dots = document.getElementsByClassName("dot");
+							    for (i = 0; i < slides.length; i++) {
+							       slides[i].style.display = "none";  
+							    }
+							    slideIndex++;
+							    if (slideIndex > slides.length) {slideIndex = 1}    
+							    for (i = 0; i < dots.length; i++) {
+							        dots[i].className = dots[i].className.replace("active", "");
+							    }
+							    slides[slideIndex-1].style.display = "block";  
+							    dots[slideIndex-1].className += " active";
+							    setTimeout(showSlides, 5000); // Change image every 2 seconds
+							}
+						</script>
+						<!--JavaScript for Slideshow ends-->
+						
+					</section>
+				</div>
+				<!--Image Gallery Modal =-->
+				<div id="artworks" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+					    	<span class="close">&times;</span>
+					      	<h2>GALLERY</h2>
+					    </div>
+					    <div class="modal-body">
+					      	<ul>
+								<li>
+									<a href="images/abstract/Arshile_Gorky/Aritst-and-his-mother.jpg" title="Artist and his Mother"><img
+									src="images/abstract/Arshile_Gorky/Aritst-and-his-mother.jpg" width="100" height="75" alt="Artist and his Mother" sec-content="This portrait of Arshile Gorky and his mother is based on a photograph taken in his native Armenia in 1912, when the artist was just a child. In 1926, he began work on this and another version now in the National Gallery of Art. Gorky, however, did not simply copy the photograph, but painted a meditation on remembrance. The figures’ searching gazes lend the composition psychological intensity, eliciting sympathy yet avoiding outright pathos or sentimentality."></a>
+								</li>
+								<li>
+									<a href="images/abstract/Arshile_Gorky/Garden-in-Sochi.jpg" title="Garden in Sochi"><img
+									src="images/abstract/Arshile_Gorky/Garden-in-Sochi.jpg" width="100" height="75" alt="Garden in Sochi" sec-content="Gorky created three paintings titled Garden in Sochi. Like the others, this, the earliest example, features an abstract composition inspired by the artist’s childhood memories of his native Armenia. Gorky wrote to the Museum explaining the imagery: “My father had a little garden with a few apple trees which had retired from giving fruit. There was a ground constantly in shade where grew incalculable amounts of wild carrots, and porcupines had made their nests.”"></a>
+								</li>
+								<li>
+									<a href="images/abstract/Arshile_Gorky/nighttime-engima-and-nostalgia.jpg" title="Nighttime Engima and Nostalgia"><img
+									src="images/abstract/Arshile_Gorky/nighttime-engima-and-nostalgia.jpg" width="100" height="75" alt="Nighttime Engima and Nostalgia" sec-content="A somber still-life abstraction, Nighttime, Enigma and Nostalgia has long been recognized as among Arshile Gorky’s masterpieces. The juxtaposition of textured and flat surfaces, and matte and glossy passages, imparts a great liveliness to the surface, creating a perfect counterbalance to the dark tones of the painting. This work is the only painting and final piece in a series of more than 40 drawings Gorky produced from 1930 to 1934."></a>
+								</li>
+								
+								<li>
+									<a href="images/abstract/Arshile_Gorky/one-year-the-milkweed.jpg" title="One Year the Milkweed"><img
+									src="images/abstract/Arshile_Gorky/one-year-the-milkweed.jpg" width="100" height="75" alt="One Year the Milkweed" sec-content="In One Year the Milkweed, one of several so-called color veil paintings Gorky made in 1944, films of paint have been washed unevenly across the canvas, and evocative but indistinct forms have been brushed in. Overall green and brown hues suggest a landscape, but there are no identifiable landscape forms and no spatial recession. Instead, vertical drips and the alternation of light and deep tones create a shifting, shimmering effect across the entire picture surface.  His mood in One Year the Milkweed is one of lyricism and ease, and the painting could be described as a kind of abstract pastoral."></a>
+								</li>
+								<li>
+									<a href="images/abstract/Arshile_Gorky/golden-brown-painting.jpg" title="Golden Brown Painting"><img
+									src="images/abstract/Arshile_Gorky/golden-brown-painting.jpg" width="100" height="75" alt="Golden Brown Painting" sec-content="Golden Brown Painting combines references to Gorky’s childhood with oblique allusions to the landscape surrounding an abandoned silica mill on the Housatonic River in Connecticut. In this work Gorky experimented with thin washes of oil paint to create transparent veils of autumnal color, evoking an otherworldly landscape. Highly abstracted figures are scattered throughout the composition. Gorky’s use of diluted paint with a loose, unpredictable flow was influenced by the European exiled Surrealists’ processes of chance composition and automatic drawing, thought to liberate the artist’s unconscious."></a>
+								</li>
+								
+								<li>
+									<a href="images/abstract/Arshile_Gorky/the-betrothal-ii.jpg" title="The Betrothal II"><img
+									src="images/abstract/Arshile_Gorky/the-betrothal-ii.jpg" width="100" height="75" alt="The Betrothal II" sec-content=" Painted one year before the artist’s death, The Betrothal, II features a lyrical assortment of odd, organic shapes against an overall field of soft luminous color. Although the painting appears spontaneous, Gorky actually made a number of studies for it, exploring over and over again the same fluid, biomorphic forms that suggest, along with the title, narratives of sexuality and procreation. Indeed, the attenuated shapes that emerge from the ocher background appear on the verge of metamorphosis"></a>
+								</li>
+								<li>
+									<a href="images/abstract/Arshile_Gorky/the-liver-is-the-cock-s-comb.jpg" title="The Liver is the Cock's Comb"><img
+									src="images/abstract/Arshile_Gorky/the-liver-is-the-cock-s-comb.jpg" width="100" height="75" alt="The Liver is the Cock's Comb" sec-content="By means of his unique approach to color and form, Arshile Gorky aimed to communicate both his painful childhood experience of the Armenian Genocide and the close affinity he felt with nature, especially the landscape. It reflects both the artist’s physical surroundings as well as his memories of the gardens of his homeland. The complexities and contradictions Gorky felt were present in his own life are built into the layers of this painting."></a>
+								</li>
+								<li>
+									<a href="images/abstract/Arshile_Gorky/water-of-the-flowery-mill.jpg" title="Water of the Flowery Mill"><img
+									src="images/abstract/Arshile_Gorky/water-of-the-flowery-mill.jpg" width="100" height="75" alt="Water of the Flowery Mill" sec-content="Water of the Flowery Mill is part of a group of landscape-inspired works that Gorky produced during the last six years of his life. Based on his study of an old mill and bridge on the Housatonic River in Connecticut, it also evokes the artist’s nostalgia for Armenia, from which he and his family had fled some twenty years earlier."></a>
+								</li>
+							</ul>
+							<figure>
+								<img src="images/abstract/Arshile_Gorky/Aritst-and-his-mother.jpg" alt="Artist and his Mother">
+								<figcaption>Artist and his Mother</figcaption>
+							</figure>
+							<span id="painting_info">
+								This portrait of Arshile Gorky and his mother is based on a photograph taken in his native Armenia in 1912, when the artist was just a child. In 1926, he began work on this and another version now in the National Gallery of Art. Gorky, however, did not simply copy the photograph, but painted a meditation on remembrance. The figures’ searching gazes lend the composition psychological intensity, eliciting sympathy yet avoiding outright pathos or sentimentality.
+							</span>
+					    </div>
+					    <div class="modal-footer">
+					      	<h3>ARSHILE GORKY</h3>
+					    </div>
+					</div>
+				</div>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById('artworks');
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("artworks_open");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					    modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					    modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					    if (event.target == modal) {
+					        modal.style.display = "none";
+					    }
+					}
+				</script>
+				
+				<!--SideBar-->
+				<div class="side_content">
+					<ul>
+						<li><a href="https://10mosttoday.com/10-most-famous-paintings-in-the-world/" target="_blank"><strong>Top 5 Paintings</strong></a></li>
+						<li><strong>Top 5 Painters</strong></li>
+						<div id="small-only">
+							<br>
+							<ol>
+								<li><a href="leonardo_da_vinci.html">Leonardo Da Vinci</a></li>
+								<li><a href="rembrandt.html">Rembrandt</a></li>
+								<li><a href="michelangelo.html">Michelangelo</a></li>
+								<li><a href="pablo_picasso.html">Pablo Picasso</a></li>
+								<li><a href="raphael.html">Raphael</a></li>
+							</ol>
+						</div>
+					</ul>
+					<div id="top_artist_list">
+						<div>
+							<a href="leonardo_da_vinci.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/leonardo_da_vinci/portrait.jpg" alt="leonardo_da_vinci">
+									<span>
+										<strong>Leonardo Da Vinci</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>
+							<a href="rembrandt.html">
+								<div class="horizontal_card">
+									<img src="images/baroque/rembrandt/portrait.jpg" alt="rembrandt">
+									<span>
+										<strong>Rembrandt</strong>
+										<br>
+										Dutch
+										<br>
+										Realist Painter
+									</span>
+								</div>
+							</a>
+							<a href="michelangelo.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/michelangelo/portrait.jpg" alt="michelangelo">
+									<span>
+										<strong>Michelangelo</strong>
+										<br>
+										French
+										<br>
+										Impressionist Painter
+									</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="pablo_picasso.html">
+								<div class="horizontal_card">
+									<img src="images/cubist/pablo_picasso/portrait.jpg" alt="pablo_picasso">
+									<span>
+										<strong>Pablo Picasso</strong>
+										<br>
+										Spanish
+										<br>
+										Cubist Painter
+									</span>
+								</div>
+							</a>
+							<a href="raphael.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/raphael/portrait.jpg" alt="raphael">
+									<span>
+										<strong>Raphael</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!--Sidebar Ends-->
+			</main>
+			<!--Footer Section-->
+			<footer style="background-color: #311B92;">
+				<a href="index.html">Home</a> | <a href="abstract_painters.html">Abstract Painters</a> | <a href="baroque_painters.html">Baroque Painters</a> | <a href="cubist_painters.html">Cubist Painters</a> | <a href="realist_painters.html">Realist Painters</a> | <a href="renaissance_painters.html">Renaissance Painters</a>
+				Copyright 2018 by Artistry World, May 2018, <a href="mailto:gilber.njq@gmail.com"><u>gilber.njq@gmail.com</u></a>
+			</footer>
+			<!--Footer Section ends-->
+		</div>
+	</body>
+</html>

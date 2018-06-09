@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pablo Picasso</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Reference to CSS and fonts-->
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+	    <!--Reference to JQuery Library-->
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <script>
+		$(document).ready(function(){
+		    //JavaScript for Image Gallery
+		    $('#artworks a').click(function(){
+		        var galleryHref = $(this).attr('href');
+		        var galleryAlt = $(this).attr('title');
+		        var gallerynfo = $(this).children('img').attr('sec-content');
+		        $('figure').css('display','none');
+		        $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		        $('figcaption').html(galleryAlt);
+		        $('figure').fadeToggle(1000);
+		        $('#painting_info').html(gallerynfo);
+		        return false;
+		      });
+		});
+</script>
+
+	</head>
+	<body>
+	   <div id="wrapper">
+			<header>
+				<!--Top Header(Logo and site name)-->
+				<div id="top_header">
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+					<h1>ARTISTRY WORLD</h1>
+				</div>
+	            <!--Top Header Ends-->
+	            <!--Painter Name-->
+	           
+             	<div class="mySlides2 fade">
+             		<div  class="slideshow2">
+             			<img src="images/cubist/pablo_picasso/portrait.jpg" alt="portrait">
+	             		<div class="slide_content">
+	             			<h1>Pablo Picasso</h1>
+	             			<blockquote>"Every child is an artist. The problem is how to remain an artist once he grows up."</blockquote>
+	             		</div>
+             		</div>
+             	</div>
+	          
+	            <!--Painter name-->
+	           
+				<!--Sticky Navigation Bar-->
+	            <div id="artist_nav">
+				    <ul>
+		                <li><a href="#overview">Overview</a></li>
+		                <li><a href="#career">Career</a></li>
+		                <li><a href="#legacy">Legacy</a></li>
+		                <li><a href="#onview">On View</a></li>
+		                <li id="desktop_only"><a id="artworks_open">Artworks</a></li>
+		                <li id="tablet_only"><a href="#artworks_mobile">Artworks</a></li>
+	            	</ul>
+	            </div>
+	            <!--Navigation Bar Ends-->
+	           
+			</header>
+			 <!--JavaScript for Navigation Bar-->
+            <script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("artist_nav");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<!--JavaScript for Navigation Bar Ends-->
+			<main>
+				<!--Content Section-->
+				<div id="content_artist">
+					<!--Overview-->
+				    <section class="artist_section" id="overview">
+						<dl>
+							<dt>Overview</dt>
+		                    <dd>
+		                    	<p><strong>Rembrandt</strong>  was a Spanish painter, sculptor, printmaker, ceramicist, stage designer, poet and playwright who spent most of his adult life in France. Regarded as one of the most influential artists of the 20th century, he is known for co-founding the Cubist movement, the invention of constructed sculpture, the co-invention of collage, and for the wide variety of styles that he helped develop and explore. Among his most famous works are the proto-Cubist Les Demoiselles d'Avignon (1907), and Guernica (1937), a dramatic portrayal of the bombing of Guernica by the German and Italian airforces.</p>
+		                    	<p>Picasso demonstrated extraordinary artistic talent in his early years, painting in a naturalistic manner through his childhood and adolescence. During the first decade of the 20th century, his style changed as he experimented with different theories, techniques, and ideas. After 1906, the Fauvist work of the slightly older artist Henri Matisse motivated Picasso to explore more radical styles, beginning a fruitful rivalry between the two artists, who subsequently were often paired by critics as the leaders of modern art.</p>
+		                    </dd>
+		                    
+		                </dl>
+		            </section>
+		            <!--Career-->
+		            <section class="artist_section" id="career">
+						<dl>
+		                    <dt>Career</dt>
+		                    <dd>
+		                    	<ul>
+		                    	   <li>He opened an art studio in Montmarte, Paris. Despite being a teenager, he had the technique to appropriate any style, and the insight to know which styles were important.<br></li>
+		                    	   
+		                    	   <li>From 1901 until 1904, was the Blue period. Just as the name depicts most of his works were marked by sombre paintings in shades of blue and blue-green, only intermittently having shades of other colors. He applied various techniques during his period, starting from the blurred technique to divisionism and expressionism. The subject he chose ranged from poverty and isolation to anguish and melancholy. Some of his famous paintings of this period include, ‘Blue Nude’, ‘La Vie’ and ‘The Old Guitarist’.<br></li> 
+		                    	   
+		                           <li>Succeeding the Blue period was the Rose period from 1904 until 1906, during which the color pink dominated much of his works. Most of his paintings were of circus people, acrobats and harlequins. Additionally, his works showcased the warm relationship that he shared with Fernande Olivier.<br></li>
+		                           
+		                           <li>In 1907, he along with his friend George Braque came up with a remarkable work that none until then had ever painted. Including sharp geometric shapes, ‘Les Demoiselles d’Avignon’, showcased five nude prostitutes, abstracted and distorted with glaring blotches of blues, greens and grays. The work became the precursor and inspiration of Cubism, an artistic style that the two invented.<br></li>
+		                           
+		                           <li>The changing panorama of the world, which was at the juncture of World War I, brought about the next change in his art form. From the abstract and the distorted form, he moved to depicting the sombre reality of the world in his works.</li>
+		                           
+		                           <li>An avid believer of experimentation and innovation, he did not remain stuck with classicalism for long and caught up with a new philosophical and cultural craze which was known as Surrealism.<br></li>
+		                           
+		                           <li>‘Guernica’ stands as a testament for the brutality, inhumanity and vicious nature of war. Painted in 1937 after the devastating aerial attack on the Basque town of Guernica, it is till date, the greatest anti-war painting of all times. it has shades of black, white and gray and illustrates several human-like figures in various states of anguish and terror.<br></li>
+		                           
+		                        </ul>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Legacy-->
+		            <section class="artist_section" id="legacy">
+						<dl>
+		                    <dt>Legacy</dt>
+		                    <dd>
+		                    	<p>On the occasion of his 1939 retrospective at MoMA, Life magazine wrote: "During the 25 years he has dominated modern European art, his enemies say he has been a corrupting influence. With equal violence, his friends say he is the greatest artist alive."</p>
+		                    	<p>At the time of Picasso's death many of his paintings were in his possession, as he had kept off the art market what he did not need to sell. In addition, Picasso had a considerable collection of the work of other famous artists, some his contemporaries, such as Henri Matisse, with whom he had exchanged works.</p>
+		                    	<p>The Museu Picasso in Barcelona features many of his early works, created while he was living in Spain, including many rarely seen works which reveal his firm grounding in classical techniques. </p>
+		                    	<p>In the 1996 movie Surviving Picasso, Picasso is portrayed by actor Anthony Hopkins.[92] Picasso is also a character in Steve Martin's 1993 play, Picasso at the Lapin Agile. In A Moveable Feast by Ernest Hemingway, Hemingway tells Gertrude Stein that he would like to have some Picassos, but cannot afford them. Later in the book, Hemingway mentions looking at one of Picasso's paintings.</p>
+		                    	<p>As of 2015, Picasso remained the top-ranked artist (based on sales of his works at auctions) according to the Art Market Trends report. More of his paintings have been stolen than any other artist's; in 2012, the Art Loss Register had 1,147 of his works listed as stolen. The Picasso Administration functions as his official Estate. The US copyright representative for the Picasso Administration is the Artists Rights Society.</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--On View-->
+		            <section class="artist_section" id="onview">
+						<dl>
+		                    <dt>On View</dt>
+		                    <dd>
+		                        <ul>
+		                        	<li>Museum of Modern Art, New York City</li>
+		                        	<li>National Gallery of Art East Building, Washington D.C.</li>
+		                        	<li>Art Institute of Chicago</li>
+		                        	<li>Philadelphia Museum of Art</li>
+		                        	<li>San Francisco Museum of Modern Art</li>
+		                        	<li>Musee Picassso, Paris</li>
+		                        	<li>Museo Nacional Centro de Arte Reina SOfia, Madrid</li>
+		                        	<li>Musee National d"Art Moderne, Paris</li>
+		                        	<li>Detroit Institute of Arts, Detroit</li>
+		                        	<li>National Museum of Fine Arts, Paris</li>
+		                        	<li>The Phillips Collection, Washington D.C.</li>
+		                        	<li>Palau Nacional, Barcelone</li>
+		                        	<li>Museu Picasso, Barcelone</li>
+		                        </ul>
+		                    </dd>
+		                </dl>     
+					</section>
+					<section class="artist_section" id="artworks_mobile">
+						<h2>ArtWorks</h2>
+						<br>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							  <img src="images/cubist/pablo_picasso/Family-of-Saltimbanques.jpg" alt="Family of Saltimbanques">
+							  <div class="content_image">
+							  	<h4>Family of Saltimbanques</h4>
+							  	<br>
+							  	<span>This painting portrays six circus performers in a desolate landscape. The word “saltimbanco” comes from Italian and is used to refer to street performers. Critics have suggested that this painting is a group portrait of Picasso and his circle, symbolized as poor, independent and isolated. Family of Saltimbanques is the most famous painting of Picasso’s Rose Period.
+							  	</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/pablo_picasso/Girl-Before-A-Mirror.jpg" alt="Girl Before A Mirror">
+							  <div class="content_image">
+							  	<h4>Girl Before A Mirror</h4>
+							  	<br>
+							  	<span>This painting portrays Marie-Thérèse Walter, mistress and model of Pablo Picasso from 1927 to around 1935. The young Marie-Thérèse was one of his favorite subjects in the early 1930s. Girl before a Mirror portrays her as beautiful and dressed up with make up on the left side; while on the right side her face is darkened, her eyes are round and hollow, and her intensely feminine body is twisted and contorted.  
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/pablo_picasso/guernica.jpg" alt="Guernica">
+							  <div class="content_image">
+							  	<h4>Guernica</h4>
+							  	<br>
+							  	<span>On the left of the canvas, a wide-eyed bull stands above a woman grieving over a dead child in her arms. The center is dominated by a horse falling in agony as if struck by a weapon. Under the horse is a dismembered soldier while towards its right is a frightened female figure which appears to have floated into the room through a window. From the right, an awe-struck woman staggers towards the center. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/pablo_picasso/La-Vie.jpg" alt="La-Vie">
+							  <div class="content_image">
+							  	<h4>La-Vie</h4>
+							  	<br>
+							  	<span>
+								 The painting portrays a naked couple confronting a mother bearing a child in her arms. The male figure in the painting is a portrait of Carlos Casagemas, who was depicted by Picasso in several posthumous portraits.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/pablo_picasso/Le-Reve.jpg" alt="Le-Reve">
+							  <div class="content_image">
+							  	<h4>Le-Reve</h4>
+							  	<br>
+							  	<span>
+							  		This painting also depicts Marie-Thérèse Walter. Unlike his later mistress Dora Maar whom Picasso often portrayed as tortured or threatening, Marie-Thérèse usually appears as blonde, sunny and bright in his paintings. Picasso created numerous works with elements of eroticism and the erotic content of this famous painting is often noted with critics pointing out that Picasso painted an erect penis, presumably symbolizing his own, in the upturned face of his 22-year-old model.
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/pablo_picasso/Les-Demoiselles-dAvignon.jpg" alt="Les Demoiselles dAvignon">
+							  <div class="content_image">
+							  	<h4>Les Demoiselles dAvignon</h4>
+							  	<br>
+							  	<span>This revolutionary masterpiece is considered one of the most influential paintings of twentieth century as it played a key role in the development of both Cubism and Modern art. It was a radical departure from traditional European painting. Picasso used different styles to depict each figure in the painting with the head of the women pulling the curtain in upper right being the most strictly Cubist element. The painting was controversial not only for its radical style but also for its subject.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/pablo_picasso/Ma-Jolie.jpg" alt="Ma Jolie">
+							  <div class="content_image">
+							  	<h4>Ma Jolie</h4>
+							  	<br>
+							  	<span> This painting exemplifies the Analytic Cubist style. It depicts Marcelle Humbert, who was Picasso’s mistress at the time and who died three years later in 1915. Ma Jolie was Picasso’s nickname for Marcelle. It was also the refrain of a popular song which was performed at a Parisian music hall which Picasso often visited. Ma Jolie is among the most famous paintings by Picasso in Analytic Cubism.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/pablo_picasso/The-Old-Guitarist.jpg" alt="The Old Guitarist">
+							  <div class="content_image">
+							  	<h4>The Old Guitarist</h4>
+							  	<br>
+							  	<span>The painting portrays a bent and sightless man who is holding a large guitar close to him. The blue palette adds to the melancholy and accentuates the tragic and sorrowful theme. In 1998, researchers used an infrared camera to discover a young mother seated in the center of the composition, reaching out with her left arm to her kneeling child at her right, and a calf or sheep on the mother’s left side.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/pablo_picasso/The-Weeping-Woman.jpg" alt="The Weeping Woman">
+							  <div class="content_image">
+							  	<h4>The Weeping Woman</h4>
+							  	<br>
+							  	<span>In his masterpiece Guernica, Pablo Picasso depicted a weeping woman holding her dead child. He then created a number of portraits based on this figure which culminated with this painting, the last and most elaborate painting of the series. The model in the painting is French photographer and painter Dora Maar, who was his mistress from 1936 to 1944. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/pablo_picasso/Three-Musicians.jpg" alt="Three Musicians">
+							  <div class="content_image">
+							  	<h4>Three Musicians</h4>
+							  	<br>
+							  	<span>This painting is a prime example of the Synthetic Cubist style. It portrays a Harlequin, a Pierrot, and a monk which are generally believed to be, respectively, Picasso; and his poet friends Guillaume Apollinaire, who died in 1918; and Max Jacob, who entered a monastery in 1921. Three Musicians is not only among Picasso’s greatest masterpieces but also one of the most renowned works in Synthetic Cubism.</span>
+							  </div>
+							</div>
+							<div id="indicators">
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+							</div>
+						</div>
+						<!--Slideshow HTML ends-->
+						<!--JavaScript for Slideshow-->
+						<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							    var i;
+							    var slides = document.getElementsByClassName("mySlides");
+							    var dots = document.getElementsByClassName("dot");
+							    for (i = 0; i < slides.length; i++) {
+							       slides[i].style.display = "none";  
+							    }
+							    slideIndex++;
+							    if (slideIndex > slides.length) {slideIndex = 1}    
+							    for (i = 0; i < dots.length; i++) {
+							        dots[i].className = dots[i].className.replace("active", "");
+							    }
+							    slides[slideIndex-1].style.display = "block";  
+							    dots[slideIndex-1].className += " active";
+							    setTimeout(showSlides, 5000); // Change image every 2 seconds
+							}
+						</script>
+						<!--JavaScript for Slideshow ends-->
+						
+					</section>
+				</div>
+				<!--Image Gallery Modal =-->
+				<div id="artworks" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+					    	<span class="close">&times;</span>
+					      	<h2>GALLERY</h2>
+					    </div>
+					    <div class="modal-body">
+					      	<ul>
+								<li>
+									<a href="images/cubist/pablo_picasso/Family-of-Saltimbanques.jpg" title="Family of Saltimbanques"><img
+									src="images/cubist/pablo_picasso/Family-of-Saltimbanques.jpg" width="100" height="75" alt="Family of Saltimbanques" sec-content=" This painting portrays six circus performers in a desolate landscape. The word “saltimbanco” comes from Italian and is used to refer to street performers. Critics have suggested that this painting is a group portrait of Picasso and his circle, symbolized as poor, independent and isolated. Family of Saltimbanques is the most famous painting of Picasso’s Rose Period."></a>
+								</li>
+								<li>
+									<a href="images/cubist/pablo_picasso/Girl-Before-A-Mirror.jpg" title="Girl Before A Mirror"><img
+									src="images/cubist/pablo_picasso/Girl-Before-A-Mirror.jpg" width="100" height="75" alt="Girl Before A Mirror" sec-content="This painting portrays Marie-Thérèse Walter, mistress and model of Pablo Picasso from 1927 to around 1935. The young Marie-Thérèse was one of his favorite subjects in the early 1930s. Girl before a Mirror portrays her as beautiful and dressed up with make up on the left side; while on the right side her face is darkened, her eyes are round and hollow, and her intensely feminine body is twisted and contorted.  ">
+									</a>
+								</li>
+								
+								<li>
+									<a href="images/cubist/pablo_picasso/La-Vie.jpg" title="La-Vie"><img
+									src="images/cubist/pablo_picasso/La-Vie.jpg" width="100" height="75" alt="La-Vie" sec-content="The painting portrays a naked couple confronting a mother bearing a child in her arms. The male figure in the painting is a portrait of Carlos Casagemas, who was depicted by Picasso in several posthumous portraits." ></a>
+								</li>
+								<li>
+									<a href="images/cubist/pablo_picasso/Le-Reve.jpg" title="Le-Reve"><img
+									src="images/cubist/pablo_picasso/Le-Reve.jpg" width="100" height="75" alt="Le-Reve" sec-content="This painting also depicts Marie-Thérèse Walter. Unlike his later mistress Dora Maar whom Picasso often portrayed as tortured or threatening, Marie-Thérèse usually appears as blonde, sunny and bright in his paintings. Picasso created numerous works with elements of eroticism and the erotic content of this famous painting is often noted with critics pointing out that Picasso painted an erect penis, presumably symbolizing his own, in the upturned face of his 22-year-old model.">
+									</a>
+								</li>
+								<li>
+									<a href="images/cubist/pablo_picasso/Les-Demoiselles-dAvignon.jpg" title="Les Demoiselles dAvignon"><img
+									src="images/cubist/pablo_picasso/Les-Demoiselles-dAvignon.jpg" width="100" height="75" alt="Les Demoiselles dAvignon" sec-content="This revolutionary masterpiece is considered one of the most influential paintings of twentieth century as it played a key role in the development of both Cubism and Modern art. It was a radical departure from traditional European painting. Picasso used different styles to depict each figure in the painting with the head of the women pulling the curtain in upper right being the most strictly Cubist element. The painting was controversial not only for its radical style but also for its subject."></a>
+								</li>
+								<li>
+									<a href="images/cubist/pablo_picasso/Ma-Jolie.jpg" title="Ma Jolie"><img
+									src="images/cubist/pablo_picasso/Ma-Jolie.jpg" width="100" height="75" alt="Ma Jolie" sec-content="This painting exemplifies the Analytic Cubist style. It depicts Marcelle Humbert, who was Picasso’s mistress at the time and who died three years later in 1915. Ma Jolie was Picasso’s nickname for Marcelle. It was also the refrain of a popular song which was performed at a Parisian music hall which Picasso often visited. Ma Jolie is among the most famous paintings by Picasso in Analytic Cubism."></a>
+								</li>
+								<li>
+									<a href="images/cubist/pablo_picasso/The-Old-Guitarist.jpg" title="The-Old-Guitarist"><img
+									src="images/cubist/pablo_picasso/The-Old-Guitarist.jpg" width="100" height="75" alt="The Old Guitarist" sec-content="The painting portrays a bent and sightless man who is holding a large guitar close to him. The blue palette adds to the melancholy and accentuates the tragic and sorrowful theme. In 1998, researchers used an infrared camera to discover a young mother seated in the center of the composition, reaching out with her left arm to her kneeling child at her right, and a calf or sheep on the mother’s left side."></a>
+								</li>
+								<li>
+									<a href="images/cubist/pablo_picasso/The-Weeping-Woman.jpg" title="The Weeping Woman"><img
+									src="images/cubist/pablo_picasso/The-Weeping-Woman.jpg" width="100" height="75" alt="The Weeping Womane" sec-content="In his masterpiece Guernica, Pablo Picasso depicted a weeping woman holding her dead child. He then created a number of portraits based on this figure which culminated with this painting, the last and most elaborate painting of the series. The model in the painting is French photographer and painter Dora Maar, who was his mistress from 1936 to 1944."></a>
+								</li>
+							</ul>
+							<figure>
+								<img src="images/cubist/pablo_picasso/Les-Demoiselles-dAvignon.jpeg" alt="Les Demoiselles dAvignon">
+								<figcaption>Les Demoiselles dAvignon</figcaption>
+							</figure>
+							<span id="painting_info">
+							This revolutionary masterpiece is considered one of the most influential paintings of twentieth century as it played a key role in the development of both Cubism and Modern art. It was a radical departure from traditional European painting. Picasso used different styles to depict each figure in the painting with the head of the women pulling the curtain in upper right being the most strictly Cubist element. The painting was controversial not only for its radical style but also for its subject.
+							</span>
+					    </div>
+					    <div class="modal-footer">
+					      	<h3>PABLO PICASSO</h3>
+					    </div>
+					</div>
+				</div>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById('artworks');
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("artworks_open");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					    modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					    modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					    if (event.target == modal) {
+					        modal.style.display = "none";
+					    }
+					}
+				</script>
+				
+				<!--SideBar-->
+				<div class="side_content">
+					<ul>
+						<li><a href="https://10mosttoday.com/10-most-famous-paintings-in-the-world/" target="_blank"><strong>Top 5 Paintings</strong></a></li>
+						<li><strong>Top 5 Painters</strong></li>
+						<div id="small-only">
+							<br>
+							<ol>
+								<li><a href="leonardo_da_vinci.html">Leonardo Da Vinci</a></li>
+								<li><a href="rembrandt.html">Rembrandt</a></li>
+								<li><a href="michelangelo.html">Michelangelo</a></li>
+								<li><a href="pablo_picasso.html">Pablo Picasso</a></li>
+								<li><a href="raphael.html">Raphael</a></li>
+							</ol>
+						</div>
+					</ul>
+					<div id="top_artist_list">
+						<div>
+							<a href="leonardo_da_vinci.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/leonardo_da_vinci/portrait.jpg" alt="leonardo_da_vinci">
+									<span>
+										<strong>Leonardo Da Vinci</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>
+							<a href="rembrandt.html">
+								<div class="horizontal_card">
+									<img src="images/baroque/rembrandt/portrait.jpg" alt="rembrandt">
+									<span>
+										<strong>Rembrandt</strong>
+										<br>
+										Dutch
+										<br>
+										Realist Painter
+									</span>
+								</div>
+							</a>
+							<a href="michelangelo.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/michelangelo/portrait.jpg" alt="michelangelo">
+									<span>
+										<strong>Michelangelo</strong>
+										<br>
+										French
+										<br>
+										Impressionist Painter
+									</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="pablo_picasso.html">
+								<div class="horizontal_card">
+									<img src="images/cubist/pablo_picasso/portrait.jpg" alt="pablo_picasso">
+									<span>
+										<strong>Pablo Picasso</strong>
+										<br>
+										Spanish
+										<br>
+										Cubist Painter
+									</span>
+								</div>
+							</a>
+							<a href="raphael.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/raphael/portrait.jpg" alt="raphael">
+									<span>
+										<strong>Raphael</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!--Sidebar Ends-->
+			</main>
+			<!--Footer Section-->
+			<footer style="background-color: #311B92;">
+				<a href="index.html">Home</a> | <a href="abstract_painters.html">Abstract Painters</a> | <a href="baroque_painters.html">Baroque Painters</a> | <a href="cubist_painters.html">Cubist Painters</a> | <a href="realist_painters.html">Realist Painters</a> | <a href="renaissance_painters.html">Renaissance Painters</a>
+				<br><br>
+				Copyright 2018 by Artistry World, May 2018, <a href="mailto:gilber.njq@gmail.com"><u>gilber.njq@gmail.com</u></a>
+			</footer>
+			<!--Footer Section ends-->
+		</div>
+	</body>
+</html>

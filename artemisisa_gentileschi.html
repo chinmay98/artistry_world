@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Artemisia Gentileschi</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Reference to CSS and fonts-->
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+	    <!--Reference to JQuery Library-->
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <script>
+		$(document).ready(function(){
+		    //JavaScript for Image Gallery
+		    $('#artworks a').click(function(){
+		        var galleryHref = $(this).attr('href');
+		        var galleryAlt = $(this).attr('title');
+		        var gallerynfo = $(this).children('img').attr('sec-content');
+		        $('figure').css('display','none');
+		        $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		        $('figcaption').html(galleryAlt);
+		        $('figure').fadeToggle(1000);
+		        $('#painting_info').html(gallerynfo);
+		        return false;
+		      });
+		});
+</script>
+
+	</head>
+	<body>
+	   <div id="wrapper">
+			<header>
+				<!--Top Header(Logo and site name)-->
+				<div id="top_header">
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+					<h1>ARTISTRY WORLD</h1>
+				</div>
+	            <!--Top Header Ends-->
+	            <!--Painter Name-->
+	           
+             	<div class="mySlides2 fade">
+             		<div  class="slideshow2">
+             			<img src="images/baroque/artemisia_gentileschi/portrait.jpg" alt="portrait">
+	             		<div class="slide_content">
+	             			<h1>Artemisia Gentileschi</h1>
+	             			<blockquote>"My illustrious lordship, I'll show you what a woman can do.."</blockquote>
+	             		</div>
+             		</div>
+             	</div>
+	          
+	            <!--Painter name-->
+	           
+				<!--Sticky Navigation Bar-->
+	            <div id="artist_nav">
+				    <ul>
+		                <li><a href="#overview">Overview</a></li>
+		                <li><a href="#career">Career</a></li>
+		                <li><a href="#legacy">Legacy</a></li>
+		                <li><a href="#onview">On View</a></li>
+		                <li id="desktop_only"><a id="artworks_open">Artworks</a></li>
+		                <li id="tablet_only"><a href="#artworks_mobile">Artworks</a></li>
+	            	</ul>
+	            </div>
+	            <!--Navigation Bar Ends-->
+	           
+			</header>
+			 <!--JavaScript for Navigation Bar-->
+            <script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("artist_nav");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<!--JavaScript for Navigation Bar Ends-->
+			<main>
+				<!--Content Section-->
+				<div id="content_artist">
+					<!--Overview-->
+				    <section class="artist_section" id="overview">
+						<dl>
+							<dt>Overview</dt>
+		                    <dd>
+		                    	<p><strong>Artemisia Gentileschi</strong> was an Italian Baroque painter, today considered one of the most accomplished painters in the generation following that of Caravaggio. In an era when female painters were not easily accepted by the artistic community or patrons, she was the first woman to become a member of the Accademia di Arte del Disegno in Florence and had international clientele.</p>
+		                    	<p>She specialized in painting pictures of strong and suffering women from myths, allegories, and the Bible- victims, suicides, warriors. Some of her best known themes are Susanna and the Elders (particularly the 1610 in Pommersfelden) and Judith Slaying Holofernes (most famous is her 1614-20 in Galleria degli Uffizi) and Judith and Her Maidservant (her version of 1625 at the Detroit Institute of Arts) that scholars currently know of.</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Career-->
+		            <section class="artist_section" id="career">
+						<dl>
+		                    <dt>Career</dt>
+		                    <dd>
+		                    	<ul>
+		                    	   <li>Artemisia Gentileschi moved to Florence following her marriage to a native of the city and in the year 1616 she became the first to enter the Florence Academy of Design. During her time in Florence she became well acquainted with the well-known personalities from the world of arts as well as people who had ties to the influential Medici family. <br></li>
+		                    	  
+		                    	   <li>During her time in Florence, Artemisia Gentileschi helped Michelangelo’s nephew Michelangelo Buonarroti by supplying him with a painting that was to adorn the ceiling of a gallery. Her other works during this time include ‘The Conversion of Magdalene’, ‘Self-Portrait of a Lute Player’ and ‘Judith and her Maid servant’. In 1621, Gentileschi went back to Rome.<br></li> 
+		                    	   
+		                           <li>Artemisia Gentileschi spent most of the 1620s in Rome and later on in Venice. During this period she was fascinated with the work of Caravaggio and some of the works of this period include ‘Portrait of Gonfalonieri’, ‘The Sleeping Venus’ and ‘Esther and Ahasuerus’.<br></li>
+		                           
+		                           <li>Artemisia Gentileschi moved to Naples in 1630 since it was a city that had the reputation of being very lucrative for artists and during her stint in the city she worked on paintings that were meant for cathedrals. ‘Birth of Saint John the Baptist’ and ‘Corisca and the Satyr’ are notable works from this period.<br></li>
+		                           
+		                           <li>In 1638, Artemisia Gentileschi went to work with hER father Orazio in London, England, to work for King Charles I. They worked on the paintings that constituted the decoration of the Great Hall at the Queen’s House. She continued to work in London for a few years and then went back to Naples.<br></li>
+		                           
+		                        </ul>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Legacy-->
+		            <section class="artist_section" id="legacy">
+						<dl>
+		                    <dt>Legacy</dt>
+		                    <dd>
+		                    	<p>The first writer to produced a novel about the figure of Artemisia was Anna Banti, wife of art critic Roberto Longhi. She started the book in 1947, to be called Artemisia. It is written in an "open diary" form, in which she maintains a dialog with Artemisia, trying to understand why she finds her so fascinating.</p>
+		                    	<p>Artemisia, and more specifically her painting Judith Beheading Holofernes, are referred to in Wendy Wasserstein's 1988 play, The Heidi Chronicles, where the main character lectures about the painting as part of her art history course on female painters.</p>
+		                    	<p>Canadian playwright Sally Clark wrote several stage plays based on the events leading up to and following the rape of Artemisia. Her Life Without Instruction was commissioned by Nightwood Theatre in 1988, and premiered at Theatre Plus Toronto on August 2, 1991.</p>
+		                        <p>The Passion of Artemisia, an historical novel translated into 20 languages, was published in Italy by Susan Vreeland; it positions itself in the wave of the popularity of the feminist account of Artemisia Gentileschi.</p>
+		                        <p>In 1999, the French writer Alexandra Lapierre became fascinated by Artemisia and wrote a novel about her, derived from scrupulous study of the painter and the historical context of her work. The novel seeks to understand the relation between Artemisia the woman and Artemisia the painter, and ends with the relationship with her father, composed of both love insufficiently expressed, and a latent professional rivalry.</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--On View-->
+		            <section class="artist_section" id="onview">
+						<dl>
+		                    <dt>On View</dt>
+		                    <dd>
+		                        <ul>
+		                        	<li>Virginia Museum of Fine Arts, Richmond</li>
+		                            <li>Uffizi Gallery, Florence</li>
+		                            <li>Moravian Gallery, Brno</li>
+		                            <li>Royal Collection Trust, </li>
+		                            <li>Museum of Fine Arts, Budapest</li>
+		                            <li>Metropolitan museum of Art, New York City</li>
+		                        </ul>
+		                    </dd>
+		                </dl>     
+					</section>
+					<section class="artist_section" id="artworks_mobile">
+						<h2>ArtWorks</h2>
+						<br>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							  <img src="images/baroque/artemisia_gentileschi/Adoration_of_the_Magi.jpg" alt="Adoration of the Magi">
+							  <div class="content_image">
+							  	<h4>Adoration of the Magi</h4>
+							  	<br>
+							  	<span>
+							  		This is one of three paintings that Artemisia provided for the renovation of a cathedral at Pozzuoli. The scene is a relatively solemn, subdued work for Artemisia, but quite appropriate for a liturgical painting. The male figures seem disproportionally large compared with the dignified Madonna and child dwarfed at left.
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/artemisia_gentileschi/Allegory_of_Peace_and_the_Arts_under_the_English_Crown.jpg" alt="Allegory of Peace and the Arts under the English Crown">
+							  <div class="content_image">
+							  	<h4>Allegory of Peace and the Arts under the English Crown</h4>
+							  	<br>
+							  	<span>This is the central ceiling panel painted by Artemisisa Gentileschi, for Queen Henrietta Maria, for the ceiling of the Great Hall at the Queen's House Greenwich, c. 1636-8. The subject is an allegory of Peace reigning over the Arts. The entire ceiling was removed to Marlborough House, London (now the Commonwealth Secretariat) in the early eighteenth century.
+							  	</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/artemisia_gentileschi/danae.jpg" alt="Danae">
+							  <div class="content_image">
+							  	<h4>Danae</h4>
+							  	<br>
+							  	<span>The subject of the painting is the ancient Greek myth of Danaë, which tells of how Zeus, king of the gods, visited Danaë in a shower of gold, from which union Perseus was born. The myth is regarded as a forerunner of the Christian belief in the Annunciation, the divine conception of Christ.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/artemisia_gentileschi/esther-and-ahasurerus.jpg" alt="Esther and Ahasurerus">
+							  <div class="content_image">
+							  	<h4>Esther and Ahasurerus</h4>
+							  	<br>
+							  	<span>This painting, among her most ambitious, recounts the story of the Jewish heroine Esther, who appeared before King Ahasuerus to plead for her people, breaking with court etiquette and risking death. She fainted in the king’s presence, but her request found favor. The story is conceived not as a historical recreation but as a contemporary theatrical performance.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/artemisia_gentileschi/Judith-and-her-Maidservant.jpg" alt="Judith and her Maidservant">
+							  <div class="content_image">
+							  	<h4>Judith and her Maidservant</h4>
+							  	<br>
+							  	<span>
+								Judith and Her Maidservant is a painting by the Italian baroque artist Artemisia Gentileschi. Executed in the 1620s, it hangs in the Detroit Institute of Arts.[1] The narrative is taken from the deuterocanonical Book of Judith, in which Judith seduces and then murders the general Holofernes. The precise moment depicted has taken place after the murder when her maidservant places the severed head in a bag, while Judith checks around her. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/artemisia_gentileschi/Judith-Beheading-Holofernes.jpg" alt="Judith Beheading Holofernes">
+							  <div class="content_image">
+							  	<h4>Judith Beheading Holofernes</h4>
+							  	<br>
+							  	<span>The work shows the scene of Judith beheading Holofernes, common in art since the early Renaissance, as part of the group of subjects called the Power of women, which show women triumphing over powerful men.It recounts the assassination of the Assyrian general Holofernes by the Israelite heroine Judith. The painting shows the moment when Judith, helped by her maidservant, beheads the general after he has fallen asleep drunk.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/artemisia_gentileschi/madonna-and-child.jpg" alt="Madonna and Child">
+							  <div class="content_image">
+							  	<h4>Madonna and Child</h4>
+							  	<br>
+							  	<span>Gentileschi’s Madonna and Child (1609–10), currently on view in Picturing Mary: Woman, Mother, Idea presents an intimate portrait of Mary preparing to breastfeed her infant son. Madonna and Child captures the signature power of Gentileschi’s women through Baroque color and detail. The rich turquoise and pink of Mary’s clothes, as well as the intense use of shadow in the background, create a sense of dynamic realism and naturalism. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/artemisia_gentileschi/Nacimiento_de_San_Juan_Bautista.jpg" alt="Nacimiento de San Juan Bautista">
+							  <div class="content_image">
+							  	<h4>Nacimiento de San Juan Bautista</h4>
+							  	<br>
+							  	<span>The painting depicts a Bible story from Luke 1:5-80, in which Zacharias and his wife, Elizabeth, are too old to have children. One day the angel Gabriel appears to tell Zacharias that he and Elizabeth will have a son named John. Zacharias is literally dumbfounded and loses his ability to speak. Later, the baby is born and all the couple’s neighbors and midwives insist that the baby should be named Zacharias, after his father. Elizabeth disagrees, so they ask for Zacharias’s opinion. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/artemisia_gentileschi/Self-Portrait_as_a_Lute_Player.jpg" alt="Self-Portrait as a Lute Player">
+							  <div class="content_image">
+							  	<h4>Self-Portrait as a Lute Player</h4>
+							  	<br>
+							  	<span>“Self-Portrait as a Lute Player” is particularly instructive on the period because it “helps us to place her situation in the artistic context of that city.” If you look at the coloring, the beautiful blue of her dress, there is certain reference to the very specific culture of Florence.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/artemisia_gentileschi/Susanna-and-the-Elders.jpg" alt="Susanna and the Elders">
+							  <div class="content_image">
+							  	<h4>Susanna and the Elders</h4>
+							  	<br>
+							  	<span>It depicts the story of Susanna from the Book of Daniel. In the story, two elders threaten to testify that Susanna was alone with a young man in her garden, which she was not, unless she has sex with them.It currently hangs in the Schloss Weißenstein collection, in Pommersfelden, Germany.</span>
+							  </div>
+							</div>
+
+							<div id="indicators">
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span> 
+
+							</div>
+						</div>
+						<!--Slideshow HTML ends-->
+						<!--JavaScript for Slideshow-->
+						<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							    var i;
+							    var slides = document.getElementsByClassName("mySlides");
+							    var dots = document.getElementsByClassName("dot");
+							    for (i = 0; i < slides.length; i++) {
+							       slides[i].style.display = "none";  
+							    }
+							    slideIndex++;
+							    if (slideIndex > slides.length) {slideIndex = 1}    
+							    for (i = 0; i < dots.length; i++) {
+							        dots[i].className = dots[i].className.replace("active", "");
+							    }
+							    slides[slideIndex-1].style.display = "block";  
+							    dots[slideIndex-1].className += " active";
+							    setTimeout(showSlides, 5000); // Change image every 2 seconds
+							}
+						</script>
+						<!--JavaScript for Slideshow ends-->
+						
+					</section>
+				</div>
+				<!--Image Gallery Modal =-->
+				<div id="artworks" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+					    	<span class="close">&times;</span>
+					      	<h2>GALLERY</h2>
+					    </div>
+					    <div class="modal-body">
+					      	<ul>
+								<li>
+									<a href="images/baroque/artemisia_gentileschi/Adoration_of_the_Magi.jpg" title="Adoration of the Magi"><img
+									src="images/baroque/artemisia_gentileschi/Adoration_of_the_Magi.jpg" width="100" height="75" alt="Adoration of the Magi" sec-content="This is one of three paintings that Artemisia provided for the renovation of a cathedral at Pozzuoli. The scene is a relatively solemn, subdued work for Artemisia, but quite appropriate for a liturgical painting. The male figures seem disproportionally large compared with the dignified Madonna and child dwarfed at left."></a>
+								</li>
+								<li>
+									<a href="images/baroque/artemisia_gentileschi/Allegory_of_Peace_and_the_Arts_under_the_English_Crown.jpg" title="Allegory of Peace and the Arts under the English Crown"><img
+									src="images/baroque/artemisia_gentileschi/Allegory_of_Peace_and_the_Arts_under_the_English_Crown.jpg" width="100" height="75" alt="Allegory of Peace and the Arts under the English Crown" sec-content="This is the central ceiling panel painted by Artemisisa Gentileschi, for Queen Henrietta Maria, for the ceiling of the Great Hall at the Queen's House Greenwich, c. 1636-8. The subject is an allegory of Peace reigning over the Arts. The entire ceiling was removed to Marlborough House, London (now the Commonwealth Secretariat) in the early eighteenth century."></a>
+								</li>
+								<li>
+									<a href="images/baroque/artemisia_gentileschi/danae.jpg" title="Danae"><img
+									src="images/baroque/artemisia_gentileschi/danae.jpg" width="100" height="75" alt="Danae" sec-content="The subject of the painting is the ancient Greek myth of Danaë, which tells of how Zeus, king of the gods, visited Danaë in a shower of gold, from which union Perseus was born. The myth is regarded as a forerunner of the Christian belief in the Annunciation, the divine conception of Christ."></a>
+								</li>
+								
+								<li>
+									<a href="images/baroque/artemisia_gentileschi/Judith-and-her-Maidservant.jpg" title="Judith and her Maidservant"><img
+									src="images/baroque/artemisia_gentileschi/Judith-and-her-Maidservant.jpg" width="100" height="75" alt="Judith and her Maidservant" sec-content="Judith and Her Maidservant is a painting by the Italian baroque artist Artemisia Gentileschi. Executed in the 1620s, it hangs in the Detroit Institute of Arts.[1] The narrative is taken from the deuterocanonical Book of Judith, in which Judith seduces and then murders the general Holofernes. The precise moment depicted has taken place after the murder when her maidservant places the severed head in a bag, while Judith checks around her." ></a>
+								</li>
+								<li>
+									<a href="images/baroque/artemisia_gentileschi/Judith-Beheading-Holofernes.jpg" title="Judith Beheading Holofernes"><img
+									src="images/baroque/artemisia_gentileschi/Judith-Beheading-Holofernes.jpg" width="100" height="75" alt="Judith Beheading Holofernes" sec-content="The work shows the scene of Judith beheading Holofernes, common in art since the early Renaissance, as part of the group of subjects called the Power of women, which show women triumphing over powerful men.It recounts the assassination of the Assyrian general Holofernes by the Israelite heroine Judith. The painting shows the moment when Judith, helped by her maidservant, beheads the general after he has fallen asleep drunk."></a>
+								</li>
+								
+								<li>
+									<a href="images/baroque/artemisia_gentileschi/Nacimiento_de_San_Juan_Bautista.jpg" title="Nacimiento de San Juan Bautista"><img
+									src="images/baroque/artemisia_gentileschi/Nacimiento_de_San_Juan_Bautista.jpg" width="100" height="75" alt="Nacimiento de San Juan Bautista" sec-content="Nacimiento de San Juan Bautista is an oil painting by French artist Paul Cézannefirst exhibited in 1906. The painting is the largest of a series of Bather paintings by Cézanne; the others are in the Museum of Modern Art in New York City, National Gallery, London, the Barnes Foundation, Philadelphia, and the Art Institute of Chicago. Considered a masterpiece of modern art and Cezanne’s finest work, this painting paved the way for future artists to break away from tradition, thus providing a bridge between "></a>
+								</li>
+								<li>
+									<a href="images/baroque/artemisia_gentileschi/Self-Portrait_as_a_Lute_Player.jpg" title="Self-Portrait as a Lute Player"><img
+									src="images/baroque/artemisia_gentileschi/Self-Portrait_as_a_Lute_Player.jpg" width="100" height="75" alt="Self-Portrait as a Lute Player" sec-content="Self-Portrait as a Lute Player” is particularly instructive on the period because it “helps us to place her situation in the artistic context of that city.” If you look at the coloring, the beautiful blue of her dress, there is certain reference to the very specific culture of Florence."></a>
+								</li>
+								<li>
+									<a href="images/baroque/artemisia_gentileschi/Susanna-and-the-Elders.jpg" title="Susanna and the Elders"><img
+									src="images/baroque/artemisia_gentileschi/Susanna-and-the-Elders.jpg" width="100" height="75" alt="Susanna and the Elders" sec-content="It depicts the story of Susanna from the Book of Daniel. In the story, two elders threaten to testify that Susanna was alone with a young man in her garden, which she was not, unless she has sex with them.It currently hangs in the Schloss Weißenstein collection, in Pommersfelden, Germany."></a>
+								</li>
+							</ul>
+							<figure>
+								<img src="images/baroque/artemisia_gentileschi/Adoration_of_the_Magi.jpg" alt="Adoration of the Magi">
+								<figcaption>Adoration of the Magi</figcaption>
+							</figure>
+							<span id="painting_info">
+								This is one of three paintings that Artemisia provided for the renovation of a cathedral at Pozzuoli. The scene is a relatively solemn, subdued work for Artemisia, but quite appropriate for a liturgical painting. The male figures seem disproportionally large compared with the dignified Madonna and child dwarfed at left.
+							</span>
+					    </div>
+					    <div class="modal-footer">
+					      	<h3>ARTEMISISA GENTILESCHI</h3>
+					    </div>
+					</div>
+				</div>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById('artworks');
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("artworks_open");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					    modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					    modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					    if (event.target == modal) {
+					        modal.style.display = "none";
+					    }
+					}
+				</script>
+				
+				<!--SideBar-->
+				<div class="side_content">
+					<ul>
+						<li><a href="https://10mosttoday.com/10-most-famous-paintings-in-the-world/" target="_blank"><strong>Top 5 Paintings</strong></a></li>
+						<li><strong>Top 5 Painters</strong></li>
+						<div id="small-only">
+							<br>
+							<ol>
+								<li><a href="leonardo_da_vinci.html">Leonardo Da Vinci</a></li>
+								<li><a href="rembrandt.html">Rembrandt</a></li>
+								<li><a href="michelangelo.html">Michelangelo</a></li>
+								<li><a href="pablo_picasso.html">Pablo Picasso</a></li>
+								<li><a href="raphael.html">Raphael</a></li>
+							</ol>
+						</div>
+					</ul>
+					<div id="top_artist_list">
+						<div>
+							<a href="leonardo_da_vinci.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/leonardo_da_vinci/portrait.jpg" alt="leonardo_da_vinci">
+									<span>
+										<strong>Leonardo Da Vinci</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>
+							<a href="rembrandt.html">
+								<div class="horizontal_card">
+									<img src="images/baroque/rembrandt/portrait.jpg" alt="rembrandt">
+									<span>
+										<strong>Rembrandt</strong>
+										<br>
+										Dutch
+										<br>
+										Realist Painter
+									</span>
+								</div>
+							</a>
+							<a href="michelangelo.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/michelangelo/portrait.jpg" alt="michelangelo">
+									<span>
+										<strong>Michelangelo</strong>
+										<br>
+										French
+										<br>
+										Impressionist Painter
+									</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="pablo_picasso.html">
+								<div class="horizontal_card">
+									<img src="images/cubist/pablo_picasso/portrait.jpg" alt="pablo_picasso">
+									<span>
+										<strong>Pablo Picasso</strong>
+										<br>
+										Spanish
+										<br>
+										Cubist Painter
+									</span>
+								</div>
+							</a>
+							<a href="raphael.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/raphael/portrait.jpg" alt="raphael">
+									<span>
+										<strong>Raphael</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!--Sidebar Ends-->
+			</main>
+			<!--Footer Section-->
+			<footer style="background-color: #311B92;">
+				<a href="index.html">Home</a> | <a href="abstract_painters.html">Abstract Painters</a> | <a href="baroque_painters.html">Baroque Painters</a> | <a href="cubist_painters.html">Cubist Painters</a> | <a href="realist_painters.html">Realist Painters</a> | <a href="renaissance_painters.html">Renaissance Painters</a>
+				<br><br>
+				Copyright 2018 by Artistry World, May 2018, <a href="mailto:gilber.njq@gmail.com"><u>gilber.njq@gmail.com</u></a>
+			</footer>
+			<!--Footer Section ends-->
+		</div>
+	</body>
+</html>

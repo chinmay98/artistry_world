@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Henry Ossawa Tanner</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Reference to CSS and fonts-->
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+	    <!--Reference to JQuery Library-->
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <script>
+		$(document).ready(function(){
+		    //JavaScript for Image Gallery
+		    $('#artworks a').click(function(){
+		        var galleryHref = $(this).attr('href');
+		        var galleryAlt = $(this).attr('title');
+		        var gallerynfo = $(this).children('img').attr('sec-content');
+		        $('figure').css('display','none');
+		        $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		        $('figcaption').html(galleryAlt);
+		        $('figure').fadeToggle(1000);
+		        $('#painting_info').html(gallerynfo);
+		        return false;
+		      });
+		});
+</script>
+
+	</head>
+	<body>
+	   <div id="wrapper">
+			<header>
+				<!--Top Header(Logo and site name)-->
+				<div id="top_header">
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+					<h1>ARTISTRY WORLD</h1>
+				</div>
+	            <!--Top Header Ends-->
+	            <!--Painter Name-->
+	           
+             	<div class="mySlides2 fade">
+             		<div  class="slideshow2">
+             			<img src="images/realist/henry_ossawa_tanner/portrait.jpg" alt="portrait">
+	             		<div class="slide_content">
+	             			<h1>Henry Ossawa Tanner</h1>
+	             			<blockquote>"Many of the artists who have represented Negro life have seen only the comic, ludicrous side of it, and have lacked sympathy with and appreciation for the warm big heart that dwells within such a rough exterior</blockquote>
+	             		</div>
+             		</div>
+             	</div>
+	          
+	            <!--Painter name-->
+	           
+				<!--Sticky Navigation Bar-->
+	            <div id="artist_nav">
+				    <ul>
+		                <li><a href="#overview">Overview</a></li>
+		                <li><a href="#career">Career</a></li>
+		                <li><a href="#legacy">Legacy</a></li>
+		                <li><a href="#onview">On View</a></li>
+		                <li id="desktop_only"><a id="artworks_open">Artworks</a></li>
+		                <li id="tablet_only"><a href="#artworks_mobile">Artworks</a></li>
+	            	</ul>
+	            </div>
+	            <!--Navigation Bar Ends-->
+	           
+			</header>
+			 <!--JavaScript for Navigation Bar-->
+            <script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("artist_nav");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<!--JavaScript for Navigation Bar Ends-->
+			<main>
+				<!--Content Section-->
+				<div id="content_artist">
+					<!--Overview-->
+				    <section class="artist_section" id="overview">
+						<dl>
+							<dt>Overview</dt>
+		                    <dd>
+		                    	<p><strong>Henry Ossawa Tanner</strong>  was an American artist and the first African-American painter to gain international acclaim. Tanner moved to Paris, France, in 1891 to study, and continued to live there after being accepted in French artistic circles. His painting entitled Daniel in the Lions' Den was accepted into the 1896 Salon,[3] the official art exhibition of the Académie des Beaux-Arts in Paris.</p>
+		                    	<p>After his own self-study in art as a young man, Tanner enrolled in 1879 at the Pennsylvania Academy of the Fine Arts in Philadelphia. The only black student, he became a favorite of the painter Thomas Eakins, who had recently begun teaching there. Tanner made other connections among artists, including Robert Henri. In the late 1890s he was sponsored for a trip to Palestine by Rodman Wanamaker, who was impressed by his paintings of biblical themes.</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Career-->
+		            <section class="artist_section" id="career">
+						<dl>
+		                    <dt>Career</dt>
+		                    <dd>
+		                    	<ul>
+		                    	   <li>With the help of Joseph C. Hartzell, a bishop, he exhibited some of his paintings in Cincinnati. In 1891, he went on a tour across Europe with the patronage of that bishop and Mrs. Hartzell.<br></li>
+		                    	   
+		                    	   <li>In Paris, he attended the Academie Julian, an art school. Colours like blue and blue-green played a dominant role in most of his paintings that he created at that time. He also started using the artistic technique of light and shade during that period.<br></li> 
+		                    	   
+		                           <li>In 1893, he came back to the United States to deliver a paper on African Americans and art at the World’s Columbian Exposition in Chicago. In the same year, he created one of his famous works ‘The Banjo Lesson’ while he was in Philadelphia.<br></li>
+
+		                           <li>Through this work, he highlighted the role of blacks as entertainers in American culture. In the next year, he created ‘The Thankful Poor’. In this year, he displayed his paintings at the annual Paris salon.<br></li>
+		                           
+		                           <li>In 1899, Booker T. Washington, an African-American educator and author published an article on Tanner. The publication of this article played a significant role in securing him an important position in the art industry of America.<br></li>
+		                           
+		                           <li>During that time, he displayed his creations through a number of exhibitions in Philadelphia, Boston, New York, Chicago and several art centres of America. ‘Abraham’s Oak’ was his one of the remarkable creations that he drew in 1905.<br></li>
+		                           
+		                           <li>In 1918, he skilfully handled the image of sunlight in the painting titled ‘Birthplace of Joan of Arc at Domremy-la-Pucelle’. In 1925, an African-American journal titled “The Crisis” depicted him as a representative of African-American creative persons.</li>
+		                        </ul>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Legacy-->
+		            <section class="artist_section" id="legacy">
+						<dl>
+		                    <dt>Legacy</dt>
+		                    <dd>
+		                    	<p>Tanner's work was influential during his career; he has been called "the greatest African American painter to date." The early paintings of William Edouard Scott, who studied with Tanner in France, show the influence of Tanner's technique.</p>
+		                    	<p>Tanner's Sand Dunes at Sunset, Atlantic City (c. 1885; oil on canvas) hangs in the Green Room at the White House; it is the first painting by an African-American artist to have been purchased for the permanent collection of the White House. The painting is a landscape with a "view across the cool gray of a shadowed beach to dunes made pink by the late afternoon sunlight. A low haze over the water partially hides the sun."</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--On View-->
+		            <section class="artist_section" id="onview">
+						<dl>
+		                    <dt>On View</dt>
+		                    <dd>
+		                        <ul>
+		                        	<li>Los Angeles County Museum of Art</li>
+		                        	<li>Morris Museum of Art, Augusta</li>
+		                        	<li>New Orleans Museum of Art, New Orleans</li>
+		                        	<li>Art Institute of Chicago</li>
+		                        	<li>Saint Louis Art Museum, Sait Louis</li>
+		                        	<li>Smithsonian American Art Museum, Washington D.C.</li>
+		                        	<li>White House, Washington D.C.</li>
+		                        	<li>Metropolitan Museum of Art, New York City</li>
+		                        	<li>Birmingham Museum of Art</li>
+		                        	<li>Museum of Fine Arts, Houston</li>
+		                        	<li>Harvey B. Gantt Center, Charlotte</li>
+		                        </ul>
+		                    </dd>
+		                </dl>     
+					</section>
+					<section class="artist_section" id="artworks_mobile">
+						<h2>ArtWorks</h2>
+						<br>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							  <img src="images/realist/henry_ossawa_tanner/two_disciples.jpg" alt="The Two Disciples at the Tomb"> 
+							  <div class="content_image">
+							  	<h4>The Two Disciples at the Tomb</h4>
+							  	<br>
+							  	<span>Henry Ossawa Tanner's Two Disciples at the Tomb depicts the discovery of Christ’s empty tomb on Easter Sunday. The event is explained in the Gospel of John in the Bible’s New Testament: "And [John] stooping down, and looking in, saw the linen clothes lying; yet went he not in." Here, John’s youthful face reflects the emptiness of the arched tomb. Next to him, bowing his head in awe, stands the bearded disciple Peter, who will later become the leader of the Christian church.
+							  	</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/realist/henry_ossawa_tanner/flight_into_egypt.jpg" alt="Flight into Egypt">
+							  <div class="content_image">
+							  	<h4>Flight into Egypt</h4>
+							  	<br>
+							  	<span>Fleeing to Egypt to avoid Herod's massacre of all newborn children, Joseph walks beside his wife the Virgin Mary, who cradles the Christ child while seated on a donkey. As the family passes a pagan idol atop a column, it breaks in half, signifying the downfall of paganism and the onset of the new Christian era. In the middle ground at the left, soldiers pursuing the Holy Family stop to question a farmer in a field.  
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/realist/henry_ossawa_tanner/Georgia-Landscape.jpg" alt="Georgia Landscape">
+							  <div class="content_image">
+							  	<h4>Georgia Landscape</h4>
+							  	<br>
+							  	<span>
+							  		It is believed that Tanner painted this work in the fall of 1889 while living in Atlanta. However, some scholars argue that this work was created while the artist still resided in the Philadelphia area. Whether or not the work is indeed Georgian, it does provide a link to the artist's brief Southern sojourn.
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/realist/henry_ossawa_tanner/Lions_in_the_Desert.png" alt="Lions in the Desert">
+							  <div class="content_image">
+							  	<h4>Lions in the Desert</h4>
+							  	<br>
+							  	<span>Lions in the Desert is a painting by Henry Ossawa Tanner, painted in 1897–98 during a visit to the Middle East.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/realist/henry_ossawa_tanner/the_banjo_lesson.jpg" alt="The Banjo Lesson">
+							  <div class="content_image">
+							  	<h4>The Banjo Lesson</h4>
+							  	<br>
+							  	<span> The painting shows an elderly black man teaching a boy, assumed to be his grandson, how to play the banjo. This deceptively simple-looking work explores several important themes. Blacks had long been stereotyped as entertainers in American culture, and the image of a black man playing the banjo appears throughout American art of the late 19th century.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/realist/henry_ossawa_tanner/The_Thankful_Poor.jpg" alt="The Thankful Poor">
+							  <div class="content_image">
+							  	<h4>The Thankful Poor</h4>
+							  	<br>
+							  	<span>Tanner depicts a grandfather and a grandchild giving thanks before a meal. He focused on the people and the main objects in the room, painting them with great detail, while everything else blends in with the light and brushstrokes in the painting. The warm and expressive light that Tanner paints with helps to enhance the spiritual quality of the painting.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/realist/henry_ossawa_tanner/The_Young_Sabot_Maker.jpg" alt="The Young Sabot Maker">
+							  <div class="content_image">
+							  	<h4>The Young Sabot Maker</h4>
+							  	<br>
+							  	<span>The Young Sabot Maker is an oil on canvas painting made by Henry Ossawa Tanner in 1895. Measuring 47 3/8 x 35 3/8 inches (120.3 x 89.9 cm), the painting was purchased by The Nelson-Atkins Museum of Art in 1995. The painting depicts an older man proudly watching a boy push with his weight against the crossbar handle of a sawhorse to carve a sabot, or wooden shoe</span>
+							  </div>
+							</div>
+							<div id="indicators">
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    
+							</div>
+						</div>
+						<!--Slideshow HTML ends-->
+						<!--JavaScript for Slideshow-->
+						<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							    var i;
+							    var slides = document.getElementsByClassName("mySlides");
+							    var dots = document.getElementsByClassName("dot");
+							    for (i = 0; i < slides.length; i++) {
+							       slides[i].style.display = "none";  
+							    }
+							    slideIndex++;
+							    if (slideIndex > slides.length) {slideIndex = 1}    
+							    for (i = 0; i < dots.length; i++) {
+							        dots[i].className = dots[i].className.replace("active", "");
+							    }
+							    slides[slideIndex-1].style.display = "block";  
+							    dots[slideIndex-1].className += " active";
+							    setTimeout(showSlides, 5000); // Change image every 2 seconds
+							}
+						</script>
+						<!--JavaScript for Slideshow ends-->
+						
+					</section>
+				</div>
+				<!--Image Gallery Modal =-->
+				<div id="artworks" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+					    	<span class="close">&times;</span>
+					      	<h2>GALLERY</h2>
+					    </div>
+					    <div class="modal-body">
+					      	<ul>
+								<li>
+									<a href="images/realist/henry_ossawa_tanner/two_disciples.jpg" title="The Two Disciples at the Tomb"><img
+									src="images/realist/henry_ossawa_tanner/two_disciples.jpg" width="100" height="75" alt="The Two Disciples at the Tomb" sec-content="Henry Ossawa Tanner's Two Disciples at the Tomb depicts the discovery of Christ’s empty tomb on Easter Sunday. The event is explained in the Gospel of John in the Bible’s New Testament: And [John] stooping down, and looking in, saw the linen clothes lying; yet went he not in. Here, John’s youthful face reflects the emptiness of the arched tomb. Next to him, bowing his head in awe, stands the bearded disciple Peter, who will later become the leader of the Christian church."></a>
+								</li>
+								<li>
+									<a href="images/realist/henry_ossawa_tanner/flight_into_egypt.jpg" title="Flight into Egypt"><img
+									src="images/realist/henry_ossawa_tanner/flight_into_egypt.jpg" width="100" height="75" alt="Flight into Egypt" sec-content="Fleeing to Egypt to avoid Herod's massacre of all newborn children, Joseph walks beside his wife the Virgin Mary, who cradles the Christ child while seated on a donkey. As the family passes a pagan idol atop a column, it breaks in half, signifying the downfall of paganism and the onset of the new Christian era. In the middle ground at the left, soldiers pursuing the Holy Family stop to question a farmer in a field.  ">
+									</a>
+								</li>
+								<li>
+									<a href="images/realist/henry_ossawa_tanner/Georgia-Landscape.jpg" title="Georgia Landscape"><img
+									src="images/realist/henry_ossawa_tanner/Georgia-Landscape.jpg" width="100" height="75" alt="Georgia Landscape" sec-content="It is believed that Tanner painted this work in the fall of 1889 while living in Atlanta. However, some scholars argue that this work was created while the artist still resided in the Philadelphia area. Whether or not the work is indeed Georgian, it does provide a link to the artist's brief Southern sojourn.">
+									</a>
+								</li>
+								<li>
+									<a href="images/realist/henry_ossawa_tanner/Lions_in_the_Desert.png" title="Lions in the Desert"><img
+									src="images/realist/henry_ossawa_tanner/Lions_in_the_Desert.png" width="100" height="75" alt="Lions in the Desert" sec-content="Lions in the Desert is a painting by Henry Ossawa Tanner, painted in 1897–98 during a visit to the Middle East."></a>
+								</li>
+								<li>
+									<a href="images/realist/henry_ossawa_tanner/the_banjo_lesson.jpg" title="The Banjo Lesson"><img
+									src="images/realist/henry_ossawa_tanner/the_banjo_lesson.jpg" width="100" height="75" alt="The Banjo Lesson" sec-content="The painting shows an elderly black man teaching a boy, assumed to be his grandson, how to play the banjo. This deceptively simple-looking work explores several important themes. Blacks had long been stereotyped as entertainers in American culture, and the image of a black man playing the banjo appears throughout American art of the late 19th century."></a>
+								</li>
+								<li>
+									<a href="images/realist/henry_ossawa_tanner/The_Thankful_Poor.jpg" title="The Thankful Poor"><img
+									src="images/realist/henry_ossawa_tanner/The_Thankful_Poor.jpg" width="100" height="75" alt="The Thankful Poor" sec-content="Tanner depicts a grandfather and a grandchild giving thanks before a meal. He focused on the people and the main objects in the room, painting them with great detail, while everything else blends in with the light and brushstrokes in the painting. The warm and expressive light that Tanner paints with helps to enhance the spiritual quality of the painting."></a>
+								</li>
+								<li>
+									<a href="images/realist/henry_ossawa_tanner/The_Young_Sabot_Maker.jpg" title="The Young Sabot Maker"><img
+									src="images/realist/henry_ossawa_tanner/The_Young_Sabot_Maker.jpg" width="100" height="75" alt="The Young Sabot Makere" sec-content="The Young Sabot Maker is an oil on canvas painting made by Henry Ossawa Tanner in 1895. Measuring 47 3/8 x 35 3/8 inches (120.3 x 89.9 cm), the painting was purchased by The Nelson-Atkins Museum of Art in 1995. The painting depicts an older man proudly watching a boy push with his weight against the crossbar handle of a sawhorse to carve a sabot, or wooden shoe"></a>
+								</li>
+							</ul>
+							<figure>
+								<img src="images/realist/henry_ossawa_tanner/two_disciples.jpg" alt="The Two Disciples at the Tomb">
+								<figcaption>The Two Disciples at the Tomb</figcaption>
+							</figure>
+							<span id="painting_info">
+							Henry Ossawa Tanner's Two Disciples at the Tomb depicts the discovery of Christ’s empty tomb on Easter Sunday. The event is explained in the Gospel of John in the Bible’s New Testament: And [John] stooping down, and looking in, saw the linen clothes lying; yet went he not in. Here, John’s youthful face reflects the emptiness of the arched tomb. Next to him, bowing his head in awe, stands the bearded disciple Peter, who will later become the leader of the Christian church.
+					    </div>
+					    <div class="modal-footer">
+					      	<h3>HENRY OSSAWA TANNER</h3>
+					    </div>
+					</div>
+				</div>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById('artworks');
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("artworks_open");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					    modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					    modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					    if (event.target == modal) {
+					        modal.style.display = "none";
+					    }
+					}
+				</script>
+				
+				<!--SideBar-->
+				<div class="side_content">
+					<ul>
+						<li><a href="https://10mosttoday.com/10-most-famous-paintings-in-the-world/" target="_blank"><strong>Top 5 Paintings</strong></a></li>
+						<li><strong>Top 5 Painters</strong></li>
+						<div id="small-only">
+							<br>
+							<ol>
+								<li><a href="leonardo_da_vinci.html">Leonardo Da Vinci</a></li>
+								<li><a href="rembrandt.html">Rembrandt</a></li>
+								<li><a href="michelangelo.html">Michelangelo</a></li>
+								<li><a href="pablo_picasso.html">Pablo Picasso</a></li>
+								<li><a href="raphael.html">Raphael</a></li>
+							</ol>
+						</div>
+					</ul>
+					<div id="top_artist_list">
+						<div>
+							<a href="leonardo_da_vinci.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/leonardo_da_vinci/portrait.jpg" alt="leonardo_da_vinci">
+									<span>
+										<strong>Leonardo Da Vinci</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>
+							<a href="rembrandt.html">
+								<div class="horizontal_card">
+									<img src="images/baroque/rembrandt/portrait.jpg" alt="rembrandt">
+									<span>
+										<strong>Rembrandt</strong>
+										<br>
+										Dutch
+										<br>
+										Realist Painter
+									</span>
+								</div>
+							</a>
+							<a href="michelangelo.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/michelangelo/portrait.jpg" alt="michelangelo">
+									<span>
+										<strong>Michelangelo</strong>
+										<br>
+										French
+										<br>
+										Impressionist Painter
+									</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="pablo_picasso.html">
+								<div class="horizontal_card">
+									<img src="images/cubist/pablo_picasso/portrait.jpg" alt="pablo_picasso">
+									<span>
+										<strong>Pablo Picasso</strong>
+										<br>
+										Spanish
+										<br>
+										Cubist Painter
+									</span>
+								</div>
+							</a>
+							<a href="raphael.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/raphael/portrait.jpg" alt="raphael">
+									<span>
+										<strong>Raphael</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!--Sidebar Ends-->
+			</main>
+			<!--Footer Section-->
+			<footer style="background-color: #311B92;">
+				<a href="index.html">Home</a> | <a href="abstract_painters.html">Abstract Painters</a> | <a href="baroque_painters.html">Baroque Painters</a> | <a href="cubist_painters.html">Cubist Painters</a> | <a href="realist_painters.html">Realist Painters</a> | <a href="renaissance_painters.html">Renaissance Painters</a>
+				<br><br>
+				Copyright 2018 by Artistry World, May 2018, <a href="mailto:gilber.njq@gmail.com"><u>gilber.njq@gmail.com</u></a>
+			</footer>
+			<!--Footer Section ends-->
+		</div>
+	</body>
+</html>

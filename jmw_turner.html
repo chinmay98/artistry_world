@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>J.M.W Turner</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Reference to CSS and fonts-->
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+	    <!--Reference to JQuery Library-->
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <script>
+		$(document).ready(function(){
+		    //JavaScript for Image Gallery
+		    $('#artworks a').click(function(){
+		        var galleryHref = $(this).attr('href');
+		        var galleryAlt = $(this).attr('title');
+		        var gallerynfo = $(this).children('img').attr('sec-content');
+		        $('figure').css('display','none');
+		        $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		        $('figcaption').html(galleryAlt);
+		        $('figure').fadeToggle(1000);
+		        $('#painting_info').html(gallerynfo);
+		        return false;
+		      });
+		});
+</script>
+
+	</head>
+	<body>
+	   <div id="wrapper">
+			<header>
+				<!--Top Header(Logo and site name)-->
+				<div id="top_header">
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+					<h1>ARTISTRY WORLD</h1>
+				</div>
+	            <!--Top Header Ends-->
+	            <!--Painter Name-->
+	           
+             	<div class="mySlides2 fade">
+             		<div  class="slideshow2">
+             			<img src="images/abstract/jmw_turner/portrait.jpg" alt="portrait">
+	             		<div class="slide_content">
+	             			<h1>J.M.W Turner</h1>
+	             			<blockquote>"I don't paint so that people will understand me, I paint to show what a particular scene looks like."</blockquote>
+	             		</div>
+             		</div>
+             	</div>
+	          
+	            <!--Painter name-->
+	           
+				<!--Sticky Navigation Bar-->
+	            <div id="artist_nav">
+				    <ul>
+		                <li><a href="#overview">Overview</a></li>
+		                <li><a href="#career">Career</a></li>
+		                <li><a href="#legacy">Legacy</a></li>
+		                <li><a href="#onview">On View</a></li>
+		                <li id="desktop_only"><a id="artworks_open">Artworks</a></li>
+		                <li id="tablet_only"><a href="#artworks_mobile">Artworks</a></li>
+	            	</ul>
+	            </div>
+	            <!--Navigation Bar Ends-->
+	           
+			</header>
+			 <!--JavaScript for Navigation Bar-->
+            <script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("artist_nav");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<!--JavaScript for Navigation Bar Ends-->
+			<main>
+				<!--Content Section-->
+				<div id="content_artist">
+					<!--Overview-->
+				    <section class="artist_section" id="overview">
+						<dl>
+							<dt>Overview</dt>
+		                    <dd>
+		                    	<p><strong>Joseph Mallord William Turner </strong>
+									 (23 April 1775 – 19 December 1851), known as J. M. W. Turner and contemporarily as William Turner, was an English Romantic painter, printmaker and watercolourist, known for his expressive colourisation, imaginative landscapes and turbulent, often violent marine paintings. Turner was born in Maiden Lane, Covent Garden, London, to a modest lower middle-class family. He lived in London all his life, retaining his Cockney accent and assiduously avoiding the trappings of success and fame. A child prodigy, Turner studied at the Royal Academy of Arts from 1789, enrolling when he was 14, and exhibited his first work there at 21. During this period, he also served as an architectural draftsman. He earned a steady income from commissions and sales, which due to his troubled, contrary nature, were often begrudgingly accepted. He opened his own gallery in 1804 and became professor of perspective at the Academy in 1807, where he lectured until 1828, although he was viewed as profoundly inarticulate. He traveled to Europe from 1802, typically returning with voluminous sketchbooks.
+		                    	</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Career-->
+		            <section class="artist_section" id="career">
+						<dl>
+		                    <dt>Career</dt>
+		                    <dd>
+		                    	<ul>
+		                    	   <li>From 1796 onwards, Turner exhibited oil paintings as well as watercolours at the Royal Academy and continued to travel in search of inspiration. He exhibited his works each year at the academy while painting in the winter and travelling in the summer widely throughout Britain to seek inspiration.<br></li>
+		                    	   
+		                    	   <li>In 1802, he travelled widely through Europe, including France and Switzerland, and also studied at the Louvre in Paris. He made more than 400 drawings during this tour and later continued to paint pictures of scenes which had fascinated him on the trip.<br></li> 
+		                    	   
+		                           <li>Soon, he was able to earn a steady income through a variety of artistic works such as selling designs to engravers, coloring sketches and taking up private lessons. In 1804, he opened a private gallery where he displayed his paintings for several seasons.<br></li>
+		                           
+		                           <li>In 1807, Turner accepted a position as professor of perspective at the Royal Academy, where he lectured until 1828.<br></li>
+		                           
+		                           <li>Over time, his paintings such as the ‘St. Mawes at the Pilchard Season’ (1812) and ‘Frosty Morning’ (1813) became increasingly luminous and atmospheric in quality. His masterpiece of this period is the ‘Dort or Dortrecht: The Dort Packet Boat from Rotterdam Becalmed’ (1818), a tribute to Aelbert Cuyp.<br></li>
+		                           
+		                           <li>In 1819, Joseph Turner set out on his first visit to Italy and during his journey, he made about 1,500 drawings. Over the next few years, he painted a series of pictures inspired by his travel experiences, prominently that of Venice.<br></li>
+		                           
+		                           <li>In the last 15 years of his life, he continued to travel and get inspiration, visiting Italy, Switzerland, Germany, and France. Some of his magnificent late works include ‘The ‘Fighting Téméraire’ Tugged to Her Last Berth to Be Broken Up, 1838’ (1839), and ‘Rain, Steam, and Speed’ (1844). In 1850, Turner exhibited his works for the last time.<br></li>
+		                        </ul>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Legacy-->
+		            <section class="artist_section" id="legacy">
+						<dl>
+		                    <dt>Legacy</dt>
+		                    <dd>
+		                    	<p>Turner left a small fortune which he hoped would be used to support what he called "decayed artists". He planned an almshouse at Twickenham with a gallery for some of his works. Another portion went to the Royal Academy of Arts, which occasionally awards students the Turner Medal. </p>
+		                    	<p>In 1910, the main part of the Turner Bequest, which includes unfinished paintings and drawings, was rehoused in the Duveen Turner Wing at the National Gallery of British Art (now Tate Britain). In 1987, a new wing at the Tate, the Clore Gallery, was opened to house the Turner bequest, though some of the most important paintings remain in the National Gallery in contravention of Turner's condition that they be kept and shown together. </p>
+		                    	<p>St Paul's Cathedral, Royal Academy of Arts and Victoria &nbsp; Albert Museum all hold statues representing him. A portrait by Cornelius Varley with his patent graphic telescope (Sheffield Museums &nbsp; Galleries) was compared with his death mask (National Portrait Gallery, London) by Kelly Freeman at Dundee University 2009–10 to ascertain whether it really depicts Turner.</p>
+		                        <p>The Tate created the prestigious annual Turner Prize art award in 1984, named in Turner's honour, and 20 years later the Royal Institute of Painters in Water Colours founded the Winsor &nbsp; Newton Turner Watercolour Award. A major exhibition, "Turner's Britain", with material (including The Fighting Temeraire) on loan from around the globe, was held at Birmingham Museum and Art Gallery from 7 November 2003 to 8 February 2004. In 2005, Turner's The Fighting Temeraire was voted Britain's "greatest painting" in a public poll organised by the BBC.</p>
+		                        
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--On View-->
+		            <section class="artist_section" id="onview">
+						<dl>
+		                    <dt>On View</dt>
+		                    <dd>
+		                        <ul>
+		                        	<li>Yale Center for British Art. New Haven</li>
+		                        	<li>Tate Gallery, Britian</li>
+		                            <li>National Gallery of Art East Building, Washington D.C</li>
+		                            <li>Scottish National Gallery. Edinburgh</li>
+		                            <li>J. Paul Getty Museum, Los Angeles</li>
+		                            <li>Art Gallery of South Australia, Adelaide</li>
+		                            <li>Museum of Fine Arts, Houston</li>
+		                            <li>National Gallery of Victoria, Southbank</li>
+		                            <li>National Gallery, London</li>
+		                            <li>Lod Angeles Couty Museum of Art, Los Angeles</li>
+		                            <li>Isabella Stewart Gardner Museum, Boston</li>
+		                            <li>Frick Collectionn New York City</li>
+		                            <li>Philadelphia Museum of Art, Philadelphia</li>
+		                            <li>Art Institute of Chicago, Chicago</li>
+		                            <li>Allen Memorial Art Museum, Oberlin(Ohio)</li>
+		                            <li>Nelson-Atkins Museum of Art, Kansas City</li>
+		                            <li>Kimbell Art Museum, Texas</li>
+		                            <li>Calouste Gulbenkian Museum, Portugal</li>
+		                            <li>Cleveland Museum of Art, Cleveland</li>
+		                            <li>Museum of Fine Arts, Boston</li>
+		                        </ul>
+		                    </dd>
+		                </dl>     
+					</section>
+					<section class="artist_section" id="artworks_mobile">
+						<h2>ArtWorks</h2>
+						<br>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							  <img src="images/abstract/jmw_turner/Dido-building-Carthage.jpg" alt="Dido building Carthage">
+							  <div class="content_image">
+							  	<h4>Dido building Carthage</h4>
+							  	<br>
+							  	<span>
+							  		 In 1814, Turner began a series on Carthaginian subjects and this painting is one of its most famous. The subject of the painting is inspired by Aeneid, a Latin epic poem written by Virgil. It depicts the building of the North African city of Carthage with Dido being the blue and white figure on the left.
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/jmw_turner/Hannibal-crossing-the-Alps.jpg" alt="Hannibal crossing the Alps">
+							  <div class="content_image">
+							  	<h4>Hannibal crossing the Alps</h4>
+							  	<br>
+							  	<span> Hannibal’s crossing of the Alps in 218 BC is one of the most celebrated military achievements in ancient warfare. As much as this painting captures this historic event, it brings to the fore the destructive power of natural forces, a prevalent theme in many of Turner’s later works. Hannibal crossing the Alps, known for parallels between Hannibal and Napoleon, is one of the most ambitious and renowned artworks of Turner’s early career.
+							  	</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/jmw_turner/Norham-Castle-Sunrise.jpg" alt="Norham Castle Sunrise">
+							  <div class="content_image">
+							  	<h4>Norham Castle Sunrise</h4>
+							  	<br>
+							  	<span>This painting was created in the mature stage of his career when his compositions became more fluid with mere suggestion of movement. These works were more appreciated by later generations. Norham Castle, Sunrise is considered one of Turner’s greatest paintings of light and atmosphere. While some regard the painting as an unfinished work, it is more widely viewed as proof of Turner’s genius. It is the most abstract and most modern of Turner’s paintings.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/jmw_turner/Rain-Steam-and-Speed.jpg" alt="Rain Steam and Speed">
+							  <div class="content_image">
+							  	<h4>Rain Steam and Speed</h4>
+							  	<br>
+							  	<span>In this famous artwork, Turner masterfully combines the elements of nature and the industrial revolution. The painting depicts a train approaching the viewer at high speed. The rain blends into the steam of the speeding train to leave the powerful black engine of the locomotive as the only visibly sharp object on the canvas. The location of the scene is the Maidenhead Railway Bridge which crosses River Thames.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/jmw_turner/Rome-From-Mount-Aventine.jpg" alt="Rome From Mount Aventine">
+							  <div class="content_image">
+							  	<h4>Rome From Mount Aventine</h4>
+							  	<br>
+							  	<span>
+								This painting depicts the city of Rome from the Aventine Hill, one of the Seven Hills on which ancient Rome was built. It is one among several paintings of the city by Turner and on first being exhibited it was described by the Morning Post as “one of those amazing pictures by which Mr Turner dazzles the imagination and confounds all criticism: it is beyond praise”. It was sold at Sotheby’s in London in December 2014 for £30.3m which, as of June 2016, is the auction record for Turner. It was also the highest price for any pre-20th century British artist ever sold at auction.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/jmw_turner/The-Burning-of-the-Houses-of-Lords-and-Commons.jpg" alt="The Burning of the Houses of Lords and Commons">
+							  <div class="content_image">
+							  	<h4>The Burning of the Houses of Lords and Commons</h4>
+							  	<br>
+							  	<span>On 16th October 1834, fire accidentally broke out in England’s Houses of Parliament leading to the biggest conflagration in London since the Great Fire of 1666. Like tens of thousands of Londoners, Turner too witnessed the fire. He used the sketches of the scene which he had drawn on the spot to create two famous canvases of the conflagration with the same title.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/jmw_turner/The-Dort.jpg" alt="The Dort">
+							  <div class="content_image">
+							  	<h4>The Dort</h4>
+							  	<br>
+							  	<span> It is the finest example of the influence of Dutch marine painting on Turner’s work and a tribute to Dutch artist Aelbert Cuyp, one of Turner’s formative influences. On its exhibition, The Dort was hailed as “one of the most magnificent pictures ever exhibited” by the Morning Chronicle and Turner’s contemporary, English Romantic painter John Constable, called it the “most complete work of a genius I ever saw”.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/jmw_turner/The-Fighting-Temeraire.jpg" alt="The Fighting Temeraire">
+							  <div class="content_image">
+							  	<h4>The Fighting Temeraire</h4>
+							  	<br>
+							  	<span>The painting pays a tribute to sailing ships as they were going to be replaced by steam-powered vessels. Turner uses symbolism, like the setting sun, to suggest the demise of the subject and its mortality despite its heroic past. Painted by Turner at the prime of his career, The Fighting Temeraire is his most famous painting and the one he referred to as his “darling”. In 2005, it was voted as Britain’s favourite painting in a poll organized by the BBC.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/jmw_turner/The-Slave-Ship.jpg" alt="The Slave Ship">
+							  <div class="content_image">
+							  	<h4>The Slave Ship</h4>
+							  	<br>
+							  	<span>The painting depicts a ship struggling in the stormy sea while a number of bodies with dark skin, and chained hands and feet, are floating in water. The picture is blurry without defined brush strokes and Turner brilliantly uses colour to create a dramatic effect for the viewer. The Slave Ship focuses on the power of nature over man and the vices of the Industrial Revolution.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/jmw_turner/Venice-from-the-Porch-of-Madonna-della-Salute.jpg" alt="Venice from the Porch of Madonna della Salute">
+							  <div class="content_image">
+							  	<h4>Venice from the Porch of Madonna della Salute</h4>
+							  	<br>
+							  	<span> Turner’s love affair with Venice produced several masterpieces and this painting is the most famous among them. It captures the Grand Canal along with buildings of Venice; and is based on the artist’s sketches from his trips to the city. Turner’s command over marine painting, his brilliance as a colourist and his pristine ability to capture the effects of atmosphere and light, all come together in this renowned artwork.
+							  	</span>
+							  </div>
+							</div>
+							<div id="indicators">
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+							</div>
+						</div>
+						<!--Slideshow HTML ends-->
+						<!--JavaScript for Slideshow-->
+						<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							    var i;
+							    var slides = document.getElementsByClassName("mySlides");
+							    var dots = document.getElementsByClassName("dot");
+							    for (i = 0; i < slides.length; i++) {
+							       slides[i].style.display = "none";  
+							    }
+							    slideIndex++;
+							    if (slideIndex > slides.length) {slideIndex = 1}    
+							    for (i = 0; i < dots.length; i++) {
+							        dots[i].className = dots[i].className.replace("active", "");
+							    }
+							    slides[slideIndex-1].style.display = "block";  
+							    dots[slideIndex-1].className += " active";
+							    setTimeout(showSlides, 5000); // Change image every 2 seconds
+							}
+						</script>
+						<!--JavaScript for Slideshow ends-->
+						
+					</section>
+				</div>
+				<!--Image Gallery Modal =-->
+				<div id="artworks" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+					    	<span class="close">&times;</span>
+					      	<h2>GALLERY</h2>
+					    </div>
+					    <div class="modal-body">
+					      	<ul>
+								<li>
+									<a href="images/abstract/jmw_turner/Dido-building-Carthage.jpg" title="Dido building Carthage"><img
+									src="images/abstract/jmw_turner/Dido-building-Carthage.jpg" width="100" height="75" alt="Dido building Carthage" sec-content=" In 1814, Turner began a series on Carthaginian subjects and this painting is one of its most famous. The subject of the painting is inspired by Aeneid, a Latin epic poem written by Virgil. It depicts the building of the North African city of Carthage with Dido being the blue and white figure on the left."></a>
+								</li>
+								<li>
+									<a href="images/abstract/jmw_turner/Hannibal-crossing-the-Alps.jpg" title="Hannibal crossing the Alps"><img
+									src="images/abstract/jmw_turner/Hannibal-crossing-the-Alps.jpg" width="100" height="75" alt="Hannibal crossing the Alps" sec-content=" Hannibal’s crossing of the Alps in 218 BC is one of the most celebrated military achievements in ancient warfare. As much as this painting captures this historic event, it brings to the fore the destructive power of natural forces, a prevalent theme in many of Turner’s later works. Hannibal crossing the Alps, known for parallels between Hannibal and Napoleon, is one of the most ambitious and renowned artworks of Turner’s early career."></a>
+								</li>
+								<li>
+									<a href="images/abstract/jmw_turner/Norham-Castle-Sunrise.jpg" title="Norham Castle Sunrise"><img
+									src="images/abstract/jmw_turner/Norham-Castle-Sunrise.jpg" width="100" height="75" alt="Norham Castle Sunrise" sec-content="This painting was created in the mature stage of his career when his compositions became more fluid with mere suggestion of movement. These works were more appreciated by later generations. Norham Castle, Sunrise is considered one of Turner’s greatest paintings of light and atmosphere. While some regard the painting as an unfinished work, it is more widely viewed as proof of Turner’s genius. It is the most abstract and most modern of Turner’s paintings."></a>
+								</li>
+								
+								<li>
+									<a href="images/abstract/jmw_turner/Rain-Steam-and-Speed.jpg" title="Rain Steam and Speed"><img
+									src="images/abstract/jmw_turner/Rain-Steam-and-Speed.jpg" width="100" height="75" alt="Rain Steam and Speed" sec-content="In this famous artwork, Turner masterfully combines the elements of nature and the industrial revolution. The painting depicts a train approaching the viewer at high speed. The rain blends into the steam of the speeding train to leave the powerful black engine of the locomotive as the only visibly sharp object on the canvas. The location of the scene is the Maidenhead Railway Bridge which crosses River Thames."></a>
+								</li>
+								<li>
+									<a href="images/abstract/jmw_turner/Rome-From-Mount-Aventine.jpg" title="Rome From Mount Aventine"><img
+									src="images/abstract/jmw_turner/Rome-From-Mount-Aventine.jpg" width="100" height="75" alt="Rome From Mount Aventine" sec-content="This painting depicts the city of Rome from the Aventine Hill, one of the Seven Hills on which ancient Rome was built. It is one among several paintings of the city by Turner and on first being exhibited it was described by the Morning Post as “one of those amazing pictures by which Mr Turner dazzles the imagination and confounds all criticism: it is beyond praise”. It was sold at Sotheby’s in London in December 2014 for £30.3m which, as of June 2016, is the auction record for Turner. It was also the highest price for any pre-20th century British artist ever sold at auction."></a>
+								</li>
+								
+								<li>
+									<a href="images/abstract/jmw_turner/The-Burning-of-the-Houses-of-Lords-and-Commons.jpg" title="The-Burning of the Houses of Lords and Commons"><img
+									src="images/abstract/jmw_turner/The-Burning-of-the-Houses-of-Lords-and-Commons.jpg" width="100" height="75" alt="The Burning of the Houses of Lords and Commons" sec-content="On 16th October 1834, fire accidentally broke out in England’s Houses of Parliament leading to the biggest conflagration in London since the Great Fire of 1666. Like tens of thousands of Londoners, Turner too witnessed the fire. He used the sketches of the scene which he had drawn on the spot to create two famous canvases of the conflagration with the same title."></a>
+								</li>
+								<li>
+									<a href="images/abstract/jmw_turner/The-Dort.jpg" title="The Dort"><img
+									src="images/abstract/jmw_turner/The-Dort.jpg" width="100" height="75" alt="The Dort" sec-content=" It is the finest example of the influence of Dutch marine painting on Turner’s work and a tribute to Dutch artist Aelbert Cuyp, one of Turner’s formative influences. On its exhibition, The Dort was hailed as “one of the most magnificent pictures ever exhibited” by the Morning Chronicle and Turner’s contemporary, English Romantic painter John Constable, called it the “most complete work of a genius I ever saw”."></a>
+								</li>
+								<li>
+									<a href="images/abstract/jmw_turner/The-Fighting-Temeraire.jpg" title="The Fighting Temeraire"><img
+									src="images/abstract/jmw_turner/The-Fighting-Temeraire.jpg" width="100" height="75" alt="The Fighting Temeraire" sec-content="The painting pays a tribute to sailing ships as they were going to be replaced by steam-powered vessels. Turner uses symbolism, like the setting sun, to suggest the demise of the subject and its mortality despite its heroic past. Painted by Turner at the prime of his career, The Fighting Temeraire is his most famous painting and the one he referred to as his “darling”. In 2005, it was voted as Britain’s favourite painting in a poll organized by the BBC."></a>
+								</li>
+							</ul>
+							<figure>
+								<img src="images/abstract/jmw_turner/Dido-building-Carthage.jpg" alt="Dido Building Carthager">
+								<figcaption>Dido Building Carthager</figcaption>
+							</figure>
+							<span id="painting_info">
+								In 1814, Turner began a series on Carthaginian subjects and this painting is one of its most famous. The subject of the painting is inspired by Aeneid, a Latin epic poem written by Virgil. It depicts the building of the North African city of Carthage with Dido being the blue and white figure on the left.
+							</span>
+					    </div>
+					    <div class="modal-footer">
+					      	<h3>J.M.W TURNER</h3>
+					    </div>
+					</div>
+				</div>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById('artworks');
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("artworks_open");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					    modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					    modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					    if (event.target == modal) {
+					        modal.style.display = "none";
+					    }
+					}
+				</script>
+				
+				<!--SideBar-->
+				<div class="side_content">
+					<ul>
+						<li><a href="https://10mosttoday.com/10-most-famous-paintings-in-the-world/" target="_blank"><strong>Top 5 Paintings</strong></a></li>
+						<li><strong>Top 5 Painters</strong></li>
+						<div id="small-only">
+							<br>
+							<ol>
+								<li><a href="leonardo_da_vinci.html">Leonardo Da Vinci</a></li>
+								<li><a href="rembrandt.html">Rembrandt</a></li>
+								<li><a href="michelangelo.html">Michelangelo</a></li>
+								<li><a href="pablo_picasso.html">Pablo Picasso</a></li>
+								<li><a href="raphael.html">Raphael</a></li>
+							</ol>
+						</div>
+					</ul>
+					<div id="top_artist_list">
+						<div>
+							<a href="leonardo_da_vinci.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/leonardo_da_vinci/portrait.jpg" alt="leonardo_da_vinci">
+									<span>
+										<strong>Leonardo Da Vinci</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>
+							<a href="rembrandt.html">
+								<div class="horizontal_card">
+									<img src="images/baroque/rembrandt/portrait.jpg" alt="rembrandt">
+									<span>
+										<strong>Rembrandt</strong>
+										<br>
+										Dutch
+										<br>
+										Realist Painter
+									</span>
+								</div>
+							</a>
+							<a href="michelangelo.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/michelangelo/portrait.jpg" alt="michelangelo">
+									<span>
+										<strong>Michelangelo</strong>
+										<br>
+										French
+										<br>
+										Impressionist Painter
+									</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="pablo_picasso.html">
+								<div class="horizontal_card">
+									<img src="images/cubist/pablo_picasso/portrait.jpg" alt="pablo_picasso">
+									<span>
+										<strong>Pablo Picasso</strong>
+										<br>
+										Spanish
+										<br>
+										Cubist Painter
+									</span>
+								</div>
+							</a>
+							<a href="raphael.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/raphael/portrait.jpg" alt="raphael">
+									<span>
+										<strong>Raphael</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!--Sidebar Ends-->
+			</main>
+			<!--Footer Section-->
+			<footer style="background-color: #311B92;">
+				<a href="index.html">Home</a> | <a href="abstract_painters.html">Abstract Painters</a> | <a href="baroque_painters.html">Baroque Painters</a> | <a href="cubist_painters.html">Cubist Painters</a> | <a href="realist_painters.html">Realist Painters</a> | <a href="renaissance_painters.html">Renaissance Painters</a>
+				Copyright 2018 by Artistry World, May 2018, <a href="mailto:gilber.njq@gmail.com"><u>gilber.njq@gmail.com</u></a>
+			</footer>
+			<!--Footer Section ends-->
+		</div>
+	</body>
+</html>

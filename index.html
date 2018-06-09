@@ -1,0 +1,255 @@
+<!--
+	Name: Gilberto Jimenez
+	Project Title: Artistry World
+	Description: The purpose of this site is to appreciate the beautiful paintings and to encourage the love and craze for paintings among viewers. Painting is an unbiased expression. It also teaches you patience and optimism. It's truly amazing to let yourself flow through the nibs of pens and brushes and let it all out on that sheet. This website will take a special place in the hearts of painting lovers because it contain different painting styles which are famous all over the world, a list of top ten painters who spread their magic of painting everywhere and top ten paintings which are heartbreaking.
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Artistry World</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--CSS and fonts reference-->
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<!--Top Header(Logo and site name)-->
+				<div id="top_header">
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+					<h1>Artistry World</h1>
+				</div>
+				<!--Top Header Ends-->
+				<!--Slideshow HTML-->
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+					  <img src="images/slideshow1.jpg" alt="slideshow_img">
+					</div>
+					<div class="mySlides fade">
+					  <img src="images/slideshow2.jpg" alt="slideshow_img">
+					</div>
+					<div id="indicators">
+		     		    <span class="dot"></span> 
+						<span class="dot"></span> 
+					</div>
+				</div>
+				<!--Slideshow HTML ends-->
+				<!--JavaScript for Slideshow-->
+				<script>
+					var slideIndex = 0;
+					showSlides();
+
+					function showSlides() {
+					    var i;
+					    var slides = document.getElementsByClassName("mySlides");
+					    var dots = document.getElementsByClassName("dot");
+					    for (i = 0; i < slides.length; i++) {
+					       slides[i].style.display = "none";  
+					    }
+					    slideIndex++;
+					    if (slideIndex > slides.length) {slideIndex = 1}    
+					    for (i = 0; i < dots.length; i++) {
+					        dots[i].className = dots[i].className.replace(" active", "");
+					    }
+					    slides[slideIndex-1].style.display = "block";  
+					    dots[slideIndex-1].className += " active";
+					    setTimeout(showSlides, 2000); // Change image every 2 seconds
+					}
+				</script>
+				<!--JavaScript for Slideshow ends-->
+			</header>
+
+			<main>
+				<!--Navigation Bar(Painting Styles)-->
+				<div id="style_nav">
+					<ul>
+						<li><a href="abstract_painters.html">ABSTRACT PAINTERS</a></li>
+						<li><a href="baroque_painters.html">BAROQUE PAINTERS</a></li>
+						<li><a href="cubist_painters.html">CUBIST PAINTERS</a></li>
+						<li><a href="realist_painters.html">REALIST PAINTERS</a></li>
+						<li><a href="renaissance_painters.html">RENAISSANCE PAINTERS</a></li>
+					</ul>
+				</div>
+				<!--Navigation Bar Ends-->
+				<!--About the website-->
+				<div class="content_section">
+					<h1>About</h1>
+					<p>
+						"ARTISTRY WORLD" is a platform acknowledging the artists around the globe. We here provide you information about various painting styles which were quite famous in 18-1th century. We also provide you information regarding artists practising those styles and all about their career and their different artworks. We here provide a platform to all the people who love paintings and want some inspiration.<br>
+						Here is a list of painting styles and thier respective artists which we have covered:
+					</p>
+					<br>
+					
+						<table class="center">
+							<thead>
+								<tr>
+									<th>Painting Style</th>
+									<th>Painters</th>
+								</tr>
+							</thead>
+							<tr>
+								<td>Abstract Painting</td>
+								<td>Paul Cezanne, Arshile Gorky, Henri Matisse, J.M.W. Turner, Wassily Kandinsky</td>
+							</tr>
+							<tr>
+								<td>Baroque Painting</td>
+								<td>Artemisia Gentileschi, Caravaggio, Nicolas Poussin, Peter Paul Rubens, Rembrandt</td>
+							</tr>
+							<tr>
+								<td>Cubisim</td>
+								<td>Juan Gris, Pablo Picasso, Paul Klee, Salvator Dali</td>
+							</tr>
+							<tr>
+								<td>Realism</td>
+								<td>Almeida Junior, Edgar Degas, Henry Ossawa Tanner, Thomas Eakins</td>
+							</tr>
+							<tr>
+								<td>Renaissance Painting</td>
+								<td>Leonardo Da Vinci, Masaccio, Michelangelo, Raphael</td>
+							</tr>
+						</table>
+				
+					<br>
+					<h1>Contact Us</h1>
+					<p>Feel free to reach out to us for any query you may have.</p>
+					<form>
+						<div class="form_col">
+							<label for="name">Name:</label>
+							<br><br>
+							<input type="text" name="name" id="name" placeholder="Enter Name" size="35">
+							<br><br>
+							<label for="query_type">Query Related to:</label>
+							<br><br>
+							<input type="text" name="query_type" id="query_type" list="query_types" placeholder="Select">
+							<datalist id="query_types">
+								<option value="style">Painting Style</option>
+								<option value="artist">Artist</option>
+								<option value="any_other">Any Other</option>
+							</datalist>
+							<br><br>
+							<label for="rating">Site Rating:</label>
+							<br><br>
+							<select name="rating">
+							    <option value="1">1</option>
+							    <option value="2">2</option>
+							    <option value="3">3</option>
+							    <option value="4">4</option>
+							    <option value="5">5</option>
+							  </select>
+						</div>
+						<div class="form_col">
+							<label for="email">Email</label>
+							<br><br>
+							<input type="email" name="emial" id="email" placeholder="Enter Email" size="35">
+							<br><br>
+							<label for="query">Ask your Query:</label>
+							<br><br>
+							<textarea name="query" rows="10" cols="40" placeholder="Enter your suggestions">
+							</textarea>
+							<br><br>
+							<button type="button" onclick="alert('Your form is submitted. We will contact you shortly..')">SEND</button>
+						
+						</div>
+						
+					</form>
+				</div>
+				<!--About the website ends-->
+				<!--SideBar-->
+				<div class="side_content">
+					<ul>
+						<li><a href="https://10mosttoday.com/10-most-famous-paintings-in-the-world/" target="_blank"><strong>Top 5 Paintings</strong></a></li>
+						<li><strong>Top 5 Painters</strong></li>
+						<div id="small-only">
+							<br>
+							<ol>
+								<li><a href="leonardo_da_vinci.html">Leonardo Da Vinci</a></li>
+								<li><a href="rembrandt.html">Rembrandt</a></li>
+								<li><a href="michelangelo.html">Michelangelo</a></li>
+								<li><a href="pablo_picasso.html">Pablo Picasso</a></li>
+								<li><a href="raphael.html">Raphael</a></li>
+							</ol>
+						</div>
+					</ul>
+					<div id="top_artist_list">
+						<div>
+							<a href="leonardo_da_vinci.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/leonardo_da_vinci/portrait.jpg" alt="leonardo_da_vinci">
+									<span>
+										<strong>Leonardo Da Vinci</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>
+							<a href="rembrandt.html">
+								<div class="horizontal_card">
+									<img src="images/baroque/rembrandt/portrait.jpg" alt="rembrandt">
+									<span>
+										<strong>Rembrandt</strong>
+										<br>
+										Dutch
+										<br>
+										Realist Painter
+									</span>
+								</div>
+							</a>
+							<a href="michelangelo.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/michelangelo/portrait.jpg" alt="michelangelo">
+									<span>
+										<strong>Michelangelo</strong>
+										<br>
+										French
+										<br>
+										Impressionist Painter
+									</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="pablo_picasso.html">
+								<div class="horizontal_card">
+									<img src="images/cubist/pablo_picasso/portrait.jpg" alt="pablo_picasso">
+									<span>
+										<strong>Pablo Picasso</strong>
+										<br>
+										Spanish
+										<br>
+										Cubist Painter
+									</span>
+								</div>
+							</a>
+							<a href="raphael.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/raphael/portrait.jpg" alt="raphael">
+									<span>
+										<strong>Raphael</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!--Sidebar Ends-->
+			</main>
+			<!--Footer Section-->
+			<footer>
+				<a href="index.html">Home</a> | <a href="abstract_painters.html">Abstract Painters</a> | <a href="baroque_painters.html">Baroque Painters</a> | <a href="cubist_painters.html">Cubist Painters</a> | <a href="realist_painters.html">Realist Painters</a> | <a href="renaissance_painters.html">Renaissance Painters</a>
+				<br><br>
+				Copyright 2018 by Artistry World, May 2018, <a href="mailto:gilber.njq@gmail.com"><u>gilber.njq@gmail.com</u></a>
+			</footer>
+			<!--Footer Section Ends-->
+		</div>
+	</body>
+</html>

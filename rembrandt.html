@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Rembrandt</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Reference to CSS and fonts-->
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+	    <!--Reference to JQuery Library-->
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <script>
+		$(document).ready(function(){
+		    //JavaScript for Image Gallery
+		    $('#artworks a').click(function(){
+		        var galleryHref = $(this).attr('href');
+		        var galleryAlt = $(this).attr('title');
+		        var gallerynfo = $(this).attr('sec-content');
+		        $('figure').css('display','none');
+		        $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		        $('figcaption').html(galleryAlt);
+		        $('figure').fadeToggle(1000);
+		        $('#painting_info').html(gallerynfo);
+		        return false;
+		      });
+		});
+</script>
+
+	</head>
+	<body>
+	   <div id="wrapper">
+			<header>
+				<!--Top Header(Logo and site name)-->
+				<div id="top_header">
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+					<h1>ARTISTRY WORLD</h1>
+				</div>
+	            <!--Top Header Ends-->
+	            <!--Painter Name-->
+	           
+             	<div class="mySlides2 fade">
+             		<div  class="slideshow2">
+             			<img src="images/baroque/Rembrandt/portrait.jpg" alt="portrait">
+	             		<div class="slide_content">
+	             			<h1>Rembrandt</h1>
+	             			<blockquote>"Practice what you know, and it will help to make clear what now you do not know."</blockquote>
+	             		</div>
+             		</div>
+             	</div>
+	          
+	            <!--Painter name-->
+	           
+				<!--Sticky Navigation Bar-->
+	            <div id="artist_nav">
+				    <ul>
+		                <li><a href="#overview">Overview</a></li>
+		                <li><a href="#career">Career</a></li>
+		                <li><a href="#legacy">Legacy</a></li>
+		                <li><a href="#onview">On View</a></li>
+		                <li id="desktop_only"><a id="artworks_open">Artworks</a></li>
+		                <li id="tablet_only"><a href="#artworks_mobile">Artworks</a></li>
+	            	</ul>
+	            </div>
+	            <!--Navigation Bar Ends-->
+	           
+			</header>
+			 <!--JavaScript for Navigation Bar-->
+            <script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("artist_nav");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<!--JavaScript for Navigation Bar Ends-->
+			<main>
+				<!--Content Section-->
+				<div id="content_artist">
+					<!--Overview-->
+				    <div class="artist_section" id="overview">
+						<dl>
+							<dt>Overview</dt>
+		                    <dd>
+		                    	<p><strong>Rembrandt</strong> was a Dutch draughtsman, painter, and printmaker. An innovative and prolific master in three media,[3] he is generally considered one of the greatest visual artists in the history of art and the most important in Dutch art history. Unlike most Dutch masters of the 17th century, Rembrandt's works depict a wide range of style and subject matter, from portraits and self-portraits to landscapes, genre scenes, allegorical and historical scenes, biblical and mythological themes as well as animal studies. His contributions to art came in a period of great wealth and cultural achievement that historians call the Dutch Golden Age, when Dutch art (especially Dutch painting), although in many ways antithetical to the Baroque style that dominated Europe, was extremely prolific and innovative, and gave rise to important new genres. Like many artists of the Dutch Golden Age, such as Jan Vermeer of Delft, Rembrandt was also known as an avid art collector and dealer.</p>
+		                    </dd>
+		                </dl>
+		            </div>
+		            <!--Career-->
+		            <div class="artist_section" id="career">
+						<dl>
+		                    <dt>Career</dt>
+		                    <dd>
+		                    	<ul>
+		                    	   <li>After completing his training, Rembrandt became a professional artist and opened a studio in Leiden in the mid-1620s with the help of a friend and fellow painter, Jan Lievens. He began experimenting with etchings and started painting biblical scenes.<br></li>
+		                    	   
+		                    	   <li>He developed his own unique style of painting light and illumination that made him very famous. His paintings ‘Peter and Paul Disputing’ (1628) and ‘Judas Repentant and Returning the Pieces of Silver’ (1629) are some of the paintings which display his ingenuity in handling the concept of light.<br></li> 
+		                    	   
+		                           <li>Rembrandt achieved considerable success within a few years of becoming a professional painter and this attracted numerous aspiring painters to his studio who were eager to be trained by the great master. In the late 1620s he began accepting students and Gerrit Dou was one of his early pupils.<br></li>
+		                           
+		                           <li>Buoyed by his success, Rembrandt moved to Amsterdam in 1631 in order to expand his business. He initially stayed with an art dealer, Hendrick van Uylenburgh, who had a workshop that created portraits and restored paintings. During this time Rembrandt began working as a portraitist for the first time and was praised for the realism in his portraits.<br></li>
+		                           
+		                           <li>During the 1630s he also began painting dramatic biblical and mythological scenes in large format. Some of his works from this period include ‘The Blinding of Samson’ (1636), ‘Belshazzar's Feast’ (c. 1635), and ‘Danaë’ (1636).<br></li>
+		                           
+		                           <li>His style underwent a significant change in the 1640s. His paintings now became less dramatic and more sober in tone. The 1640s also marked a tragic period in his personal life which might have been the reason behind his changed style of painting. During this difficult period he painted several biblical scenes from the New Testament than the Old Testament.<br></li>
+		                          
+		                           <li>The 1650s saw more changes in his style of art. He took to painting with more vibrant hues and bolder brushstrokes. His new style departed considerably from his older delicate style and became coarser. The biblical themes in his later paintings shifted to intimate portrait-like figures from the dramatic group scenes he once used to specialize in.<br></li>
+		                           
+		                        </ul>
+		                    </dd>
+		                </dl>
+		            </div>
+		            <!--Legacy-->
+		            <div class="artist_section" id="legacy">
+						<dl>
+		                    <dt>Legacy</dt>
+		                    <dd>
+		                    	<p>Rembrandt is renowned for his outstanding ability to render the human figure and its emotions. He also was unusually gifted as an artist; the way in which he handled his pen or chalk, the etching needle, or the brush betrays a great sensitivity and spontaneity, and the resulting works convey a sense of freedom and creativity. Rembrandt thought about and experimented with purely pictorial matters—the possibilities of composition; the role of tone and colour in the creation of pictorial space, light, shadow, and reflection; and how to vary the properties of his paint to obtain specific effects—with sharp intelligence and originality.</p>
+		                    	<p>Rembrandt was an innovator in technique in all three of his media. From his early, colourful history paintings to his glowing late works, it is clear that he was an artist continuously in search of new stylistic modes of expression and that he belongs to that small category of artists whose development never ceased. Rembrandt’s evolution culminated in his remarkable late style, usually considered to be the summit of his art. </p>
+		                    </dd>
+		                </dl>
+		            </div>
+		            <!--On View-->
+		            <div class="artist_section" id="onview">
+						<dl>
+		                    <dt>On View</dt>
+		                    <dd>
+		                        <ul>
+		                        	<li>National Gallery of Art East Building, Washington D.C.</li>
+		                        	<li>Los Angeles County Museum Of Art</li>
+		                        	<li>Rijksmuseum, Amsterdam</li>
+		                        	<li>Hermitgage Museum, Saint Petersburg</li>
+		                        	<li>Mauritshuis, The Hague</li>
+		                        	<li>The Louvre, Paris</li>
+		                        	<li>J. Paul Getty Museum, Los Angeles</li>
+		                        	<li>Minneapolis Institute of Art, Minneapolis</li>
+		                        	<li>Gemaldegalerie Alte Meister, Dresden</li>
+		                        	<li>Metropolitan museum of Art, New York City</li>
+		                        	<li>National Gallery, London</li>
+		                        	<li>British Museum, London</li>
+		                        	<li>Museo Nacional Del Prado, Madrid</li>
+		                        	<li>Royal Ontario Museum. Toronto</li>
+		                        	<li>Norton Simon Museum</li>
+		                        	<li>Art Institute of Chicago</li>
+		                        	<li>Art Gallery of Ontario, Toronto</li>
+		                        	<li>Hammer Museum</li>
+		                        	<li>Amsterdam Museum</li>
+		                        	<li>Stadel Museum, Frankfurt</li>
+		                        </ul>
+		                    </dd>
+		                </dl>     
+					</div>
+					<div class="artist_section" id="artworks_mobile">
+						<h2>ArtWorks</h2>
+						<br>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							  <img src="images/baroque/Rembrandt/Bathsheba-at-Her-Bath.jpg" alt="Bathsheba at Her Bath">
+							  <div class="content_image">
+							  	<h4>Bathsheba at Her Bath</h4>
+							  	<br>
+							  	<span>
+							  		Rembrandt’s life size portrayal is exceptional for its erotic vitality brought about by vibrant colors and thick brushstrokes. The painting is also noted for brilliantly capturing Bathsheba’s moral dilemma as she stares at nothing while contemplating on David’s proposal. Bathsheba at Her Bath is Rembrandt’s most renowned nude and it is regarded as one of the greatest achievements in the genre.
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Rembrandt/Danae.jpg" alt="Danae">
+							  <div class="content_image">
+							  	<h4>Danae</h4>
+							  	<br>
+							  	<span>Rembrandt’s painting, regarded among his most magnificent, depicts the character lying naked in her bed and welcoming Zeus. Instead of paying attention to idealizing her physical appearance, Rembrandt captures the passion felt by a woman on seeing her lover. His wife Saskia was the original model for Danaë but 10 years later he changed the figure’s face to that of his mistress Geertje Dircx.
+							  	</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Rembrandt/Portrait-of-Jan-Six.jpg" alt="Portrait of Jan Six">
+							  <div class="content_image">
+							  	<h4>Portrait of Jan Six</h4>
+							  	<br>
+							  	<span>This portrait captures the moment as Six pauses while putting on his gloves just before leaving his house. Rembrandt uses powerful strokes to brilliantly display the hands, the gloves and the red cloak. But it is the face, on which he worked and reworked, that is responsible for the fame of the portrait as he has been able to capture a marvelous expression of momentary abstraction.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Rembrandt/Self-Portrait-with-Beret-and-Turned-Up-Collar.jpg" alt="Self-Portrait with Beret and Turned Up Collar">
+							  <div class="content_image">
+							  	<h4>Self-Portrait with Beret and Turned Up Collar</h4>
+							  	<br>
+							  	<span>Self-Portrait with Beret and Turned-Up Collar is a work in which may be seen “the stresses and strains of a life compounded of creative triumphs and personal and financial reverses”. Rembrandt’s self-portraits are known for him not showing any mercy to himself and this painting, which was painted when he was 50 years old, showcases his ruthless and sincere depiction of himself.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Rembrandt/Syndics-of-the-Drapers-Guild.jpg" alt="Syndics of the Drapers Guild">
+							  <div class="content_image">
+							  	<h4>Syndics of the Drapers Guild</h4>
+							  	<br>
+							  	<span>
+								This painting is a group portrait of the officials of the Drapers’ Guild, who were controllers of cloth-samples.Rembrandt gives great attention to each subject by capturing different expressions on their faces thus giving them different personalities. At the same time, he also brings a strong sense of togetherness by using compositional devices.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Rembrandt/The-Anatomy-Lesson-of-Dr.-Nicolaes-Tulp.jpg" alt="The Anatomy Lesson of Dr. Nicolaes Tulp">
+							  <div class="content_image">
+							  	<h4>The Anatomy Lesson of Dr. Nicolaes Tulp</h4>
+							  	<br>
+							  	<span>The event depicted in this painting occurred in January 1632. Anatomy lessons were a social event in 17th century and were often captured on canvas. Dr. Nicolaes Tulp, who can be see in the portrait explaining the musculature of the arm to medical professionals, was the official City Anatomist of the Amsterdam Guild of Surgeons. Some of the spectators are various doctors who paid commissions to be included in the painting. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Rembrandt/The-Jewish-Bride.jpg" alt="The Jewish Bride">
+							  <div class="content_image">
+							  	<h4>The Jewish Bride</h4>
+							  	<br>
+							  	<span>The title by which this painting is known comes from an art collector in Amsterdam, who interpreted it as a Jewish father and his daughter. The necklace in the painting was interpreted by him as a present the father had given to the daughter for her wedding day.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Rembrandt/The-Nightwatch.jpg" alt="The Nightwatch">
+							  <div class="content_image">
+							  	<h4>The Nightwatch</h4>
+							  	<br>
+							  	<span>The painting depicts a Bible story from Luke 1:5-80, in which Zacharias and his wife, Elizabeth, are too old to have children. One day the angel Gabriel appears to tell Zacharias that he and Elizabeth will have a son named John. Zacharias is literally dumbfounded and loses his ability to speak. Later, the baby is born and all the couple’s neighbors and midwives insist that the baby should be named Zacharias, after his father. Elizabeth disagrees, so they ask for Zacharias’s opinion. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Rembrandt/The-Return-of-the-Prodigal-Son.jpg" alt="The Return of the Prodigal Son">
+							  <div class="content_image">
+							  	<h4>The Return of the Prodigal Son</h4>
+							  	<br>
+							  	<span>Rembrandt’s painting depicts the moment when the son returns home in a wretched state. The father can be seen receiving his son with a tender gesture while the brother crosses his hands in judgment. Painted at the end of his career, the artwork demonstrates Rembrandt’s mastery as he uses expressive lighting and coloring to brilliantly evoke in the viewer the parable’s message of forgiveness.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Rembrandt/The-Storm-on-the-Sea-of-Galilee.jpg" alt="The Storm on the Sea of Galilee">
+							  <div class="content_image">
+							  	<h4>The Storm on the Sea of Galilee</h4>
+							  	<br>
+							  	<span>The Storm on the Sea of Galilee is renowned for being Rembrandt’s only seascape and because it can no longer be seen, as it has been stolen! In March 1990, thieves disguised as police officers stole this painting and 12 other artworks from the Isabella Stewart Gardner Museum in Boston, Massachusetts, US.</span>
+							  </div>
+							</div>
+
+							<div id="indicators">
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span> 
+
+							</div>
+						</div>
+						<!--Slideshow HTML ends-->
+						<!--JavaScript for Slideshow-->
+						<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							    var i;
+							    var slides = document.getElementsByClassName("mySlides");
+							    var dots = document.getElementsByClassName("dot");
+							    for (i = 0; i < slides.length; i++) {
+							       slides[i].style.display = "none";  
+							    }
+							    slideIndex++;
+							    if (slideIndex > slides.length) {slideIndex = 1}    
+							    for (i = 0; i < dots.length; i++) {
+							        dots[i].className = dots[i].className.replace("active", "");
+							    }
+							    slides[slideIndex-1].style.display = "block";  
+							    dots[slideIndex-1].className += " active";
+							    setTimeout(showSlides, 5000); // Change image every 2 seconds
+							}
+						</script>
+						<!--JavaScript for Slideshow ends-->
+						
+					</div>
+				</div>
+				<!--Image Gallery Modal =-->
+				<div id="artworks" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+					    	<span class="close">&times;</span>
+					      	<h2>GALLERY</h2>
+					    </div>
+					    <div class="modal-body">
+					      	<ul>
+								<li>
+									<a href="images/baroque/Rembrandt/Bathsheba-at-Her-Bath.jpg" title="Bathsheba at Her Bath"><img
+									src="images/baroque/Rembrandt/Bathsheba-at-Her-Bath.jpg" width="100" height="75" alt="Bathsheba at Her Bath" sec-content="Rembrandt’s life size portrayal is exceptional for its erotic vitality brought about by vibrant colors and thick brushstrokes. The painting is also noted for brilliantly capturing Bathsheba’s moral dilemma as she stares at nothing while contemplating on David’s proposal. Bathsheba at Her Bath is Rembrandt’s most renowned nude and it is regarded as one of the greatest achievements in the genre."></a>
+								</li>
+								<li>
+									<a href="images/baroque/Rembrandt/Danae.jpg" title="Danae"><img
+									src="images/baroque/Rembrandt/Danae.jpg" width="100" height="75" alt="Danae" sec-content="Rembrandt’s painting, regarded among his most magnificent, depicts the character lying naked in her bed and welcoming Zeus. Instead of paying attention to idealizing her physical appearance, Rembrandt captures the passion felt by a woman on seeing her lover. His wife Saskia was the original model for Danaë but 10 years later he changed the figure’s face to that of his mistress Geertje Dircx."></a>
+								</li>
+								<li>
+									<a href="images/baroque/Rembrandt/Portrait-of-Jan-Six.jpg" title="Portrait of Jan Six"><img
+									src="images/baroque/Rembrandt/Portrait-of-Jan-Six.jpg" width="100" height="75" alt="Portrait of Jan Six" sec-content="This portrait captures the moment as Six pauses while putting on his gloves just before leaving his house. Rembrandt uses powerful strokes to brilliantly display the hands, the gloves and the red cloak. But it is the face, on which he worked and reworked, that is responsible for the fame of the portrait as he has been able to capture a marvelous expression of momentary abstraction."></a>
+								</li>
+								
+								<li>
+									<a href="images/baroque/Rembrandt/Syndics-of-the-Drapers-Guild.jpg" title="Syndics of the Drapers Guild"><img
+									src="images/baroque/Rembrandt/Syndics-of-the-Drapers-Guild.jpg" width="100" height="75" alt="Syndics of the Drapers Guild" sec-content="This painting is a group portrait of the officials of the Drapers’ Guild, who were controllers of cloth-samples.Rembrandt gives great attention to each subject by capturing different expressions on their faces thus giving them different personalities. At the same time, he also brings a strong sense of togetherness by using compositional devices." ></a>
+								</li>
+								<li>
+									<a href="images/baroque/Rembrandt/The-Anatomy-Lesson-of-Dr.-Nicolaes-Tulp.jpg" title="The Anatomy Lesson of Dr. Nicolaes Tulp"><img
+									src="images/baroque/Rembrandt/The-Anatomy-Lesson-of-Dr.-Nicolaes-Tulp.jpg" width="100" height="75" alt="The Anatomy Lesson of Dr. Nicolaes Tulp" sec-content="The event depicted in this painting occurred in January 1632. Anatomy lessons were a social event in 17th century and were often captured on canvas. Dr. Nicolaes Tulp, who can be see in the portrait explaining the musculature of the arm to medical professionals, was the official City Anatomist of the Amsterdam Guild of Surgeons. Some of the spectators are various doctors who paid commissions to be included in the painting. "></a>
+								</li>
+								
+								<li>
+									<a href="images/baroque/Rembrandt/The-Nightwatch.jpg" title="The Nightwatch"><img
+									src="images/baroque/Rembrandt/The-Nightwatch.jpg" width="100" height="75" alt="The Nightwatch" sec-content=" Its fame rests on several factors including its enormous size (11.91 ft × 14.34 ft); its coherent, dynamic and realistic portrayal; brilliant use of light and shadow by the artist; and Rembrandt’s mastery in making it appear to the viewer that the painting’s nearly human size figures are about to jump off the canvas and into real space. The Night Watch is the most renowned work in group portraiture and it is the most famous painting of not only Rembrandt but of the entire Dutch Golden Age."></a>
+								</li>
+								<li>
+									<a href="images/baroque/Rembrandt/The-Return-of-the-Prodigal-Son.jpg" title="The Return of the Prodigal Son"><img
+									src="images/baroque/Rembrandt/The-Return-of-the-Prodigal-Son.jpg" width="100" height="75" alt="The Return of the Prodigal Son" sec-content="Rembrandt’s painting depicts the moment when the son returns home in a wretched state. The father can be seen receiving his son with a tender gesture while the brother crosses his hands in judgment. Painted at the end of his career, the artwork demonstrates Rembrandt’s mastery as he uses expressive lighting and coloring to brilliantly evoke in the viewer the parable’s message of forgiveness."></a>
+								</li>
+								<li>
+									<a href="images/baroque/Rembrandt/The-Storm-on-the-Sea-of-Galilee.jpg" title="The Storm on the Sea of Galilee"><img
+									src="images/baroque/Rembrandt/The-Storm-on-the-Sea-of-Galilee.jpg" width="100" height="75" alt="The Storm on the Sea of Galilee" sec-content="The Storm on the Sea of Galilee is renowned for being Rembrandt’s only seascape and because it can no longer be seen, as it has been stolen! In March 1990, thieves disguised as police officers stole this painting and 12 other artworks from the Isabella Stewart Gardner Museum in Boston, Massachusetts, US."></a>
+								</li>
+							</ul>
+							<figure>
+								<img src="images/baroque/Rembrandt/Bathsheba-at-Her-Bath.jpg" alt="Bathsheba at Her Bath">
+								<figcaption>Bathsheba at Her Bath</figcaption>
+							</figure>
+							<span id="painting_info">
+								Rembrandt’s life size portrayal is exceptional for its erotic vitality brought about by vibrant colors and thick brushstrokes. The painting is also noted for brilliantly capturing Bathsheba’s moral dilemma as she stares at nothing while contemplating on David’s proposal. Bathsheba at Her Bath is Rembrandt’s most renowned nude and it is regarded as one of the greatest achievements in the genre.
+							</span>
+					    </div>
+					    <div class="modal-footer">
+					      	<h3>REMBRANDT</h3>
+					    </div>
+					</div>
+				</div>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById('artworks');
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("artworks_open");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					    modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					    modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					    if (event.target == modal) {
+					        modal.style.display = "none";
+					    }
+					}
+				</script>
+				
+				<!--SideBar-->
+				<div class="side_content">
+					<ul>
+						<li><a href="https://10mosttoday.com/10-most-famous-paintings-in-the-world/" target="_blank"><strong>Top 5 Paintings</strong></a></li>
+						<li><strong>Top 5 Painters</strong></li>
+						<div id="small-only">
+							<br>
+							<ol>
+								<li><a href="leonardo_da_vinci.html">Leonardo Da Vinci</a></li>
+								<li><a href="rembrandt.html">Rembrandt</a></li>
+								<li><a href="michelangelo.html">Michelangelo</a></li>
+								<li><a href="pablo_picasso.html">Pablo Picasso</a></li>
+								<li><a href="raphael.html">Raphael</a></li>
+							</ol>
+						</div>
+					</ul>
+					<div id="top_artist_list">
+						<div>
+							<a href="leonardo_da_vinci.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/leonardo_da_vinci/portrait.jpg" alt="leonardo_da_vinci">
+									<span>
+										<strong>Leonardo Da Vinci</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>
+							<a href="rembrandt.html">
+								<div class="horizontal_card">
+									<img src="images/baroque/rembrandt/portrait.jpg" alt="rembrandt">
+									<span>
+										<strong>Rembrandt</strong>
+										<br>
+										Dutch
+										<br>
+										Realist Painter
+									</span>
+								</div>
+							</a>
+							<a href="michelangelo.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/michelangelo/portrait.jpg" alt="michelangelo">
+									<span>
+										<strong>Michelangelo</strong>
+										<br>
+										French
+										<br>
+										Impressionist Painter
+									</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="pablo_picasso.html">
+								<div class="horizontal_card">
+									<img src="images/cubist/pablo_picasso/portrait.jpg" alt="pablo_picasso">
+									<span>
+										<strong>Pablo Picasso</strong>
+										<br>
+										Spanish
+										<br>
+										Cubist Painter
+									</span>
+								</div>
+							</a>
+							<a href="raphael.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/raphael/portrait.jpg" alt="raphael">
+									<span>
+										<strong>Raphael</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!--Sidebar Ends-->
+			</main>
+			<!--Footer Section-->
+			<footer style="background-color: #311B92;">
+				<a href="index.html">Home</a> | <a href="abstract_painters.html">Abstract Painters</a> | <a href="baroque_painters.html">Baroque Painters</a> | <a href="cubist_painters.html">Cubist Painters</a> | <a href="realist_painters.html">Realist Painters</a> | <a href="renaissance_painters.html">Renaissance Painters</a>
+				<br><br>
+				Copyright 2018 by Artistry World, May 2018, <a href="mailto:gilber.njq@gmail.com"><u>gilber.njq@gmail.com</u></a>
+			</footer>
+			<!--Footer Section ends-->
+		</div>
+	</body>
+</html>

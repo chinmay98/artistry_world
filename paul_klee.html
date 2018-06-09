@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Paul Klee</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Reference to CSS and fonts-->
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+	    <!--Reference to JQuery Library-->
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <script>
+		$(document).ready(function(){
+		    //JavaScript for Image Gallery
+		    $('#artworks a').click(function(){
+		        var galleryHref = $(this).attr('href');
+		        var galleryAlt = $(this).attr('title');
+		        var gallerynfo = $(this).children('img').attr('sec-content');
+		        $('figure').css('display','none');
+		        $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		        $('figcaption').html(galleryAlt);
+		        $('figure').fadeToggle(1000);
+		        $('#painting_info').html(gallerynfo);
+		        return false;
+		      });
+		});
+</script>
+
+	</head>
+	<body>
+	   <div id="wrapper">
+			<header>
+				<!--Top Header(Logo and site name)-->
+				<div id="top_header">
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+					<h1>ARTISTRY WORLD</h1>
+				</div>
+	            <!--Top Header Ends-->
+	            <!--Painter Name-->
+	           
+             	<div class="mySlides2 fade">
+             		<div  class="slideshow2">
+             			<img src="images/cubist/paul_klee/portrait.jpg" alt="portrait">
+	             		<div class="slide_content">
+	             			<h1>Paul Klee</h1>
+	             			<blockquote>"Color has got me. I no longer need to chase after it. It has got me for ever. I know it. That is the meaning of this happy hour."</blockquote>
+	             		</div>
+             		</div>
+             	</div>
+	          
+	            <!--Painter name-->
+	           
+				<!--Sticky Navigation Bar-->
+	            <div id="artist_nav">
+				    <ul>
+		                <li><a href="#overview">Overview</a></li>
+		                <li><a href="#career">Career</a></li>
+		                <li><a href="#legacy">Legacy</a></li>
+		                <li><a href="#onview">On View</a></li>
+		                <li id="desktop_only"><a id="artworks_open">Artworks</a></li>
+		                <li id="tablet_only"><a href="#artworks_mobile">Artworks</a></li>
+	            	</ul>
+	            </div>
+	            <!--Navigation Bar Ends-->
+	           
+			</header>
+			 <!--JavaScript for Navigation Bar-->
+            <script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("artist_nav");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<!--JavaScript for Navigation Bar Ends-->
+			<main>
+				<!--Content Section-->
+				<div id="content_artist">
+					<!--Overview-->
+				    <section class="artist_section" id="overview">
+						<dl>
+							<dt>Overview</dt>
+		                    <dd>
+		                    	<p><strong>Paul Klee</strong>  was a Swiss German artist. His highly individual style was influenced by movements in art that included Expressionism, Cubism, and Surrealism. Klee was a natural draftsman who experimented with and eventually deeply explored color theory, writing about it extensively; his lectures Writings on Form and Design Theory (Schriften zur Form und Gestaltungslehre), published in English as the Paul Klee Notebooks, are held to be as important for modern art as Leonardo da Vinci's A Treatise on Painting for the Renaissance. He and his colleague, Russian painter Wassily Kandinsky, both taught at the Bauhaus school of art, design and architecture. His works reflect his dry humor and his sometimes childlike perspective, his personal moods and beliefs, and his musicality.</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Career-->
+		            <section class="artist_section" id="career">
+						<dl>
+		                    <dt>Career</dt>
+		                    <dd>
+		                    	<ul>
+		                    	   <li>He started developing some experimental techniques during the 1900s, including etching and drawing with a needle on a blackened pane of glass. From 1903 to 1905 he worked on a series of etchings called ‘Inventions’ in which he illustrated several grotesque characters. During this time he was also playing violin in an orchestra and writing concert reviews.<br></li>
+		                    	   
+		                    	   <li>His work reached a new level of maturity during the World War I. Several of his friends including Auguste Macke and Franz Marc were killed and this deeply affected Klee. He made many pen-and-ink lithographs, including ‘Death for the Idea’, in response to these losses.<br></li> 
+		                    	   
+		                           <li>He joined the German army in 1916, restoring aircraft camouflage and working as a clerk. He also continued to paint during the entire war and also managed to exhibit in several shows. He became very popular by 1917 and was hailed as the best of the new German artists.<br></li>
+		                          
+		                           <li>In 1919 he secured a three-year contract with dealer Hans Goltz, whose influential gallery gave Klee major exposure as well as commercial success. He also held a retrospective of over 300 works in 1920.<br></li>
+		                           
+		                           <li>In 1920, Walter Gropius invited Klee to join the faculty of the Bauhaus, a school of architecture and industrial design. He accepted this post and started teaching in January 1921. His friend Kandinsky joined the staff the next year, and the two men formed the Blue Four with two other artists, Alexej von Jawlensky and Lyonel Feininger, and toured the United States to lecture and exhibit work.<br></li>
+
+		                           <li>Klee began teaching at Dusseldorf Academy in 1931. However, he was fired under Nazi rule in 1933 and moved with his family to Switzerland. He was at the peak of his career at this time. He soon started suffered from ill health and his output dropped considerably even though he continued painting until his last years.<br></li>
+		                        </ul>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Legacy-->
+		            <section class="artist_section" id="legacy">
+						<dl>
+		                    <dt>Legacy</dt>
+		                    <dd>
+		                    	<p>"Klee's act is very prestigious. In a minimum of one line he can reveal his wisdom. He is everything; profound, gentle and many more of the good things, and this because: he is innovative", wrote Oskar Schlemmer, Klee's future artist colleague at the Bauhaus, in his September 1916 diary.</p>
+		                    	<p>When Klee visited the Paris surrealism exhibition in 1925, Max Ernst was impressed by his work. His partially morbid motifs appealed to the surrealists. André Breton helped to develop the surrealism and renamed Klee's 1912 painting Zimmerperspektive mit Einwohnern (Room Perspective with People) to chambre spirit in a catalogue. </p>
+		                    	<p>The art of mentally ill people inspired Klee as well as Kandinsky and Max Ernst, after Hans Prinzhorns book Bildnerei der Geisteskranken (Artistry of the Mentally Ill) was published in 1922. In 1937, some papers from Prinzhorn's anthology were presented at the National Socialist propaganda exhibition "Entartete Kunst" in Munich, with the purpose of defaming the works of Kirchner, Klee, Nolde and other artists by likening them to the works of the insane.</p>
+		                    	<p>Klee's work has influenced composers including Argentinian Roberto García Morillo in 1943, with Tres pinturas de Paul Klee, and the American artist David Diamond in 1958, with the four-part Opus Welt von Paul Klee (World of Paul Klee). Gunther Schuller composed Seven Studies on Themes of Paul Klee in the years 1959/60, consisting of Antique Harmonies, Abstract Trio, Little Blue Devil, Twittering Machine, Arab Village, An Eerie Moment, and Pastorale.</p>
+		                    	<p>Since 1995, the "Paul Klee-Archiv" (Paul Klee archive) of the University of Jena houses an extensive collection of works by Klee. It is located within the art history department, established by Franz-Joachim Verspohl. It encompasses the private library of book collector Rolf Sauerwein which contains nearly 700 works from 30 years composed of monographs about Klee, exhibition catalogues, extensive secondary literature as well as originally illustrated issues, a postcard and a signed photography portrait of Klee.</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--On View-->
+		            <section class="artist_section" id="onview">
+						<dl>
+		                    <dt>On View</dt>
+		                    <dd>
+		                        <ul>
+		                        	<li>Museum of Modern Art, New York City</li>
+		                        	<li>Art Institute of Chicago</li>
+		                        	<li>Philadelphia Museum of Art</li>
+		                        	<li>San Francisco Museum of Modern Art</li>
+		                        	<li>The Phillips Collection, Washington D.C.</li>
+		                        	<li>Beyeler Foundation, Riehen</li>
+		                        	<li>Kunstmuseum Basel, Basel</li>
+		                        	<li>Kunsthalle Hamburg, Hamburg</li>
+		                        	<li>Tate Modern, London</li>
+		                        	<li>Lenbachhaus, Munich</li>
+		                        	<li>Museum of Fine Arts, Houston</li>
+		                        	<li>Sprengel Museum, Hanover</li>
+		                        	<li>Zentrum Paul Klee, Bern</li>
+		                        	<li>Kunsthaus Zurich, Zurich</li>
+		                        	<li>Nelson-Atkins Museum of Art, Kansas City</li>
+		                        	<li>Israel Museum, Jerusalem</li>
+		                        	<li>Minneapolis Institute of Art, Minneapolis</li>
+		                        	<li>Stadel Museum, Frankfurt</li>
+		                        	<li>Thyssen-Bornemisza Museum, Madrid</li>
+		                        	<li>Kupferstichkabinett Berlin, Berlin</li>
+		                        	<li>Museum Kunstpalast, Dusseldorf</li>
+		                        	<li>Solomon R. Guggenheim Museum, New York City</li>
+		                        </ul>
+		                    </dd>
+		                </dl>     
+					</section>
+					<section class="artist_section" id="artworks_mobile">
+						<h2>ArtWorks</h2>
+						<br>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							  <img src="images/cubist/paul_klee/Ad-Parnassum.jpg" alt="Ad Parnassum">
+							  <div class="content_image">
+							  	<h4>Ad Parnassum</h4>
+							  	<br>
+							  	<span>In Greek mythology, Mount Parnassus was the abode of goddesses who inspired artists and Klee’s Ad Parnassum has been an inspiration for many modern artists. Considered his masterpiece, the painting highlights the skills with color of the master of color. It is the best example of his command over the pointillist style and it also showcases his technical ability.
+							  	</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/paul_klee/Angelus-Novus.jpg" alt="Angelus Novus">
+							  <div class="content_image">
+							  	<h4>Angelus Novus</h4>
+							  	<br>
+							  	<span>The central character in this famous painting is interpreted as the ‘Angel of History’. The name and the concept of the angel have inspired many artists and musicians over the years.  
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/paul_klee/Cat-and-Bird.jpg" alt="Cat and Bird">
+							  <div class="content_image">
+							  	<h4>Cat and Bird</h4>
+							  	<br>
+							  	<span>An example of Klee creating an image which deals more with thought than with perception, Cat and Bird is among his most well-known works. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/paul_klee/Death-and-Fire.jpg" alt="Death and Fire">
+							  <div class="content_image">
+							  	<h4>Death and Fire</h4>
+							  	<br>
+							  	<span>
+								 Death and Fire was painted in the year of Klee’s death. In this painting, he paints his own grimacing death mask without compassion with a skull in the center and the German word for death, ‘Tod’, appearing in the face.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/paul_klee/Fish-Magic.jpg" alt="Fish Magic">
+							  <div class="content_image">
+							  	<h4>Fish Magic</h4>
+							  	<br>
+							  	<span>
+							  		In this extraordinary painting, Klee creates a magical realm where all forms of life intermingle, the aquatic, the celestial, and the earthly. Fish Magic is often cited by his supporters as the best example of his works in which his two divergent gifts, his intellect and his imagination, come together.
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/paul_klee/Flower-Myth.jpg" alt="Flower Myth">
+							  <div class="content_image">
+							  	<h4>Flower Myth</h4>
+							  	<br>
+							  	<span>One of the most well-known paintings from the early part of Klee’s career, Flower Myth is a beautiful three-dimensional work which is a great example of creating a painting in mixed media.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/paul_klee/Insula-Dulcamara.jpg" alt="Insula Dulcamara">
+							  <div class="content_image">
+							  	<h4>Insula Dulcamara</h4>
+							  	<br>
+							  	<span> The largest painting created by Klee, Insula Dulcamara has symbols and signs which create a dream like affect. It means ‘Bittersweet Island’ and was created in his last years.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/paul_klee/Landscape-with-Yellow-Birds.jpg" alt="Landscape with Yellow Birds">
+							  <div class="content_image">
+							  	<h4>Landscape with Yellow Birds</h4>
+							  	<br>
+							  	<span>One of his most important works during the Bauhaus period, Landscape with Yellow Birds is noted for its bright colors and its underlying themes. In 1995 experimental filmmaker, Kostas Sfikas created a film on Klee’s works and it was titled “Paul Klee’s Prophetic Bird of Sorrows” after this painting.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/paul_klee/Struck-From-The-List.jpg" alt="Struck From The List">
+							  <div class="content_image">
+							  	<h4>Struck From The List</h4>
+							  	<br>
+							  	<span>After Klee’s house was searched by the Gestapo and he was fired from his job at the Dusseldorf Academy for being a Jew, he created this famous self-portrait.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/cubist/paul_klee/Twittering-Machine.jpg" alt="Twittering Machine">
+							  <div class="content_image">
+							  	<h4>Twittering Machine</h4>
+							  	<br>
+							  	<span>Dubbed as ‘degenerate art’ by Adolf Hitler in 1933, this piece of art can now often be seen in children’s bedroom. There are various interpretations of Twittering Machine with art critics perceiving it as a nightmarish lure for the viewer to a depiction of the helplessness of the artist to a triumph of nature over mechanical pursuits. Among the most famous of Klee’s works, the painting is “one of the best-known treasures at the Museum of Modern Art” in New York.</span>
+							  </div>
+							</div>
+							<div id="indicators">
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+							</div>
+						</div>
+						<!--Slideshow HTML ends-->
+						<!--JavaScript for Slideshow-->
+						<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							    var i;
+							    var slides = document.getElementsByClassName("mySlides");
+							    var dots = document.getElementsByClassName("dot");
+							    for (i = 0; i < slides.length; i++) {
+							       slides[i].style.display = "none";  
+							    }
+							    slideIndex++;
+							    if (slideIndex > slides.length) {slideIndex = 1}    
+							    for (i = 0; i < dots.length; i++) {
+							        dots[i].className = dots[i].className.replace("active", "");
+							    }
+							    slides[slideIndex-1].style.display = "block";  
+							    dots[slideIndex-1].className += " active";
+							    setTimeout(showSlides, 5000); // Change image every 2 seconds
+							}
+						</script>
+						<!--JavaScript for Slideshow ends-->
+						
+					</section>
+				</div>
+				<!--Image Gallery Modal =-->
+				<div id="artworks" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+					    	<span class="close">&times;</span>
+					      	<h2>GALLERY</h2>
+					    </div>
+					    <div class="modal-body">
+					      	<ul>
+								<li>
+									<a href="images/cubist/paul_klee/Ad-Parnassum.jpg" title="Ad Parnassum"><img
+									src="images/cubist/paul_klee/Ad-Parnassum.jpg" width="100" height="75" alt="Ad Parnassum" sec-content=" In Greek mythology, Mount Parnassus was the abode of goddesses who inspired artists and Klee’s Ad Parnassum has been an inspiration for many modern artists. Considered his masterpiece, the painting highlights the skills with color of the master of color. It is the best example of his command over the pointillist style and it also showcases his technical ability.
+
+ "></a>
+								</li>
+								<li>
+									<a href="images/cubist/paul_klee/Angelus-Novus.jpg" title="Angelus Novus"><img
+									src="images/cubist/paul_klee/Angelus-Novus.jpg" width="100" height="75" alt="Angelus Novus" sec-content="The central character in this famous painting is interpreted as the ‘Angel of History’. The name and the concept of the angel have inspired many artists and musicians over the years.  ">
+									</a>
+								</li>
+								
+								<li>
+									<a href="images/cubist/paul_klee/Death-and-Fire.jpg" title="Death and Fire"><img
+									src="images/cubist/paul_klee/Death-and-Fire.jpg" width="100" height="75" alt="Death and Fire" sec-content="Death and Fire was painted in the year of Klee’s death. In this painting, he paints his own grimacing death mask without compassion with a skull in the center and the German word for death, ‘Tod’, appearing in the face." ></a>
+								</li>
+								<li>
+									<a href="images/cubist/paul_klee/Fish-Magic.jpg" title="Fish Magic"><img
+									src="images/cubist/paul_klee/Fish-Magic.jpg" width="100" height="75" alt="Fish Magic" sec-content="In this extraordinary painting, Klee creates a magical realm where all forms of life intermingle, the aquatic, the celestial, and the earthly. Fish Magic is often cited by his supporters as the best example of his works in which his two divergent gifts, his intellect and his imagination, come together.">
+									</a>
+								</li>
+								<li>
+									<a href="images/cubist/paul_klee/Flower-Myth.jpg" title="Flower Myth"><img
+									src="images/cubist/paul_klee/Flower-Myth.jpg" width="100" height="75" alt="Flower Myth" sec-content="One of the most well-known paintings from the early part of Klee’s career, Flower Myth is a beautiful three-dimensional work which is a great example of creating a painting in mixed media."></a>
+								</li>
+								<li>
+									<a href="images/cubist/paul_klee/Insula-Dulcamara.jpg" title="Insula Dulcamara"><img
+									src="images/cubist/paul_klee/Insula-Dulcamara.jpg" width="100" height="75" alt="Insula Dulcamara" sec-content="The largest painting created by Klee, Insula Dulcamara has symbols and signs which create a dream like affect. It means ‘Bittersweet Island’ and was created in his last years."></a>
+								</li>
+								<li>
+									<a href="images/cubist/paul_klee/Landscape-with-Yellow-Birds.jpg" title="Landscape with Yellow Birds"><img
+									src="images/cubist/paul_klee/Landscape-with-Yellow-Birds.jpg" width="100" height="75" alt="Landscape with Yellow Birds" sec-content="One of his most important works during the Bauhaus period, Landscape with Yellow Birds is noted for its bright colors and its underlying themes. In 1995 experimental filmmaker, Kostas Sfikas created a film on Klee’s works and it was titled “Paul Klee’s Prophetic Bird of Sorrows” after this painting."></a>
+								</li>
+								<li>
+									<a href="images/cubist/paul_klee/Struck-From-The-List.jpg" title="Struck From The List"><img
+									src="images/cubist/paul_klee/Struck-From-The-List.jpg" width="100" height="75" alt="Struck From The Liste" sec-content="After Klee’s house was searched by the Gestapo and he was fired from his job at the Dusseldorf Academy for being a Jew, he created this famous self-portrait."></a>
+								</li>
+							</ul>
+							<figure>
+								<img src="images/cubist/paul_klee/Ad-Parnassum.jpg" alt="Ad Parnassum">
+								<figcaption>Ad Parnassum</figcaption>
+							</figure>
+							<span id="painting_info">
+							In Greek mythology, Mount Parnassus was the abode of goddesses who inspired artists and Klee’s Ad Parnassum has been an inspiration for many modern artists. Considered his masterpiece, the painting highlights the skills with color of the master of color. It is the best example of his command over the pointillist style and it also showcases his technical ability.
+							</span>
+					    </div>
+					    <div class="modal-footer">
+					      	<h3>PAUL KLEE</h3>
+					    </div>
+					</div>
+				</div>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById('artworks');
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("artworks_open");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					    modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					    modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					    if (event.target == modal) {
+					        modal.style.display = "none";
+					    }
+					}
+				</script>
+				
+				<!--SideBar-->
+				<div class="side_content">
+					<ul>
+						<li><a href="https://10mosttoday.com/10-most-famous-paintings-in-the-world/" target="_blank"><strong>Top 5 Paintings</strong></a></li>
+						<li><strong>Top 5 Painters</strong></li>
+						<div id="small-only">
+							<br>
+							<ol>
+								<li><a href="leonardo_da_vinci.html">Leonardo Da Vinci</a></li>
+								<li><a href="rembrandt.html">Rembrandt</a></li>
+								<li><a href="michelangelo.html">Michelangelo</a></li>
+								<li><a href="pablo_picasso.html">Pablo Picasso</a></li>
+								<li><a href="raphael.html">Raphael</a></li>
+							</ol>
+						</div>
+					</ul>
+					<div id="top_artist_list">
+						<div>
+							<a href="leonardo_da_vinci.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/leonardo_da_vinci/portrait.jpg" alt="leonardo_da_vinci">
+									<span>
+										<strong>Leonardo Da Vinci</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>
+							<a href="rembrandt.html">
+								<div class="horizontal_card">
+									<img src="images/baroque/rembrandt/portrait.jpg" alt="rembrandt">
+									<span>
+										<strong>Rembrandt</strong>
+										<br>
+										Dutch
+										<br>
+										Realist Painter
+									</span>
+								</div>
+							</a>
+							<a href="michelangelo.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/michelangelo/portrait.jpg" alt="michelangelo">
+									<span>
+										<strong>Michelangelo</strong>
+										<br>
+										French
+										<br>
+										Impressionist Painter
+									</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="pablo_picasso.html">
+								<div class="horizontal_card">
+									<img src="images/cubist/pablo_picasso/portrait.jpg" alt="pablo_picasso">
+									<span>
+										<strong>Pablo Picasso</strong>
+										<br>
+										Spanish
+										<br>
+										Cubist Painter
+									</span>
+								</div>
+							</a>
+							<a href="raphael.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/raphael/portrait.jpg" alt="raphael">
+									<span>
+										<strong>Raphael</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!--Sidebar Ends-->
+			</main>
+			<!--Footer Section-->
+			<footer style="background-color: #311B92;">
+				<a href="index.html">Home</a> | <a href="abstract_painters.html">Abstract Painters</a> | <a href="baroque_painters.html">Baroque Painters</a> | <a href="cubist_painters.html">Cubist Painters</a> | <a href="realist_painters.html">Realist Painters</a> | <a href="renaissance_painters.html">Renaissance Painters</a>
+				<br><br>
+				Copyright 2018 by Artistry World, May 2018, <a href="mailto:gilber.njq@gmail.com"><u>gilber.njq@gmail.com</u></a>
+			</footer>
+			<!--Footer Section ends-->
+		</div>
+	</body>
+</html>

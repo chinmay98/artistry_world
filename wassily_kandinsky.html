@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Wassily Kandinsky</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Reference to CSS and fonts-->
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+	    <!--Reference to JQuery Library-->
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <script>
+		$(document).ready(function(){
+		    //JavaScript for Image Gallery
+		    $('#artworks a').click(function(){
+		        var galleryHref = $(this).attr('href');
+		        var galleryAlt = $(this).attr('title');
+		        var gallerynfo = $(this).children('img').attr('sec-content');
+		        $('figure').css('display','none');
+		        $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		        $('figcaption').html(galleryAlt);
+		        $('figure').fadeToggle(1000);
+		        $('#painting_info').html(gallerynfo);
+		        return false;
+		      });
+		});
+</script>
+
+	</head>
+	<body>
+	   <div id="wrapper">
+			<header>
+				<!--Top Header(Logo and site name)-->
+				<div id="top_header">
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+					<h1>ARTISTRY WORLD</h1>
+				</div>
+	            <!--Top Header Ends-->
+	            <!--Painter Name-->
+	           
+             	<div class="mySlides2 fade">
+             		<div  class="slideshow2">
+             			<img src="images/abstract/wassily_kandinsky/portrait.jpg" alt="portrait">
+	             		<div class="slide_content">
+	             			<h1>Wassily Kandinsky</h1>
+	             			<blockquote>"The artist must train not only his eye but also his soul."</blockquote>
+	             		</div>
+             		</div>
+             	</div>
+	          
+	            <!--Painter name-->
+	           
+				<!--Sticky Navigation Bar-->
+	            <div id="artist_nav">
+				    <ul>
+		                <li><a href="#overview">Overview</a></li>
+		                <li><a href="#career">Career</a></li>
+		                <li><a href="#legacy">Legacy</a></li>
+		                <li><a href="#onview">On View</a></li>
+		                <li id="desktop_only"><a id="artworks_open">Artworks</a></li>
+		                <li id="tablet_only"><a href="#artworks_mobile">Artworks</a></li>
+	            	</ul>
+	            </div>
+	            <!--Navigation Bar Ends-->
+	           
+			</header>
+			 <!--JavaScript for Navigation Bar-->
+            <script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("artist_nav");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<!--JavaScript for Navigation Bar Ends-->
+			<main>
+				<!--Content Section-->
+				<div id="content_artist">
+					<!--Overview-->
+				    <section class="artist_section" id="overview">
+						<dl>
+							<dt>Overview</dt>
+		                    <dd>
+		                    	<p><strong>Wassily Kandinsky</strong>
+									 (23 April 1775 – 19 December 1851), known as J. M. W. Turner and contemporarily as William Turner, was an English Romantic painter, printmaker ) (16 December [O.S. 4 December] 1866 – 13 December 1944) was a Russian painter and art theorist.
+
+									 He is credited with painting one of the first recognised purely abstract works.[1] Born in Moscow, Kandinsky spent his childhood in Odessa, where he graduated at Grekov Odessa Art school. He enrolled at the University of Moscow, studying law and economics. Successful in his profession—he was offered a professorship (chair of Roman Law) at the University of Dorpat—Kandinsky began painting studies (life-drawing, sketching and anatomy) at the age of 30.
+		                    	</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Career-->
+		            <section class="artist_section" id="career">
+						<dl>
+		                    <dt>Career</dt>
+		                    <dd>
+		                    	<ul>
+		                    	   <li>In 1896, he gave up on law and travelled to Munich to make a career out of art. He enrolled at the Munich Academy of Arts. However, much of what he learned was self-directed.<br></li>
+		                    	   
+		                    	   <li>At the beginning of the 19th century, he emerged as a theorist and a painter. Though his earlier works were based on conventional themes and art forms, much of his later work portrayed intense relationship between music and color.<br></li> 
+		                    	   
+		                           <li>From 1906 to 1908, he travelled to Europe engaging himself in paintings and exploring various exhibitions. It was during this time that he came out with his famous work, ‘The Blue Mountain’ which explicitly described a scenic view of nature through colors.<br></li>
+		                           
+		                           <li>In 1909, he founded the Munich New Artist’s Association and served as its president. However, his radical thoughts did not go down well with the other conventional artists and led to the disbanding of the group in 1911.<br></li>
+		                           
+		                           <li>Meanwhile, he released the treatise, ‘On the Spiritual in Art’ in the Blue Rider Calendar in which he promoted abstract art and the autonomous use of colors rather than them being employed to provide visual description of objects and other forms.<br></li>
+		                           
+		                           <li>In 1921, architect Walter Gropius, founder of the Bauhaus of Weimar, invited him to visit Germany which he duly did. The following year, he conducted painting classes for beginners as well as trained professionals, teaching them his color theory with new elements of form psychology.<br></li>
+		                           
+		                           <li>‘Composition VIII’ released in 1923 is one of the foremost works of the Weimar period. Two years later, he released yet another significant work, ’Yellow-Red-Blue’ wherein he described a stage of ‘cold romanticism’.<br></li>
+		                          
+		                          <li>Between 1936 and 1939, he painted two last major compositions - ‘Composition IX’ and ‘Composition X’. While the former has an impression of an embryo in the womb with highly powerful and contrasted diagonals, the latter employs small squares of colours and coloured bands.</li>
+		                        </ul>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Legacy-->
+		            <section class="artist_section" id="legacy">
+						<dl>
+		                    <dt>Legacy</dt>
+		                    <dd>
+		                    	<p>Little of the work Kandinsky produced in Russia has survived, although many of the paintings he created in Germany are still extant.</p>
+		                    	<p>The New York auction houses continue to do him proud today—in recent years, his artwork has sold for well over $20 million.</p>
+		                    	<p>Kandinsky believed that each time period puts its own indelible stamp on artistic expression; his vivid interpretations of color through musical and spiritual sensibilities certainly altered the artistic landscape at the start of the 20th century going forward, precipitating the modern age.</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--On View-->
+		            <section class="artist_section" id="onview">
+						<dl>
+		                    <dt>On View</dt>
+		                    <dd>
+		                        <ul>
+		                        	<li>Art Institute of Chicago, Chicago</li>
+		                        	<li>Museum of Fine Arts, Houston</li>
+		                        	<li>Museum of Modern Art, New Yorrk City</li>
+		                        	<li>San Francisco museum of Modern Art, San Francisco</li>
+		                        	<li>The Phillips Collection, Washington D.C.</li>
+		                        	<li>Lenbachhaus, Munich</li>
+		                        	<li>Kunsthaus Zurich, Zurich</li>
+		                        	<li>National Museum of Modern Art, Paris</li>
+		                        	<li>Tretyakov Gallery, Moscow</li>
+		                        	<li>Kunsthalle Hamburg, Hamburg</li>
+		                        	<li>Ohara Museum of Art, Kurashikl(Japan)</li>
+		                        	<li>Virginia Museum of Fine Arts, Richmond</li>
+		                        	<li>Kunstsammlung Nordrhein-Westfalen, Germany</li>
+		                        	<li>Ca' Pesaro, Venice</li>
+		                        </ul>
+		                    </dd>
+		                </dl>     
+					</section>
+					<section class="artist_section" id="artworks_mobile">
+						<h2>ArtWorks</h2>
+						<br>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							  <img src="images/abstract/wassily_kandinsky/Black-Lines.jpg" alt="Black Lines">
+							  <div class="content_image">
+							  	<h4>Black Lines</h4>
+							  	<br>
+							  	<span>
+							  		 The period from 1910 to 1914 is considered the peak of the artistic achievement of Wassily Kandinsky and this painting is a fine example of his art at the time. It is one of the first of the artist’s truly abstract paintings. Kandinsky’s paintings just before the First Word War have been called “apocalyptic landscapes” and in this work he uses forceful black lines over vibrant colors to create what he called “dissonance”, to suggest destructiveness.
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/wassily_kandinsky/Composition-VII.jpg" alt="Composition VII">
+							  <div class="content_image">
+							  	<h4>Composition VII</h4>
+							  	<br>
+							  	<span>Composition VII is believed to allude to the apocalyptic themes of Deluge, Last Judgement, Resurrection and Paradise. A swirling hurricane of colors and shapes, it was considered by Kandinsky to be the most complex piece he ever painted and it is the most famous painting by the artist.
+							  	</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/wassily_kandinsky/Composition-X.jpg" alt="Composition X">
+							  <div class="content_image">
+							  	<h4>Composition X</h4>
+							  	<br>
+							  	<span>Music, being abstract in nature, was an inherent part of the art of Wassily Kandinsky. He named some of his spontaneous works as “improvisations” and elaborate ones as “compositions”. This painting is the last in his lifelong series of Compositions. It uses a black background to enhance the visual impact of the brightly colored forms in the foreground. Composition X is the most famous painting of the last phase of Kandinsky’s career when he aimed to create a spiritual resonance in the viewer and the artist.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/wassily_kandinsky/Composition-VIII.jpg" alt="Composition VIII">
+							  <div class="content_image">
+							  	<h4>Composition VIII</h4>
+							  	<br>
+							  	<span>This painting is a synthesis of elements from Suprematism, Constructivism and the Bauhaus school; and illustrates Kandinsky’s command over modern art of the time. Composition VIII with its rational geometric order is the polar opposite to the previous and more famed work in the series Composition VII. It is one of the most renowned works of the Composition series as well as Kandinsky’s Bauhaus period.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/wassily_kandinsky/Farbstudie-Quadrate.jpg" alt="Farbstudie Quadrate">
+							  <div class="content_image">
+							  	<h4>Farbstudie Quadrate</h4>
+							  	<br>
+							  	<span>
+								Kandinsky was inspired by color and believed he could convey emotion through it without use of figures. He explored the emotional and expressionistic qualities of colors in many paintings. Also known simply as Concentric Circles, this painting is one of his most famous color studies and perhaps his most recognizable artwork. It plots out color combinations within concentric circular patterns arranged in an all over grid format. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/wassily_kandinsky/First-abstract-watercolor.jpg" alt="First Abstract Watercolor">
+							  <div class="content_image">
+							  	<h4>First Abstract Watercolor</h4>
+							  	<br>
+							  	<span>Wassily Kandinsky is most known for being a pioneer in non-figurative painting and for moving art away from the representational traditions of Western European art. This painting is an untitled work by Kandinsky which is now famous as the First Abstract Watercolor. It is credited by some to be the first purely abstract painting and it is definitely one of the firsts. In it, Kandinsky, for the first time, completely moved away from representational traditions and towards pure abstraction.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/wassily_kandinsky/On-White-II.jpg" alt="On White II">
+							  <div class="content_image">
+							  	<h4>On White II</h4>
+							  	<br>
+							  	<span>Considered a milestone for 20th century Modern Art, this painting portrays different geometric forms in a magnificent color scheme. The painting is said to represent the opportunities of life with the color black used to represent death and how all those opportunities can be taken away. The white may also express peace while black may be used to portray nothingness.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/wassily_kandinsky/Several-Circles.jpg" alt="Several Circles">
+							  <div class="content_image">
+							  	<h4>Several Circles</h4>
+							  	<br>
+							  	<span>Kandinsky created numerous artworks on geometric forms and according to him, “the circle is the synthesis of the greatest oppositions. It combines the concentric and the eccentric in a single form and in equilibrium. Of the three primary forms, it points most clearly to the fourth dimension.” This cosmic painting with overlapping circles and harmonious colors is the culmination of his efforts to capture the importance of the Circle.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/wassily_kandinsky/The-Blue-Rider.jpg" alt="The Blue Rider">
+							  <div class="content_image">
+							  	<h4>The Blue Rider</h4>
+							  	<br>
+							  	<span>This painting is from Kandinsky’s pre-abstract period. It shows a speeding horse rushing through a rocky meadow possibly carrying a second figure, perhaps a child. Kandinsky shows the rider through colors rather than specific details. These techniques of making the user participate in creating the painting through imagination and using color for representation would later be used by Kandinsky in his abstract works.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/wassily_kandinsky/Yellow-Red-Blue.jpg" alt="Yellow Red Blue">
+							  <div class="content_image">
+							  	<h4>Yellow Red Blue</h4>
+							  	<br>
+							  	<span>Yellow-Red-Blue, painted by Kandinsky during his time at Bauhaus, can be seen as a symphony he created by merging his style with Bauhaus techniques and suprematist ideas. It can be divided into two parts with geometric shapes and bright colors on the left and abstract shapes and dark colors on the right.
+							  	</span>
+							  </div>
+							</div>
+							<div id="indicators">
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+							</div>
+						</div>
+						<!--Slideshow HTML ends-->
+						<!--JavaScript for Slideshow-->
+						<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							    var i;
+							    var slides = document.getElementsByClassName("mySlides");
+							    var dots = document.getElementsByClassName("dot");
+							    for (i = 0; i < slides.length; i++) {
+							       slides[i].style.display = "none";  
+							    }
+							    slideIndex++;
+							    if (slideIndex > slides.length) {slideIndex = 1}    
+							    for (i = 0; i < dots.length; i++) {
+							        dots[i].className = dots[i].className.replace("active", "");
+							    }
+							    slides[slideIndex-1].style.display = "block";  
+							    dots[slideIndex-1].className += " active";
+							    setTimeout(showSlides, 5000); // Change image every 2 seconds
+							}
+						</script>
+						<!--JavaScript for Slideshow ends-->
+						
+					</section>
+				</div>
+				<!--Image Gallery Modal =-->
+				<div id="artworks" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+					    	<span class="close">&times;</span>
+					      	<h2>GALLERY</h2>
+					    </div>
+					    <div class="modal-body">
+					      	<ul>
+								<li>
+									<a href="images/abstract/wassily_kandinsky/Black-Lines.jpg" title="Black Lines"><img
+									src="images/abstract/wassily_kandinsky/Black-Lines.jpg" width="100" height="75" alt="Black Lines" sec-content="The period from 1910 to 1914 is considered the peak of the artistic achievement of Wassily Kandinsky and this painting is a fine example of his art at the time. It is one of the first of the artist’s truly abstract paintings. Kandinsky’s paintings just before the First Word War have been called “apocalyptic landscapes” and in this work he uses forceful black lines over vibrant colors to create what he called “dissonance”, to suggest destructiveness."></a>
+								</li>
+								<li>
+									<a href="images/abstract/wassily_kandinsky/Composition-VII.jpg" title="Composition VII"><img
+									src="images/abstract/wassily_kandinsky/Composition-VII.jpg" width="100" height="75" alt="Composition VII" sec-content="Composition VII is believed to allude to the apocalyptic themes of Deluge, Last Judgement, Resurrection and Paradise. A swirling hurricane of colors and shapes, it was considered by Kandinsky to be the most complex piece he ever painted and it is the most famous painting by the artist."></a>
+								</li>
+								<li>
+									<a href="images/abstract/wassily_kandinsky/Composition-X.jpg" title="Composition X"><img
+									src="images/abstract/wassily_kandinsky/Composition-X.jpg" width="100" height="75" alt="Composition X" sec-content="Music, being abstract in nature, was an inherent part of the art of Wassily Kandinsky. He named some of his spontaneous works as “improvisations” and elaborate ones as “compositions”. This painting is the last in his lifelong series of Compositions. It uses a black background to enhance the visual impact of the brightly colored forms in the foreground. Composition X is the most famous painting of the last phase of Kandinsky’s career when he aimed to create a spiritual resonance in the viewer and the artist."></a>
+								</li>
+								
+								<li>
+									<a href="images/abstract/wassily_kandinsky/Composition-VIII.jpg" title="Composition VIII"><img
+									src="images/abstract/wassily_kandinsky/Composition-VIII.jpg" width="100" height="75" alt="Composition VIII" sec-content="This painting is a synthesis of elements from Suprematism, Constructivism and the Bauhaus school; and illustrates Kandinsky’s command over modern art of the time. Composition VIII with its rational geometric order is the polar opposite to the previous and more famed work in the series Composition VII. It is one of the most renowned works of the Composition series as well as Kandinsky’s Bauhaus period."></a>
+								</li>
+								<li>
+									<a href="images/abstract/wassily_kandinsky/Farbstudie-Quadrate.jpg" title="Farbstudie Quadrate"><img
+									src="images/abstract/wassily_kandinsky/Farbstudie-Quadrate.jpg" width="100" height="75" alt="Farbstudie Quadrate" sec-content="Kandinsky was inspired by color and believed he could convey emotion through it without use of figures. He explored the emotional and expressionistic qualities of colors in many paintings. Also known simply as Concentric Circles, this painting is one of his most famous color studies and perhaps his most recognizable artwork. It plots out color combinations within concentric circular patterns arranged in an all over grid format. "></a>
+								</li>
+								
+								<li>
+									<a href="images/abstract/wassily_kandinsky/First-abstract-watercolor.jpg" title="The-Burning of the Houses of Lords and Commons"><img
+									src="images/abstract/wassily_kandinsky/First-abstract-watercolor.jpg" width="100" height="75" alt="First Abstract Watercolor" sec-content="Wassily Kandinsky is most known for being a pioneer in non-figurative painting and for moving art away from the representational traditions of Western European art. This painting is an untitled work by Kandinsky which is now famous as the First Abstract Watercolor. It is credited by some to be the first purely abstract painting and it is definitely one of the firsts. In it, Kandinsky, for the first time, completely moved away from representational traditions and towards pure abstraction."></a>
+								</li>
+								<li>
+									<a href="images/abstract/wassily_kandinsky/On-White-II.jpg" title="On White II"><img
+									src="images/abstract/wassily_kandinsky/On-White-II.jpg" width="100" height="75" alt="On White II" sec-content="Considered a milestone for 20th century Modern Art, this painting portrays different geometric forms in a magnificent color scheme. The painting is said to represent the opportunities of life with the color black used to represent death and how all those opportunities can be taken away. The white may also express peace while black may be used to portray nothingness."></a>
+								</li>
+								<li>
+									<a href="images/abstract/wassily_kandinsky/Several-Circles.jpg" title="Several Circles"><img
+									src="images/abstract/wassily_kandinsky/Several-Circles.jpg" width="100" height="75" alt="Several Circles" sec-content="Kandinsky created numerous artworks on geometric forms and according to him, “the circle is the synthesis of the greatest oppositions. It combines the concentric and the eccentric in a single form and in equilibrium. Of the three primary forms, it points most clearly to the fourth dimension.” This cosmic painting with overlapping circles and harmonious colors is the culmination of his efforts to capture the importance of the Circle."></a>
+								</li>
+							</ul>
+							<figure>
+								<img src="images/abstract/wassily_kandinsky/Black-Lines.jpg" alt="Black Lines">
+								<figcaption>Black Lines</figcaption>
+							</figure>
+							<span id="painting_info">
+								The period from 1910 to 1914 is considered the peak of the artistic achievement of Wassily Kandinsky and this painting is a fine example of his art at the time. It is one of the first of the artist’s truly abstract paintings. Kandinsky’s paintings just before the First Word War have been called “apocalyptic landscapes” and in this work he uses forceful black lines over vibrant colors to create what he called “dissonance”, to suggest destructiveness.
+							</span>
+					    </div>
+					    <div class="modal-footer">
+					      	<h3>WASSILY KANDINSKY</h3>
+					    </div>
+					</div>
+				</div>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById('artworks');
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("artworks_open");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					    modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					    modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					    if (event.target == modal) {
+					        modal.style.display = "none";
+					    }
+					}
+				</script>
+				
+				<!--SideBar-->
+				<div class="side_content">
+					<ul>
+						<li><a href="https://10mosttoday.com/10-most-famous-paintings-in-the-world/" target="_blank"><strong>Top 5 Paintings</strong></a></li>
+						<li><strong>Top 5 Painters</strong></li>
+						<div id="small-only">
+							<br>
+							<ol>
+								<li><a href="leonardo_da_vinci.html">Leonardo Da Vinci</a></li>
+								<li><a href="rembrandt.html">Rembrandt</a></li>
+								<li><a href="michelangelo.html">Michelangelo</a></li>
+								<li><a href="pablo_picasso.html">Pablo Picasso</a></li>
+								<li><a href="raphael.html">Raphael</a></li>
+							</ol>
+						</div>
+					</ul>
+					<div id="top_artist_list">
+						<div>
+							<a href="leonardo_da_vinci.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/leonardo_da_vinci/portrait.jpg" alt="leonardo_da_vinci">
+									<span>
+										<strong>Leonardo Da Vinci</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>
+							<a href="rembrandt.html">
+								<div class="horizontal_card">
+									<img src="images/baroque/rembrandt/portrait.jpg" alt="rembrandt">
+									<span>
+										<strong>Rembrandt</strong>
+										<br>
+										Dutch
+										<br>
+										Realist Painter
+									</span>
+								</div>
+							</a>
+							<a href="michelangelo.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/michelangelo/portrait.jpg" alt="michelangelo">
+									<span>
+										<strong>Michelangelo</strong>
+										<br>
+										French
+										<br>
+										Impressionist Painter
+									</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="pablo_picasso.html">
+								<div class="horizontal_card">
+									<img src="images/cubist/pablo_picasso/portrait.jpg" alt="pablo_picasso">
+									<span>
+										<strong>Pablo Picasso</strong>
+										<br>
+										Spanish
+										<br>
+										Cubist Painter
+									</span>
+								</div>
+							</a>
+							<a href="raphael.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/raphael/portrait.jpg" alt="raphael">
+									<span>
+										<strong>Raphael</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!--Sidebar Ends-->
+			</main>
+			<!--Footer Section-->
+			<footer style="background-color: #311B92;">
+				<a href="index.html">Home</a> | <a href="abstract_painters.html">Abstract Painters</a> | <a href="baroque_painters.html">Baroque Painters</a> | <a href="cubist_painters.html">Cubist Painters</a> | <a href="realist_painters.html">Realist Painters</a> | <a href="renaissance_painters.html">Renaissance Painters</a>
+				Copyright 2018 by Artistry World, May 2018, <a href="mailto:gilber.njq@gmail.com"><u>gilber.njq@gmail.com</u></a>
+			</footer>
+			<!--Footer Section ends-->
+		</div>
+	</body>
+</html>

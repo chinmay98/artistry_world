@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Paul Cezanne</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Reference to CSS and fonts-->
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+	    <!--Reference to JQuery Library-->
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <script>
+		$(document).ready(function(){
+		    //JavaScript for Image Gallery
+		    $('#artworks a').click(function(){
+		        var galleryHref = $(this).attr('href');
+		        var galleryAlt = $(this).attr('title');
+		        var gallerynfo = $(this).children('img').attr('sec-content');
+		        $('figure').css('display','none');
+		        $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		        $('figcaption').html(galleryAlt);
+		        $('figure').fadeToggle(1000);
+		        $('#painting_info').html(gallerynfo);
+		        return false;
+		      });
+		});
+</script>
+
+	</head>
+	<body>
+	   <div id="wrapper">
+			<header>
+				<!--Top Header(Logo and site name)-->
+				<div id="top_header">
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+					<h1>ARTISTRY WORLD</h1>
+				</div>
+	            <!--Top Header Ends-->
+	            <!--Painter Name-->
+	           
+             	<div class="mySlides2 fade">
+             		<div  class="slideshow2">
+             			<img src="images/abstract/paul_cezanne/portrait.jpg" alt="portrait">
+	             		<div class="slide_content">
+	             			<h1>Paul Cézanne</h1>
+	             			<blockquote>" Painting from nature is not copying the object; it is realizing one's sensations."</blockquote>
+	             		</div>
+             		</div>
+             	</div>
+	          
+	            <!--Painter name-->
+	           
+				<!--Sticky Navigation Bar-->
+	            <div id="artist_nav">
+				    <ul>
+		                <li><a href="#overview">Overview</a></li>
+		                <li><a href="#career">Career</a></li>
+		                <li><a href="#legacy">Legacy</a></li>
+		                <li><a href="#onview">On View</a></li>
+		                <li id="desktop_only"><a id="artworks_open">Artworks</a></li>
+		                <li id="tablet_only"><a href="#artworks_mobile">Artworks</a></li>
+	            	</ul>
+	            </div>
+	            <!--Navigation Bar Ends-->
+	           
+			</header>
+			 <!--JavaScript for Navigation Bar-->
+            <script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("artist_nav");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<!--JavaScript for Navigation Bar Ends-->
+			<main>
+				<!--Content Section-->
+				<div id="content_artist">
+					<!--Overview-->
+				    <section class="artist_section" id="overview">
+						<dl>
+							<dt>Overview</dt>
+		                    <dd>
+		                    	<p><strong>Paul Cézanne</strong> (19 January 1839 – 22 October 1906) was a French artist and Post-Impressionist painter whose work laid the foundations of the transition from the 19th-century conception of artistic endeavor to a new and radically different   world of art in the 20th century. Cézanne's often repetitive, exploratory brushstrokes are highly characteristic and clearly recognizable. He used planes of colour and small brushstrokes that build up to form complex fields. The paintings convey Cézanne's intense study of his subjects.</p>
+		                    	<p>Cézanne is said to have formed the bridge between late 19th-century Impressionism and the early 20th century's new line of artistic enquiry, Cubism. Both Matisse and Picasso are said to have remarked that Cézanne "is the father of us all."</p>
+		                    	<p>His father was a successful banker, who wished him to pursue a ‘respectable’ career. To please his father, between 1859 and 1861, Paul attended the law school of the University of Aix. However, in 1861, he became disillusioned with this orthodox career path and dropped out to pursue his life’s passion – art.</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Career-->
+		            <section class="artist_section" id="career">
+						<dl>
+		                    <dt>Career</dt>
+		                    <dd>
+		                    	<ul>
+		                    	   <li>Cézanne's early work is often concerned with the figure in the landscape and includes many paintings of groups of large, heavy figures in the landscape, imaginatively painted.<br></li>
+		                    	   <br>
+		                    	   <li> Later in his career, he became more interested in working from direct observation and gradually developed a light, airy painting style. Nevertheless, in Cézanne's mature work there is the development of a solidified, almost architectural style of painting.<br></li> 
+		                    	   <br>
+		                           <li>His works in the period, 1861-1870 are characterized by dark colours and the heavy use of black. They differ sharply from his earlier watercolours and sketches at the École Spéciale de dessin at Aix-en-Provence in 1859, and their violence of expression is in contrast to his subsequent works.<br></li>
+		                           <br>
+		                           <li>In 1866–67, inspired by the example of Courbet, Cézanne painted a series of paintings with a palette knife. He later called these works, mostly portraits, une couillarde.<br></li>
+		                           <br>
+		                           <li>Among the couillarde paintings are a series of portraits of his uncle Dominique in which Cézanne achieved a style that "was as unified as Impressionism was fragmentary".[34] Later works of the dark period include several erotic or violent subjects, such as Women Dressing (c. 1867), The Rape (c. 1867), and The Murder (c. 1867–68), which depicts a man stabbing a woman who is held down by his female accomplice.<br></li>
+		                           <br>
+		                           <li>After the start of the Franco-Prussian War in July 1870, Cézanne and his mistress, Marie-Hortense Fiquet, left Paris for L'Estaque, near Marseilles, where he changed themes to predominantly landscapes.<br></li>
+		                           <br>
+		                           <li>For a long time afterwards, Cézanne described himself as Pissarro's pupil, referring to him as "God the Father", as well as saying: "We all stem from Pissarro.” Under Pissarro's influence Cézanne began to abandon dark colours and his canvases grew much brighter.<br></li>
+		                           <br>
+		                           <li>From 1890 until his death he was beset by troubling events and he withdrew further into his painting, spending long periods as a virtual recluse. His paintings became well-known and sought after and he was the object of respect from a new generation of painters.<br></li>
+		                        </ul>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Legacy-->
+		            <section class="artist_section" id="legacy">
+						<dl>
+		                    <dt>Legacy</dt>
+		                    <dd>
+		                    	<p> Cézanne's works were rejected numerous times by the official Salon in Paris and ridiculed by art critics when exhibited with the Impressionists. Yet during his lifetime Cézanne was considered a master by younger artists who visited his studio in Aix.</p>
+		                    	<p>After Cézanne died in 1906, his paintings were exhibited in a large museum-like retrospective in Paris, September 1907. The 1907 Cézanne retrospective at the Salon d'Automne greatly affected the direction that the avant-garde in Paris took, lending credence to his position as one of the most influential artists of the 19th century and to the advent of Cubism.</p>
+		                    	<p>Inspired by Cézanne, two of the younger artists wrote:</p>
+		                        <p>Cézanne is one of the greatest of those who changed the course of art history . . . From him we have learned that to alter the coloring of an object is to alter its structure. His work proves without doubt that painting is not—or not any longer—the art of imitating an object by lines and colors, but of giving plastic [solid, but alterable] form to our nature. (Albert Gleizes and Jean Metzinger in Du "Cubisme", 1912)</p>
+		                        <p>Cézanne's explorations of geometric simplification and optical phenomena inspired Picasso, Braque, Metzinger, Gleizes, Gris and others to experiment with ever more complex multiple views of the same subject and eventually to the fracturing of form. Cézanne thus sparked one of the most revolutionary areas of artistic enquiry of the 20th century, one which was to affect profoundly the development of modern art. Picasso referred to Cézanne as "the father of us all" and claimed him as "my one and only master!" Other painters such as Edgar Degas, Pierre-Auguste Renoir, Paul Gauguin, Kasimir Malevich, Georges Rouault, Paul Klee, and Henri Matisseacknowledged Cézanne's genius.</p>
+		                        <p>A prize in his memory, called the Cézanne medal, is granted by the city of Aix en Provence, in France for special achievement in the arts.</p>
+		                        <p>Cézanne's painting The Boy in the Red Vest was stolen from a Swiss museum in 2008. It was recovered in a Serbian police raid in 2012.</p>
+		                        <p>The 2016 film Cézanne and I explores the friendship between the artist and Émile Zola.</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--On View-->
+		            <section class="artist_section" id="onview">
+						<dl>
+		                    <dt>On View</dt>
+		                    <dd>
+		                        <ul>
+		                            <li>National Gallery of Art East Building, Washington D.C</li>
+		                            <li>Museum of Modern Art, New York City</li>
+		                            <li>Musee d’Orsay, Paris</li>
+		                            <li>Art Institute of Chicago, Chicago</li>
+		                            <li>Barnes Foundation, Philadelphia</li>
+		                            <li>Los Angeles County Museum, Los Angeles</li>	
+		                            <li>Museum of Fine Arts, Boston</li>
+		                            <li>The phillips Collection, Washington DC</li>
+		                            <li>Metropolitan museum of Art, New York City</li>
+		                        </ul>
+		                    </dd>
+		                </dl>     
+					</section>
+					<section class="artist_section" id="artworks_mobile">
+						<h2>ArtWorks</h2>
+						<br>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							  <img src="images/abstract/paul_cezanne/Jug-Curtain-and-Fruit-Bowl-Rideau-Cruchon-et-Compotier.jpg" alt="Jug Curtain and Fruit Bowl">
+							  <div class="content_image">
+							  	<h4>Jug Curtain and Fruit Bowl</h4>
+							  	<br>
+							  	<span>
+							  		Curtain, Jug and Fruit Bowl is a painting produced in 1894 by French artist Paul Cézanne.
+									One of the most famous masterpieces of Post-Impressionism, and has been considered to be the most expensive still life ever sold.
+									The painting was sold for $ 60. 5 million at Sotheby’s New York in 1999, but later it was resold.
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/paul_cezanne/LEstaque-Melting-Snow.jpg" alt="Melting Snow">
+							  <div class="content_image">
+							  	<h4>Melting Snow</h4>
+							  	<br>
+							  	<span>L'Estaque, Melting Snow is a c. 1871 oil-on-canvas painting by French Post-Impressionist artist Paul Cézanne. It shows a view from the outskirts of L'Estaque, a small village near Marseille, with a steep hillside covered in a drift of melting snow underneath a foreboding dark grey sky. Filled with intense emotion, the painting has been described as similar to the work of Vincent van Gogh the following decade, and a painting more formally similar to early 20th-century than contemporaneous art.
+							  	</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/paul_cezanne/Mont-Sainte-Victoire.jpg" alt="Mont Sainte Victoire">
+							  <div class="content_image">
+							  	<h4>Mont Sainte Victoire</h4>
+							  	<br>
+							  	<span>The Montagne Sainte-Victoire is a mountain in southern France, overlooking Aix-en-Provence. It became the subject of a number of Cézanne's paintings. n these paintings, Cézanne often sketched the railway bridge on the Aix-Marseille line at the Arc River Valley in the center on the right side of the picture. Especially, in Mont Sainte-Victoire and the Viaduct of the Arc River Valley (1885–1887), he depicted a moving train on this bridge.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/paul_cezanne/Portrait-of-Madame-Cezanne-with-Loosened-Hair.jpg" alt="Portrait of Madame Cezanne with Loosened Hair">
+							  <div class="content_image">
+							  	<h4>Portrait of Madame Cezanne with Loosened Hair</h4>
+							  	<br>
+							  	<span>The work is oppressively flat and rectangular. While it lacks pictorial depth, it is highly symmetrical, showing a near full-face and centered body view, with a number of playful deviations, including the lean of her head and torso and the thick vertical line in the background which is positioned slightly to the left.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/paul_cezanne/Pyramid-of-Skulls.jpg" alt="Pyramid of Skulls">
+							  <div class="content_image">
+							  	<h4>Pyramid of Skulls</h4>
+							  	<br>
+							  	<span>
+								Paul Cézanne. Pyramid of Skulls, oil on canvas, c. 1901, 37 cm × 45.5 cm. Private collection.
+								Pyramid of Skulls is a c. 1901 oil painting by French Post-Impressionist artist Paul Cézanne. It depicts four human skulls stacked in a pyramidal configuration. Painted in a pale light against a dark background, Pyramid of Skulls is exceptional in the artist's oeuvre, for "in no other painting did Cézanne place his objects so close to the viewer."</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/paul_cezanne/the_murder.jpg" alt="The Murder">
+							  <div class="content_image">
+							  	<h4>The Murder</h4>
+							  	<br>
+							  	<span>Two figures have thrown a woman to the ground and prepare to murder her and dump her body into the storm-tossed sea. Intensifying the explosive force of the figures' actions is the brutality of the handling, with its turbulent swatches of paint and somber colouring. It is the only work of Cezanne's early subject pictures to be found in a public collection in the United Kingdom and the only painting by the artist which has received an Art Fund grant.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/paul_cezanne/The-Basket-of-Apples.jpg" alt="The Basket of Apples">
+							  <div class="content_image">
+							  	<h4>The Basket of Apples</h4>
+							  	<br>
+							  	<span>The piece is often noted for its disjointed perspective. It has been described as a balanced composition due to its unbalanced parts; the tilted bottle, the incline of the basket, and the foreshortened lines of the cookies mesh with the lines of the tablecloth. Additionally, the right side of the tabletop is not in the same plane as the left side, as if the image simultaneously reflects two viewpoints. Paintings such as this helped form a bridge between Impressionism and Cubism.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/paul_cezanne/The-Bathers.jpg" alt="The Bathers">
+							  <div class="content_image">
+							  	<h4>The Bathers</h4>
+							  	<br>
+							  	<span>The Bathers is an oil painting by French artist Paul Cézannefirst exhibited in 1906. The painting is the largest of a series of "Bather" paintings by Cézanne; the others are in the Museum of Modern Art in New York City, National Gallery, London, the Barnes Foundation, Philadelphia, and the Art Institute of Chicago. Considered a masterpiece of modern art and Cezanne’s finest work, this painting paved the way for future artists to break away from tradition, thus providing a bridge between </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/paul_cezanne/The-Boy-in-the-Red-Vest.jpg" alt="The Boy in the Red Vest">
+							  <div class="content_image">
+							  	<h4>The Boy in the Red Vest</h4>
+							  	<br>
+							  	<span>Cézanne painted four oil portraits of this Italian boy in the red vest, all in different poses. The colors of the painting are rich, dense, and festive. The composition is organized with three main diagonals: the angle of the boy's tilted back and head, the angle of the deep-green curtain behind the boy, and the long angle of the seat and table rising from the lower left. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/abstract/paul_cezanne/The-Card-Players.jpg" alt="The Card Players">
+							  <div class="content_image">
+							  	<h4>The Card Players</h4>
+							  	<br>
+							  	<span>Painting depicts Provençal peasants immersed in their pipes and playing cards. The subjects, all male, are displayed as studious within their card playing, eyes cast downward, intent on the game at hand. Cézanne adapted a motif from 17th-century Dutch and French genre painting which often depicted card games with rowdy, drunken gamblers in taverns, replacing them instead with stone-faced tradesmen in a more simplified setting.</span>
+							  </div>
+							</div>
+
+							<div id="indicators">
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span> 
+
+							</div>
+						</div>
+						<!--Slideshow HTML ends-->
+						<!--JavaScript for Slideshow-->
+						<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							    var i;
+							    var slides = document.getElementsByClassName("mySlides");
+							    var dots = document.getElementsByClassName("dot");
+							    for (i = 0; i < slides.length; i++) {
+							       slides[i].style.display = "none";  
+							    }
+							    slideIndex++;
+							    if (slideIndex > slides.length) {slideIndex = 1}    
+							    for (i = 0; i < dots.length; i++) {
+							        dots[i].className = dots[i].className.replace("active", "");
+							    }
+							    slides[slideIndex-1].style.display = "block";  
+							    dots[slideIndex-1].className += " active";
+							    setTimeout(showSlides, 5000); // Change image every 2 seconds
+							}
+						</script>
+						<!--JavaScript for Slideshow ends-->
+						
+					</section>
+				</div>
+				<!--Image Gallery Modal =-->
+				<div id="artworks" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+					    	<span class="close">&times;</span>
+					      	<h2>GALLERY</h2>
+					    </div>
+					    <div class="modal-body">
+					      	<ul>
+								<li>
+									<a href="images/abstract/paul_cezanne/Jug-Curtain-and-Fruit-Bowl-Rideau-Cruchon-et-Compotier.jpg" title="Jug Curtain and Fruit Bowl"><img
+									src="images/abstract/paul_cezanne/Jug-Curtain-and-Fruit-Bowl-Rideau-Cruchon-et-Compotier.jpg" width="100" height="75" alt="Jug Curtain and Fruit Bowl" sec-content="Curtain, Jug and Fruit Bowl is a painting produced in 1894 by French artist Paul Cézanne. One of the most famous masterpieces of Post-Impressionism, and has been considered to be the most expensive still life ever sold. The painting was sold for $ 60. 5 million at Sotheby’s New York in 1999, but later it was resold."></a>
+								</li>
+								<li>
+									<a href="images/abstract/paul_cezanne/LEstaque-Melting-Snow.jpg" title="Melting Snow"><img
+									src="images/abstract/paul_cezanne/LEstaque-Melting-Snow.jpg" width="100" height="75" alt="Melting Snow" sec-content="L'Estaque, Melting Snow is a c. 1871 oil-on-canvas painting by French Post-Impressionist artist Paul Cézanne. It shows a view from the outskirts of L'Estaque, a small village near Marseille, with a steep hillside covered in a drift of melting snow underneath a foreboding dark grey sky. Filled with intense emotion, the painting has been described as similar to the work of Vincent van Gogh the following decade, and a painting more formally similar to early 20th-century than contemporaneous art."></a>
+								</li>
+								<li>
+									<a href="images/abstract/paul_cezanne/Mont-Sainte-Victoire.jpg" title="Mont Sainte Victoire"><img
+									src="images/abstract/paul_cezanne/Mont-Sainte-Victoire.jpg" width="100" height="75" alt="Mont Sainte Victoire" sec-content="The Montagne Sainte-Victoire is a mountain in southern France, overlooking Aix-en-Provence. It became the subject of a number of Cézanne's paintings. n these paintings, Cézanne often sketched the railway bridge on the Aix-Marseille line at the Arc River Valley in the center on the right side of the picture. Especially, in Mont Sainte-Victoire and the Viaduct of the Arc River Valley (1885–1887), he depicted a moving train on this bridge."></a>
+								</li>
+								
+								<li>
+									<a href="images/abstract/paul_cezanne/Pyramid-of-Skulls.jpg" title="Pyramid of Skulls"><img
+									src="images/abstract/paul_cezanne/Pyramid-of-Skulls.jpg" width="100" height="75" alt="Pyramid of Skulls" sec-content="Paul Cézanne. Pyramid of Skulls, oil on canvas, c. 1901, 37 cm × 45.5 cm. Private collection.
+									Pyramid of Skulls is a c. 1901 oil painting by French Post-Impressionist artist Paul Cézanne. It depicts four human skulls stacked in a pyramidal configuration. Painted in a pale light against a dark background, Pyramid of Skulls is exceptional in the artist's oeuvre, for in no other painting did Cézanne place his objects so close to the viewer."></a>
+								</li>
+								<li>
+									<a href="images/abstract/paul_cezanne/the_murder.jpg" title="The Murder"><img
+									src="images/abstract/paul_cezanne/the_murder.jpg" width="100" height="75" alt="The Murder" sec-content="Two figures have thrown a woman to the ground and prepare to murder her and dump her body into the storm-tossed sea. Intensifying the explosive force of the figures' actions is the brutality of the handling, with its turbulent swatches of paint and somber colouring. It is the only work of Cezanne's early subject pictures to be found in a public collection in the United Kingdom and the only painting by the artist which has received an Art Fund grant."></a>
+								</li>
+								
+								<li>
+									<a href="images/abstract/paul_cezanne/The-Bathers.jpg" title="The Bathers"><img
+									src="images/abstract/paul_cezanne/The-Bathers.jpg" width="100" height="75" alt="The Bathers" sec-content="The Bathers is an oil painting by French artist Paul Cézannefirst exhibited in 1906. The painting is the largest of a series of Bather paintings by Cézanne; the others are in the Museum of Modern Art in New York City, National Gallery, London, the Barnes Foundation, Philadelphia, and the Art Institute of Chicago. Considered a masterpiece of modern art and Cezanne’s finest work, this painting paved the way for future artists to break away from tradition, thus providing a bridge between "></a>
+								</li>
+								<li>
+									<a href="images/abstract/paul_cezanne/The-Boy-in-the-Red-Vest.jpg" title="The Boy in the Red Vest"><img
+									src="images/abstract/paul_cezanne/The-Boy-in-the-Red-Vest.jpg" width="100" height="75" alt="The Boy in the Red Vest" sec-content="Cézanne painted four oil portraits of this Italian boy in the red vest, all in different poses. The colors of the painting are rich, dense, and festive. The composition is organized with three main diagonals: the angle of the boy's tilted back and head, the angle of the deep-green curtain behind the boy, and the long angle of the seat and table rising from the lower left."></a>
+								</li>
+								<li>
+									<a href="images/abstract/paul_cezanne/The-Card-Players.jpg" title="The Card Players"><img
+									src="images/abstract/paul_cezanne/The-Card-Players.jpg" width="100" height="75" alt="The Card PLayers" sec-content="Painting depicts Provençal peasants immersed in their pipes and playing cards. The subjects, all male, are displayed as studious within their card playing, eyes cast downward, intent on the game at hand. Cézanne adapted a motif from 17th-century Dutch and French genre painting which often depicted card games with rowdy, drunken gamblers in taverns, replacing them instead with stone-faced tradesmen in a more simplified setting."></a>
+								</li>
+							</ul>
+							<figure>
+								<img src="images/abstract/paul_cezanne/Jug-Curtain-and-Fruit-Bowl-Rideau-Cruchon-et-Compotier.jpg" alt="Jug Curtain and Fruit Bowl">
+								<figcaption>Jug Curtain and Fruit Bowl</figcaption>
+							</figure>
+							<span id="painting_info">
+								Curtain, Jug and Fruit Bowl is a painting produced in 1894 by French artist Paul Cézanne. One of the most famous masterpieces of Post-Impressionism, and has been considered to be the most expensive still life ever sold. The painting was sold for $ 60. 5 million at Sotheby’s New York in 1999, but later it was resold.
+							</span>
+					    </div>
+					    <div class="modal-footer">
+					      	<h3>PAUL CEZANNE</h3>
+					    </div>
+					</div>
+				</div>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById('artworks');
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("artworks_open");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					    modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					    modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					    if (event.target == modal) {
+					        modal.style.display = "none";
+					    }
+					}
+				</script>
+				
+				<!--SideBar-->
+				<div class="side_content">
+					<ul>
+						<li><a href="https://10mosttoday.com/10-most-famous-paintings-in-the-world/" target="_blank"><strong>Top 5 Paintings</strong></a></li>
+						<li><strong>Top 5 Painters</strong></li>
+						<div id="small-only">
+							<br>
+							<ol>
+								<li><a href="leonardo_da_vinci.html">Leonardo Da Vinci</a></li>
+								<li><a href="rembrandt.html">Rembrandt</a></li>
+								<li><a href="michelangelo.html">Michelangelo</a></li>
+								<li><a href="pablo_picasso.html">Pablo Picasso</a></li>
+								<li><a href="raphael.html">Raphael</a></li>
+							</ol>
+						</div>
+					</ul>
+					<div id="top_artist_list">
+						<div>
+							<a href="leonardo_da_vinci.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/leonardo_da_vinci/portrait.jpg" alt="leonardo_da_vinci">
+									<span>
+										<strong>Leonardo Da Vinci</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>
+							<a href="rembrandt.html">
+								<div class="horizontal_card">
+									<img src="images/baroque/rembrandt/portrait.jpg" alt="rembrandt">
+									<span>
+										<strong>Rembrandt</strong>
+										<br>
+										Dutch
+										<br>
+										Realist Painter
+									</span>
+								</div>
+							</a>
+							<a href="michelangelo.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/michelangelo/portrait.jpg" alt="michelangelo">
+									<span>
+										<strong>Michelangelo</strong>
+										<br>
+										French
+										<br>
+										Impressionist Painter
+									</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="pablo_picasso.html">
+								<div class="horizontal_card">
+									<img src="images/cubist/pablo_picasso/portrait.jpg" alt="pablo_picasso">
+									<span>
+										<strong>Pablo Picasso</strong>
+										<br>
+										Spanish
+										<br>
+										Cubist Painter
+									</span>
+								</div>
+							</a>
+							<a href="raphael.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/raphael/portrait.jpg" alt="raphael">
+									<span>
+										<strong>Raphael</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!--Sidebar Ends-->
+			</main>
+			<!--Footer Section-->
+			<footer style="background-color: #311B92;">
+				<a href="index.html">Home</a> | <a href="abstract_painters.html">Abstract Painters</a> | <a href="baroque_painters.html">Baroque Painters</a> | <a href="cubist_painters.html">Cubist Painters</a> | <a href="realist_painters.html">Realist Painters</a> | <a href="renaissance_painters.html">Renaissance Painters</a>
+				<br><br>
+				Copyright 2018 by Artistry World, May 2018, <a href="mailto:gilber.njq@gmail.com"><u>gilber.njq@gmail.com</u></a>
+			</footer>
+			<!--Footer Section ends-->
+		</div>
+	</body>
+</html>

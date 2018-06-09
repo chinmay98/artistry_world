@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Nicolas Poussin</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Reference to CSS and fonts-->
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+	    <!--Reference to JQuery Library-->
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <script>
+		$(document).ready(function(){
+		    //JavaScript for Image Gallery
+		    $('#artworks a').click(function(){
+		        var galleryHref = $(this).attr('href');
+		        var galleryAlt = $(this).attr('title');
+		        var gallerynfo = $(this).children('img').attr('sec-content');
+		        $('figure').css('display','none');
+		        $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		        $('figcaption').html(galleryAlt);
+		        $('figure').fadeToggle(1000);
+		        $('#painting_info').html(gallerynfo);
+		        return false;
+		      });
+		});
+</script>
+
+	</head>
+	<body>
+	   <div id="wrapper">
+			<header>
+				<!--Top Header(Logo and site name)-->
+				<div id="top_header">
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+					<h1>ARTISTRY WORLD</h1>
+				</div>
+	            <!--Top Header Ends-->
+	            <!--Painter Name-->
+	           
+             	<div class="mySlides2 fade">
+             		<div  class="slideshow2">
+             			<img src="images/baroque/Nicolas_poussin/portrait.jpg" alt="portrait">
+	             		<div class="slide_content">
+	             			<h1>Nicolas Poussin</h1>
+	             			<blockquote>“The colours in the paintings are like the illusions that convince the eyes, similar to the beauty of the verses in poetry.”</blockquote>
+	             		</div>
+             		</div>
+             	</div>
+	          
+	            <!--Painter name-->
+	           
+				<!--Sticky Navigation Bar-->
+	            <div id="artist_nav">
+				    <ul>
+		                <li><a href="#overview">Overview</a></li>
+		                <li><a href="#career">Career</a></li>
+		                <li><a href="#legacy">Legacy</a></li>
+		                <li><a href="#onview">On View</a></li>
+		                <li id="desktop_only"><a id="artworks_open">Artworks</a></li>
+		                <li id="tablet_only"><a href="#artworks_mobile">Artworks</a></li>
+	            	</ul>
+	            </div>
+	            <!--Navigation Bar Ends-->
+	           
+			</header>
+			 <!--JavaScript for Navigation Bar-->
+            <script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("artist_nav");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<!--JavaScript for Navigation Bar Ends-->
+			<main>
+				<!--Content Section-->
+				<div id="content_artist">
+					<!--Overview-->
+				    <section class="artist_section" id="overview">
+						<dl>
+							<dt>Overview</dt>
+		                    <dd>
+		                    	<p><strong>Nicolas Poussin</strong>(June 1594 – 19 November 1665) was the leading painter of the classical French Baroque style, although he spent most of his working life in Rome. Most of his works were on religious and mythological subjects painted for a small group of Italian and French collectors. He returned to Paris for a brief period to serve as First Painter to the King under Louis XIII and Cardinal Richelieu, but soon returned to Rome and resumed his more traditional themes. In his later years he gave growing prominence to the landscapes in his pictures. His work is characterized by clarity, logic, and order, and favors line over color. Until the 20th century he remained a major inspiration for such classically-oriented artists as Jacques-Louis David, Jean-Auguste-Dominique Ingres and Paul Cézanne.</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Career-->
+		            <section class="artist_section" id="career">
+						<dl>
+		                    <dt>Career</dt>
+		                    <dd>
+		                    	<ul>
+		                    	   <li>Marion had introduced Poussin to Marcello Sacchietti, a wealthy patron. In the mid 1620s, he also came in contact with Cardinal Francesco Barberini and his secretary Cassiano del Pozzo. All these individuals became patrons of Poussin.<br></li>
+		                    	   
+		                    	   <li>In 1628, he created his early masterwork ‘The Death of Germanicus’ by utilizing Barberini’s commission.<br></li> 
+		                    	   
+		                           <li>Pozzo helped him in securing a commission for ‘The Martyrdom of St. Erasmus’ (1629), an altarpiece for St. Peter’s.<br></li>
+		                           
+		                           <li>During the late 1620s and 1630s, he formulated his own style based on his studies of Titian’s ‘Bacchanals’ and the paintings of Domenichino and Guido Reni.<br></li>
+		                           
+		                           <li>In 1635–36 he got a major commission from Cardinal Richelieu, first minister to Louis XIII for a series of bacchanals to decorate the cardinal’s estate.<br></li>
+		                           
+		                           <li>In the late 1630s, he created the ‘Seven Sacraments’ for Philip IV, the king of Spain. In 1638 he created one of his masterpieces, ‘The Israelites Gathering the Manna’ for Paul Fréart de Chantelou, his greatest patron.<br></li>
+		                           
+		                           <li>In the later years of 1640, he produced some of his greatest figure paintings like ‘Eliezer and Rebecca’, ‘The Holy Family on the Steps’, and ‘The Judgment of Solomon’.<br></li>
+		                          
+		                           <li>Poussin went back to Rome in 1642 and six years later, finished the second series of ‘The Seven Sacraments’.</li>
+		                           
+		                           <li>In 1649–50 he also painted two self-portraits in which he was dressed like the ancients.<br></li>
+		                        </ul>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Legacy-->
+		            <section class="artist_section" id="legacy">
+						<dl>
+		                    <dt>Legacy</dt>
+		                    <dd>
+		                    	<p>In the years following Poussin's death, his style had a strong influence on French art, thanks in particular to Charles LeBrun, who had studied briefly with Poussin in Rome, and who, like Poussin, became a court painter for the King and later the head of the French Academy in Rome. Poussin's work had an important influence on the 17th-century paintings of Jacques Stella and Sébastien Bourdon, the Italian painter Pier Francesco Mola, and the Dutch painter Gerard de Lairesse.</p>
+		                    	<p>During the French Revolution, Poussin's style was championed by Jacques-Louis David in part because the leaders of the Revolution looked to replace the frivolity of French court art with Republican severity and civic-mindedness. The influence of Poussin was evident in paintings such as Brutus and Death of Marat. Benjamin West, an American painter of the 18th century who worked in Britain, found inspiration for his canvas of The Death of General Wolfe in Poussin's The Death of Germanicus.</p>
+		                    	<p>Cézanne appreciated Poussin's version of classicism. "Imagine how Poussin entirely redid nature, that is the classicism that I mean. What I don't accept is the classicism that limits you. I want that a visit to a master will help me find myself. Every time I leave a Poussin, I know better who I am."</p>
+		                    	<p>In the 20th century, some art critics suggested that the analytic Cubist experiments of Pablo Picasso and Georges Braque were also founded upon Poussin's example. In 1963 Picasso based a series of paintings on Poussin's The Rape of the Sabine Women. André Derain, Jean Hélion, Balthus, and Jean Hugo were other modern artists who acknowledged the influence of Poussin. </p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--On View-->
+		            <section class="artist_section" id="onview">
+						<dl>
+		                    <dt>On View</dt>
+		                    <dd>
+		                        <ul>
+		                        	<li>Dulwich Picture Gallery, London</li>
+		                        	<li>The Louvre, Paris</li>
+		                        	<li>J. Paul Getty Museum, Los Angeles</li>
+		                        	<li>Rijksmuseum, Amsterdam</li>
+		                        	<li>National Gallery of Art East Building, Washington D.C.</li>
+		                        	<li>Chateau de Chantilly, Chantilly(France)</li>
+		                        	<li>Harvard Art Museums, Cambridge</li>
+		                        	<li>Hermitage Museum, Saint Petersburg</li>
+		                        	<li>Walker Art Gallery, Liverpool</li>
+		                        	<li>Kimbell Art Museum, Fort Worth</li>
+		                        	<li>Minneapolis Institute of Art, Minneapolis</li>
+		                        	<li>Gemaldegalerie Alte Meister, Dresden</li>
+		                        	<li>Detroit Institute of Arts, Detroit</li>
+		                        	<li>Wallance Collection, London</li>
+		                        	<li>Nelson-Atkins Museum, Kansas City</li>
+		                        	<li>Kunsthistorisches Museum, Vienna</li>
+		                        	<li>Museum of Fine Arts, Boston</li>
+		                        	<li>Israel Museum, Jerusalem</li>
+		                        	<li>Albertina, Vienna</li>
+		                        	<li>Museum of Fine Arts of Lyon</li>
+		                        	<li>Morgan Library and Museum, New York City</li>
+		                        	<li>Stadel Museum, Frankfurt</li>
+		                        	<li>National Gallery, London</li>
+		                        </ul>
+		                    </dd>
+		                </dl>     
+					</section>
+					<section class="artist_section" id="artworks_mobile">
+						<h2>ArtWorks</h2>
+						<br>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							  <img src="images/baroque/Nicolas_poussin/a-dance-to-the-music-of-time.jpg" alt="A Dance to the Music of Time">
+							  <div class="content_image">
+							  	<h4>A Dance to the Music of Time</h4>
+							  	<br>
+							  	<span>
+							  		Four figures, holding each other by the hand, dance in a circle, as Time plays a lyre on the right. The scene is set in the early morning, with Aurora, goddess of dawn, preceding the chariot of Apollo the sun-god in the sky behind; the Hours accompany him and he holds a ring representing the Zodiac.
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Nicolas_poussin/autumn.jpg" alt="Autumn"> 
+							  <div class="content_image">
+							  	<h4>Autumn</h4>
+							  	<br>
+							  	<span>The Four Seasons is the last set of four oil canvases painted by Poussin between the years of 1660 and 1664, for the son of the Cardinal Richelieu, Duc de Richelieu. They were created during Poussin’s last years of life, during which he suffered hand tremors, which made the execution of the paintings slow and painful, turning Poussin into a virtual recluse. 
+							  	</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Nicolas_poussin/Et-in-arcadia-ego.jpg" alt="Et in Arcadia Ego">
+							  <div class="content_image">
+							  	<h4>Et in Arcadia Ego</h4>
+							  	<br>
+							  	<span>It depicts a pastoral scene with idealized shepherds from classical antiquity clustering around an austere tomb. It is held in the Louvre, Paris.Poussin painted two versions of the subject under the same title; his earlier version, painted in 1627, is held at Chatsworth House. An earlier treatment of the theme was painted by Guercino circa 1618–22, also titled Et in Arcadia ego.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Nicolas_poussin/landscape-with-a-calm.jpg" alt="Landscape with a Calm">
+							  <div class="content_image">
+							  	<h4>Landscape with a Calm</h4>
+							  	<br>
+							  	<span>Landscape with a Calm does not illustrate a story but rather evokes a mood. The ordered composition and clear, golden light contribute to A Calm's utter tranquility, while glowing, gem-like colors and fluid paint strokes enliven this scene of benevolent nature.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Nicolas_poussin/Landscape-with-Polyphemus.jpg" alt="Landscape with Polyphemus">
+							  <div class="content_image">
+							  	<h4>Landscape with Polyphemus</h4>
+							  	<br>
+							  	<span>
+								The one-eyed Cyclope Polyphemus fell in love with the sea nymph Galatea, but she rejected him and Polyphemus withdrew to a high mountain to play out his sadness on his flute. Poussin presents love and music as the source of harmony in nature and human relations. Love has tamed the ferocious Cyclope, who has ceased to turn rocks to dust, to tear down trees and trample the corn, to sink ships. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Nicolas_poussin/landscape-with-diogenes.jpg" alt="Landscape with Diogenes">
+							  <div class="content_image">
+							  	<h4>Landscape with Diogenes</h4>
+							  	<br>
+							  	<span>It the well-known story of Diogenes, the humble philosopher, is depicted. Rejecting all worldly goods, he even throws away his last remaining possession, his drinking cup, when he sees a man drinking water from a stream by cupping his hands. The philosopher's final return to and communion with nature are expressed perfectly in the naturalistic landscape, and although there is a good deal of calculation in the placing of the tree silhouettes, it is the delicacy of each element and the subtle tonality of yellows and greens which dominate.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Nicolas_poussin/Landscape-with-the-Ashes-of-Phocion.jpg" alt="Landscape with the Ashes of Phocion">
+							  <div class="content_image">
+							  	<h4>Landscape with the Ashes of Phocion</h4>
+							  	<br>
+							  	<span>It is a picture about exile. Phocion, an Athenian general, was falsely condemned and executed, and his unburied corpse banished, and taken to the outskirts of Megara where it was burnt. At the very front his faithful widow gathers up his ashes. Her servant keeps look out. And the outcasts are placed directly below the mighty nucleus of temple-rock-cloud.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Nicolas_poussin/Self-portrait.jpg" alt="Self Portrait">
+							  <div class="content_image">
+							  	<h4>Self Portrait</h4>
+							  	<br>
+							  	<span>A founder of French Classicism, Nicolas Poussin drew his subjects from history, biblical stories, and Ovid’s Metamorphoses. Poussin moved to Rome early in his career where, inspired by Titian, he painted in a sensual and dramatic style rich in color. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/baroque/Nicolas_poussin/Spring-(The Earthly Paradise).jpg" alt="pring(The Earthly Paradise)">
+							  <div class="content_image">
+							  	<h4>Spring(The Earthly Paradise)</h4>
+							  	<br>
+							  	<span>The images in the paintings reflect a philosophical interpretation of the outside world, depicting the power and might of nature. As well as the four seasons, they also revolve through the four times of day: early morning, midday, evening, and moonlight. All four paintings (Spring, Summer, Autumn, Winter) currently reside in the Louvre Museum in Paris, where they enjoy their own room.</span>
+							  </div>
+							</div>
+
+							<div id="indicators">
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span> 
+
+							</div>
+						</div>
+						<!--Slideshow HTML ends-->
+						<!--JavaScript for Slideshow-->
+						<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							    var i;
+							    var slides = document.getElementsByClassName("mySlides");
+							    var dots = document.getElementsByClassName("dot");
+							    for (i = 0; i < slides.length; i++) {
+							       slides[i].style.display = "none";  
+							    }
+							    slideIndex++;
+							    if (slideIndex > slides.length) {slideIndex = 1}    
+							    for (i = 0; i < dots.length; i++) {
+							        dots[i].className = dots[i].className.replace("active", "");
+							    }
+							    slides[slideIndex-1].style.display = "block";  
+							    dots[slideIndex-1].className += " active";
+							    setTimeout(showSlides, 5000); // Change image every 2 seconds
+							}
+						</script>
+						<!--JavaScript for Slideshow ends-->
+						
+					</section>
+				</div>
+				<!--Image Gallery Modal =-->
+				<div id="artworks" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+					    	<span class="close">&times;</span>
+					      	<h2>GALLERY</h2>
+					    </div>
+					    <div class="modal-body">
+					      	<ul>
+								<li>
+									<a href="images/baroque/Nicolas_poussin/a-dance-to-the-music-of-time.jpg" title="a Dance to the Music of Time"><img
+									src="images/baroque/Nicolas_poussin/a-dance-to-the-music-of-time.jpg" width="100" height="75" alt="a Dance to the Music of Time" sec-content="Four figures, holding each other by the hand, dance in a circle, as Time plays a lyre on the right. The scene is set in the early morning, with Aurora, goddess of dawn, preceding the chariot of Apollo the sun-god in the sky behind; the Hours accompany him and he holds a ring representing the Zodiac."></a>
+								</li>
+								<li>
+									<a href="images/baroque/Nicolas_poussin/autumn.jpg" title="autumn"><img
+									src="images/baroque/Nicolas_poussin/autumn.jpg" width="100" height="75" alt="autumn" sec-content="The Four Seasons is the last set of four oil canvases painted by Poussin between the years of 1660 and 1664, for the son of the Cardinal Richelieu, Duc de Richelieu. They were created during Poussin’s last years of life, during which he suffered hand tremors, which made the execution of the paintings slow and painful, turning Poussin into a virtual recluse. "></a>
+								</li>
+								<li>
+									<a href="images/baroque/Nicolas_poussin/Et-in-arcadia-ego.jpg" title="Et in Arcadia Ego"><img
+									src="images/baroque/Nicolas_poussin/Et-in-arcadia-ego.jpg" width="100" height="75" alt="Et in Arcadia Ego" sec-content="It depicts a pastoral scene with idealized shepherds from classical antiquity clustering around an austere tomb. It is held in the Louvre, Paris. Poussin painted two versions of the subject under the same title; his earlier version, painted in 1627, is held at Chatsworth House. An earlier treatment of the theme was painted by Guercino circa 1618–22, also titled Et in Arcadia ego."></a>
+								</li>
+								
+								<li>
+									<a href="images/baroque/Nicolas_poussin/Landscape-with-Polyphemus.jpg" title="Landscape with Polyphemus"><img
+									src="images/baroque/Nicolas_poussin/Landscape-with-Polyphemus.jpg" width="100" height="75" alt="Landscape with Polyphemus" sec-content="Landscape with Polyphemus is a painting by the Italian baroque artist Artemisia Gentileschi. Executed in the 1620s, it hangs in the Detroit Institute of Arts.[1] The narrative is taken from the deuterocanonical Book of Judith, in which Judith seduces and then murders the general Holofernes. The precise moment depicted has taken place after the murder when her maidservant places the severed head in a bag, while Judith checks around her." ></a>
+								</li>
+								<li>
+									<a href="images/baroque/Nicolas_poussin/Landscape-with-the-Ashes-of-Phocion.jpg" title="Landscape with the Ashes of Phocion"><img
+									src="images/baroque/Nicolas_poussin/Landscape-with-the-Ashes-of-Phocion.jpg" width="100" height="75" alt="Landscape with the Ashes of Phocion" sec-content="TIt is a picture about exile. Phocion, an Athenian general, was falsely condemned and executed, and his unburied corpse banished, and taken to the outskirts of Megara where it was burnt. At the very front his faithful widow gathers up his ashes. Her servant keeps look out. And the outcasts are placed directly below the mighty nucleus of temple-rock-cloud."></a>
+								</li>
+								
+								<li>
+									<a href="images/baroque/Nicolas_poussin/landscape-with-diogenes.jpg" title="Landscape with Diogenes"><img
+									src="images/baroque/Nicolas_poussin/landscape-with-diogenes.jpg" width="100" height="75" alt="Landscape with Diogenes" sec-content="It the well-known story of Diogenes, the humble philosopher, is depicted. Rejecting all worldly goods, he even throws away his last remaining possession, his drinking cup, when he sees a man drinking water from a stream by cupping his hands. The philosopher's final return to and communion with nature are expressed perfectly in the naturalistic landscape, and although there is a good deal of calculation in the placing of the tree silhouettes, it is the delicacy of each element and the subtle tonality of yellows and greens which dominate."></a>
+								</li>
+								<li>
+									<a href="images/baroque/Nicolas_poussin/Self-portrait.jpg" title="Self Portrait"><img
+									src="images/baroque/Nicolas_poussin/Self-portrait.jpg" width="100" height="75" alt="Self Portrait" sec-content="A founder of French Classicism, Nicolas Poussin drew his subjects from history, biblical stories, and Ovid’s Metamorphoses. Poussin moved to Rome early in his career where, inspired by Titian, he painted in a sensual and dramatic style rich in color. "></a>
+								</li>
+								<li>
+									<a href="images/baroque/Nicolas_poussin/Spring-(The Earthly Paradise).jpg" title="Spring(The Earthly Paradise)"><img
+									src="images/baroque/Nicolas_poussin/Spring-(The Earthly Paradise).jpg" width="100" height="75" alt="Spring(The Earthly Paradise)" sec-content="The images in the paintings reflect a philosophical interpretation of the outside world, depicting the power and might of nature. As well as the four seasons, they also revolve through the four times of day: early morning, midday, evening, and moonlight. All four paintings (Spring, Summer, Autumn, Winter) currently reside in the Louvre Museum in Paris, where they enjoy their own room."></a>
+								</li>
+							</ul>
+							<figure>
+								<img src="images/baroque/Nicolas_poussin/a-dance-to-the-music-of-time.jpg" alt="A Dance to the Music of Time">
+								<figcaption>A Dance to the Music of Time</figcaption>
+							</figure>
+							<span id="painting_info">
+								The painting is interesting for a number of reasons: Many have speculated that Caravaggio used a mirror to paint, modelling himself posing as a-dance-to-the-music-of-time (note that the wine is held in the figure’s left hand). What’s more, upon restoration of the work, a tiny reflection of Caravaggio, paintbrush in hand, was also discovered on the wine carafe!
+							</span>
+					    </div>
+					    <div class="modal-footer">
+					      	<h3>NICOLAS POUSSIN</h3>
+					    </div>
+					</div>
+				</div>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById('artworks');
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("artworks_open");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					    modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					    modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					    if (event.target == modal) {
+					        modal.style.display = "none";
+					    }
+					}
+				</script>
+				
+				<!--SideBar-->
+				<div class="side_content">
+					<ul>
+						<li><a href="https://10mosttoday.com/10-most-famous-paintings-in-the-world/" target="_blank"><strong>Top 5 Paintings</strong></a></li>
+						<li><strong>Top 5 Painters</strong></li>
+						<div id="small-only">
+							<br>
+							<ol>
+								<li><a href="leonardo_da_vinci.html">Leonardo Da Vinci</a></li>
+								<li><a href="rembrandt.html">Rembrandt</a></li>
+								<li><a href="michelangelo.html">Michelangelo</a></li>
+								<li><a href="pablo_picasso.html">Pablo Picasso</a></li>
+								<li><a href="raphael.html">Raphael</a></li>
+							</ol>
+						</div>
+					</ul>
+					<div id="top_artist_list">
+						<div>
+							<a href="leonardo_da_vinci.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/leonardo_da_vinci/portrait.jpg" alt="leonardo_da_vinci">
+									<span>
+										<strong>Leonardo Da Vinci</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>
+							<a href="rembrandt.html">
+								<div class="horizontal_card">
+									<img src="images/baroque/rembrandt/portrait.jpg" alt="rembrandt">
+									<span>
+										<strong>Rembrandt</strong>
+										<br>
+										Dutch
+										<br>
+										Realist Painter
+									</span>
+								</div>
+							</a>
+							<a href="michelangelo.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/michelangelo/portrait.jpg" alt="michelangelo">
+									<span>
+										<strong>Michelangelo</strong>
+										<br>
+										French
+										<br>
+										Impressionist Painter
+									</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="pablo_picasso.html">
+								<div class="horizontal_card">
+									<img src="images/cubist/pablo_picasso/portrait.jpg" alt="pablo_picasso">
+									<span>
+										<strong>Pablo Picasso</strong>
+										<br>
+										Spanish
+										<br>
+										Cubist Painter
+									</span>
+								</div>
+							</a>
+							<a href="raphael.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/raphael/portrait.jpg" alt="raphael">
+									<span>
+										<strong>Raphael</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!--Sidebar Ends-->
+			</main>
+			<!--Footer Section-->
+			<footer style="background-color: #311B92;">
+				<a href="index.html">Home</a> | <a href="abstract_painters.html">Abstract Painters</a> | <a href="baroque_painters.html">Baroque Painters</a> | <a href="cubist_painters.html">Cubist Painters</a> | <a href="realist_painters.html">Realist Painters</a> | <a href="renaissance_painters.html">Renaissance Painters</a>
+				<br><br>
+				Copyright 2018 by Artistry World, May 2018, <a href="mailto:gilber.njq@gmail.com"><u>gilber.njq@gmail.com</u></a>
+			</footer>
+			<!--Footer Section ends-->
+		</div>
+	</body>
+</html>

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Michelangelo</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--Reference to CSS and fonts-->
+		<link rel="stylesheet" type="text/css" href="project.css">
+		<link href='https://fonts.googleapis.com/css?family=Knewave' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	    <link href='https://fonts.googleapis.com/css?family=Nosifer' rel='stylesheet'>
+	    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i" rel="stylesheet">
+	    <!--Reference to JQuery Library-->
+	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	    <script>
+		$(document).ready(function(){
+		    //JavaScript for Image Gallery
+		    $('#artworks a').click(function(){
+		        var galleryHref = $(this).attr('href');
+		        var galleryAlt = $(this).attr('title');
+		        var gallerynfo = $(this).children('img').attr('sec-content');
+		        $('figure').css('display','none');
+		        $('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		        $('figcaption').html(galleryAlt);
+		        $('figure').fadeToggle(1000);
+		        $('#painting_info').html(gallerynfo);
+		        return false;
+		      });
+		});
+</script>
+
+	</head>
+	<body>
+	   <div id="wrapper">
+			<header>
+				<!--Top Header(Logo and site name)-->
+				<div id="top_header">
+					<a href="index.html"><img src="images/logo.png" alt="logo" width="100"></a>
+					<h1>ARTISTRY WORLD</h1>
+				</div>
+	            <!--Top Header Ends-->
+	            <!--Painter Name-->
+	           
+             	<div class="mySlides2 fade">
+             		<div  class="slideshow2">
+             			<img src="images/Renaissance/michelangelo/portrait.jpg" alt="portrait">
+	             		<div class="slide_content">
+	             			<h1>Michelangelo</h1>
+	             			<blockquote>"The greatest danger for most of us is not that our aim is too high and we miss it, but that it is too low and we reach it."</blockquote>
+	             		</div>
+             		</div>
+             	</div>
+	          
+	            <!--Painter name-->
+	           
+				<!--Sticky Navigation Bar-->
+	            <div id="artist_nav">
+				    <ul>
+		                <li><a href="#overview">Overview</a></li>
+		                <li><a href="#career">Career</a></li>
+		                <li><a href="#onview">On View</a></li>
+		                <li id="desktop_only"><a id="artworks_open">Artworks</a></li>
+		                <li id="tablet_only"><a href="#artworks_mobile">Artworks</a></li>
+	            	</ul>
+	            </div>
+	            <!--Navigation Bar Ends-->
+	           
+			</header>
+			 <!--JavaScript for Navigation Bar-->
+            <script>
+				window.onscroll = function() {myFunction()};
+
+				var navbar = document.getElementById("artist_nav");
+				var sticky = navbar.offsetTop;
+
+				function myFunction() {
+				  if (window.pageYOffset >= sticky) {
+				    navbar.classList.add("sticky")
+				  } else {
+				    navbar.classList.remove("sticky");
+				  }
+				}
+			</script>
+			<!--JavaScript for Navigation Bar Ends-->
+			<main>
+				<!--Content Section-->
+				<div id="content_artist">
+					<!--Overview-->
+				    <section class="artist_section" id="overview">
+						<dl>
+							<dt>Overview</dt>
+		                    <dd>
+		                    	<p><strong>Michelangelo</strong> was an Italian sculptor, painter, architect and poet of the High Renaissance born in the Republic of Florence, who exerted an unparalleled influence on the development of Western art. Considered by some the greatest living artist during his lifetime, he has since been described as one of the greatest artists of all time. Despite making few forays beyond the arts, his artistic versatility was of such a high order that he is often considered a contender for the title of the archetypal Renaissance man, along with his rival, the fellow Florentine and client of the Medici, Leonardo da Vinci.</p>
+		                    </dd>
+		                </dl>
+		            </section>
+		            <!--Career-->
+		            <section class="artist_section" id="career">
+						<dl>
+		                    <dt>Career</dt>
+		                    <dd>
+		                    	<ul>
+		                    	   <li>Impressed by the quality of his design, Cardinal Raffaele Riario invited him to Rome and commissioned him to work on a statue of the Roman wine god Bacchus.<br></li>
+		                    	   
+		                    	   <li>In 1499, he returned to Florence again but this time as an art star. He was recognized as the most talented sculptor of Italy and was commissioned to carve a statue of ‘David’. He turned a huge piece of marble into a dominating figure which was placed on the gable of Florence Cathedral.<br></li> 
+		                    	   
+		                           <li>In 1508, Julius commissioned him to decorate the ceiling of Sistine Chapel, a project which took about four years to complete. After the ceiling was completed in 1512, Michelangelo continued to work on the tomb of Julius II for the next several decades.<br></li>
+		                           
+		                           <li>During this time, he also designed the Medici Chapel in Florence and the historical Laurentian Library at San Lorenzo's Church, Florence. In 1534 he finally settled in Rome and later on met Vittoria Colonna who became the subject and recipient of many of his more than 300 poems and sonnets.<br></li>
+		                           
+		                           <li>In 1546, he was appointed the chief architect of St. Peter’s Basilica, Rome, and devoted himself entirely to architecture and poetry during his later years.<br></li>
+		                        </ul>
+		                    </dd>
+		                </dl>
+		            </section>
+		            
+		            <!--On View-->
+		            <section class="artist_section" id="onview">
+						<dl>
+		                    <dt>On View</dt>
+		                    <dd>
+		                        <ul>
+		                        	<li>The Louvre, Paris</li>
+		                        	<li>Rijksmuseum, Amsterdam</li>
+		                        	<li>National Gallery, London</li>
+		                        	<li>British Museum, London</li>
+		                        	<li>Isabella Stewart Gardener Museum, Boston</li>
+		                        	<li>Kimbell Art Museum, Fort Worth</li>
+		                        	<li>Palazzo Vecchio, Florence</li>
+		                        	<li>Royal Collection Trust</li>
+		                        	<li>Uffizi Gallery, Florence</li>
+		                        </ul>
+		                    </dd>
+		                </dl>     
+					</section>
+					<section class="artist_section" id="artworks_mobile">
+						<h2>ArtWorks</h2>
+						<br>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							  <img src="images/Renaissance/michelangelo/Battle_of_cascina.jpg" alt="Battle of Cascina">
+							  <div class="content_image">
+							  	<h4>Battle of Cascina</h4>
+							  	<br>
+							  	<span>Michelangelo never completed the painting, but did produce a complete cartoon of the composition. The cartoon was copied by several artists, the most notable extant copy being by Michelangelo's pupil Sangallo. Some of Michelangelo's preparatory drawings also survive, along with prints of part of the scene by Marcantonio Raimondi.
+							  	</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/Renaissance/michelangelo/crucifixion_of_saint_peter.jpg" alt="Crucifixion of Saint Peter">
+							  <div class="content_image">
+							  	<h4>Crucifixion of Saint Peter</h4>
+							  	<br>
+							  	<span>The Crucifixion of Saint Peter (Italian: Crocifissione di san Pietro; 1601) is a work by Michelangelo Merisi da Caravaggio, painted for the Cerasi Chapel of Santa Maria del Popolo in Rome. Across the chapel is a second Caravaggio work depicting the Conversion of Saint Paul on the Road to Damascus (1601). On the altar between the two is an Assumption of the Virgin Mary by Annibale Carracci.   
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/Renaissance/michelangelo/Doni-Tondo.jpg" alt="Doni Tondo">
+							  <div class="content_image">
+							  	<h4>Doni Tondo</h4>
+							  	<br>
+							  	<span>During the early 1500s, Michelangelo was commissioned by Angelo Doni to paint a “Holy Family” as a present for his wife, Maddalena Strozzi. Michelangelo used the form of a tondo, or round frame, for the painting. Doni Tondo features the Christian Holy family (the child Jesus, Mary, and Saint Joseph) along with John the Baptist in the foreground and contains five ambiguous nude male figures in the background.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/Renaissance/michelangelo/Manchester_Madonna.jpg" alt="Manchester Madonna">
+							  <div class="content_image">
+							  	<h4>Manchester Madonna</h4>
+							  	<br>
+							  	<span>
+								 he Madonna and Child with St John and Angels (c. 1497), also known as The Manchester Madonna, is an unfinished painting attributed to Michelangelo in the National Gallery, London. It is one of three surviving panel paintings attributed to the artist and is dated to his first period in Rome. The painting's attribution to Michelangelo was in doubt for much of the 19th and 20th centuries, but now most scholars are in agreement.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/Renaissance/michelangelo/Staircase-of-the-Laurentian-Library.jpg" alt=">Staircase of the Laurentian Library">
+							  <div class="content_image">
+							  	<h4>Staircase of the Laurentian Library</h4>
+							  	<br>
+							  	<span>
+							  		In 1524, Michelangelo was commissioned by the Medici pope to design the library for the San Lorenzo’s Church in Florence, Italy. Michelangelo designed both the interior of the library itself and its vestibule. He pioneered the Mannerist style in his design of the library which became renowned for its architecture. The Laurentian Library is one of Michelangelo’s most important architectural achievements and his innovations and use of space in the library were revolutionary..
+								</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/Renaissance/michelangelo/The_Calling_of_Saint_Matthew.jpg" alt="The Calling of Saint Matthew">
+							  <div class="content_image">
+							  	<h4>The Calling of Saint Matthew</h4>
+							  	<br>
+							  	<span>The painting depicts the story from the Gospel of Matthew (Matthew 9:9): "Jesus saw a man named Matthew at his seat in the custom house, and said to him, "Follow me", and Matthew rose and followed Him." Caravaggio depicts Matthew the tax collector sitting at a table with four other men. Jesus Christ and Saint Peter have entered the room, and Jesus is pointing at Matthew. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/Renaissance/michelangelo/The_Martyrdom_of_Saint_Matthew.jpg" alt="The Martyrdom of Saint Matthew">
+							  <div class="content_image">
+							  	<h4>The Martyrdom of Saint Matthew</h4>
+							  	<br>
+							  	<span>The Martyrdom of Saint Matthew (Italian: Martirio di San Matteo; 1599–1600) is a painting by the Italian master Michelangelo Merisi da Caravaggio. It is located in the Contarelli Chapel of the church of the French congregation San Luigi dei Francesi in Rome, where it hangs opposite The Calling of Saint Matthew and beside the altarpiece The Inspiration of Saint Matthew, both by Caravaggio.</span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/Renaissance/michelangelo/The-Conversion-of-Saul.jpg" alt="The Conversion of Saul">
+							  <div class="content_image">
+							  	<h4>The Conversion of Saul</h4>
+							  	<br>
+							  	<span>The Conversion of Saul is a fresco painted by the Italian Renaissance master Michelangelo Buonarroti (c. 1542–1545). It is housed in the Cappella Paolina, Vatican Palace, in the Vatican City. The style is more mannerist than his earlier Sistine Chapel frescoes, and was not as well received by contemporaries. The next fresco he completed was The Crucifixion of St. Peter. </span>
+							  </div>
+							</div>
+							<div class="mySlides fade">
+							  <img src="images/Renaissance/michelangelo/The-Creation-of-Adam.jpg" alt="The Creation of Adam">
+							  <div class="content_image">
+							  	<h4>The Creation of Adam</h4>
+							  	<br>
+							  	<span>The work done by Michelangelo on the Sistine Chapel ceiling is a cornerstone of Renaissance art and The Creation of Adam is the most famous fresco panel of the masterpiece. The popularity of the painting is second only to Mona Lisa; and along with The Last Supper of Da Vinci, it is the most replicated religious painting of all time. The image of the near-touching hands of God and Adam has become iconic of humanity and has been imitated and parodied innumerable times.</span>
+							  </div>
+							</div>							
+							<div class="mySlides fade">
+							  <img src="images/Renaissance/michelangelo/The-Last-Judgement.jpg" alt="The Last Judgement">
+							  <div class="content_image">
+							  	<h4>The Last Judgement</h4>
+							  	<br>
+							  	<span> The Last Judgement is one of the most influential works in fresco in the history of Western art. Painted on the altar wall of the Sistine Chapel in Vatican City, it depicts the Second Coming of Christ (a future return of Jesus to earth) and the final and eternal judgment by God of all humanity. Jesus is shown in the center of the painting and is surrounded by prominent saints; while the Resurrection of the Dead and the Descent of the Damned into Hell is shown in the zone below. </span>
+							  </div>
+							</div>
+							<div id="indicators">
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+				     		    <span class="dot"></span>
+							</div>
+						</div>
+						<!--Slideshow HTML ends-->
+						<!--JavaScript for Slideshow-->
+						<script>
+							var slideIndex = 0;
+							showSlides();
+
+							function showSlides() {
+							    var i;
+							    var slides = document.getElementsByClassName("mySlides");
+							    var dots = document.getElementsByClassName("dot");
+							    for (i = 0; i < slides.length; i++) {
+							       slides[i].style.display = "none";  
+							    }
+							    slideIndex++;
+							    if (slideIndex > slides.length) {slideIndex = 1}    
+							    for (i = 0; i < dots.length; i++) {
+							        dots[i].className = dots[i].className.replace("active", "");
+							    }
+							    slides[slideIndex-1].style.display = "block";  
+							    dots[slideIndex-1].className += " active";
+							    setTimeout(showSlides, 5000); // Change image every 2 seconds
+							}
+						</script>
+						<!--JavaScript for Slideshow ends-->
+						
+					</section>
+				</div>
+				<!--Image Gallery Modal =-->
+				<div id="artworks" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+					    	<span class="close">&times;</span>
+					      	<h2>GALLERY</h2>
+					    </div>
+					    <div class="modal-body">
+					      	<ul>
+								<li>
+									<a href="images/Renaissance/michelangelo/Battle_of_cascina.jpg" title="Battle of Cascina"><img
+									src="images/Renaissance/michelangelo/Battle_of_cascina.jpg" width="100" height="75" alt="Battle of Cascina" sec-content=" Michelangelo never completed the painting, but did produce a complete cartoon of the composition. The cartoon was copied by several artists, the most notable extant copy being by Michelangelo's pupil Sangallo. Some of Michelangelo's preparatory drawings also survive, along with prints of part of the scene by Marcantonio Raimondi."></a>
+								</li>
+								<li>
+									<a href="images/Renaissance/michelangelo/crucifixion_of_saint_peter.jpg" title="Crucifixion of Saint Peter"><img
+									src="images/Renaissance/michelangelo/crucifixion_of_saint_peter.jpg" width="100" height="75" alt="Crucifixion of Saint Peter" sec-content=" This painting, also known as the Berlin Tondo, is a Crucifixion of Saint Peter, or birthing-tray painted by the Italian Renaissance artist Masaccio, c. 1427–1428, though the work is regarded as from his workshop or by a follower by many recent scholars.">
+									</a>
+								</li>
+								
+								<li>
+									<a href="images/Renaissance/michelangelo/Manchester_Madonna.jpg" title="Manchester Madonna"><img
+									src="images/Renaissance/michelangelo/Manchester_Madonna.jpg" width="100" height="75" alt="Manchester Madonna" sec-content="he Madonna and Child with St John and Angels (c. 1497), also known as The Manchester Madonna, is an unfinished painting attributed to Michelangelo in the National Gallery, London. It is one of three surviving panel paintings attributed to the artist and is dated to his first period in Rome. The painting's attribution to Michelangelo was in doubt for much of the 19th and 20th centuries, but now most scholars are in agreement." ></a>
+								</li>
+								<li>
+									<a href="images/Renaissance/michelangelo/Staircase-of-the-Laurentian-Library.jpg" title="Staircase of the Laurentian Library"><img
+									src="images/Renaissance/michelangelo/Staircase-of-the-Laurentian-Library.jpg" width="100" height="75" alt="Staircase of the Laurentian Library" sec-content="In 1524, Michelangelo was commissioned by the Medici pope to design the library for the San Lorenzo’s Church in Florence, Italy. Michelangelo designed both the interior of the library itself and its vestibule. He pioneered the Mannerist style in his design of the library which became renowned for its architecture. The Laurentian Library is one of Michelangelo’s most important architectural achievements and his innovations and use of space in the library were revolutionary..">
+									</a>
+								</li>
+								<li>
+									<a href="images/Renaissance/michelangelo/The_Calling_of_Saint_Matthew.jpg" title="The Calling of Saint Matthew"><img
+									src="images/Renaissance/michelangelo/The_Calling_of_Saint_Matthew.jpg" width="100" height="75" alt="The Calling of Saint Matthew" sec-content="The painting depicts the story from the Gospel of Matthew (Matthew 9:9): Jesus saw a man named Matthew at his seat in the custom house, and said to him, Follow me, and Matthew rose and followed Him. Caravaggio depicts Matthew the tax collector sitting at a table with four other men. Jesus Christ and Saint Peter have entered the room, and Jesus is pointing at Matthew. "></a>
+								</li>
+								<li>
+									<a href="images/Renaissance/michelangelo/The_Martyrdom_of_Saint_Matthew.jpg" title="The Martyrdom of Saint Matthew"><img
+									src="images/Renaissance/michelangelo/The_Martyrdom_of_Saint_Matthew.jpg" width="100" height="75" alt="The Martyrdom of Saint Matthew" sec-content="The Martyrdom of Saint Matthew (Italian: Martirio di San Matteo; 1599–1600) is a painting by the Italian master Michelangelo Merisi da Caravaggio. It is located in the Contarelli Chapel of the church of the French congregation San Luigi dei Francesi in Rome, where it hangs opposite The Calling of Saint Matthew and beside the altarpiece The Inspiration of Saint Matthew, both by Caravaggio."></a>
+								</li>
+								<li>
+									<a href="images/Renaissance/michelangelo/The-Conversion-of-Saul.jpg" title="The Conversion of Saul"><img
+									src="images/Renaissance/michelangelo/The-Conversion-of-Saul.jpg" width="100" height="75" alt="The Conversion of Saule" sec-content="The Conversion of Saul is a fresco painted by the Italian Renaissance master Michelangelo Buonarroti (c. 1542–1545). It is housed in the Cappella Paolina, Vatican Palace, in the Vatican City. The style is more mannerist than his earlier Sistine Chapel frescoes, and was not as well received by contemporaries. The next fresco he completed was The Crucifixion of St. Peter.   "></a>
+								</li>
+								<li>
+									<a href="images/Renaissance/michelangelo/The-Last-Judgement.jpg" title="The Last Judgement"><img
+									src="images/Renaissance/michelangelo/The-Last-Judgement.jpg" width="100" height="75" alt="The Last Judgement" sec-content="The Last Judgement is one of the most influential works in fresco in the history of Western art. Painted on the altar wall of the Sistine Chapel in Vatican City, it depicts the Second Coming of Christ (a future return of Jesus to earth) and the final and eternal judgment by God of all humanity. Jesus is shown in the center of the painting and is surrounded by prominent saints; while the Resurrection of the Dead and the Descent of the Damned into Hell is shown in the zone below."></a>
+								</li>
+							</ul>
+							<figure>
+								<img src="images/Renaissance/michelangelo/Battle_of_cascina.jpg" alt="Battle of Cascina">
+								<figcaption>Battle of Cascina</figcaption>
+							</figure>
+							<span id="painting_info">
+							Michelangelo never completed the painting, but did produce a complete cartoon of the composition. The cartoon was copied by several artists, the most notable extant copy being by Michelangelo's pupil Sangallo. Some of Michelangelo's preparatory drawings also survive, along with prints of part of the scene by Marcantonio Raimondi.
+							</span>
+					    </div>
+					    <div class="modal-footer">
+					      	<h3>MICHELANGELO</h3>
+					    </div>
+					</div>
+				</div>
+
+				<script>
+					// Get the modal
+					var modal = document.getElementById('artworks');
+
+					// Get the button that opens the modal
+					var btn = document.getElementById("artworks_open");
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks the button, open the modal 
+					btn.onclick = function() {
+					    modal.style.display = "block";
+					}
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() {
+					    modal.style.display = "none";
+					}
+
+					// When the user clicks anywhere outside of the modal, close it
+					window.onclick = function(event) {
+					    if (event.target == modal) {
+					        modal.style.display = "none";
+					    }
+					}
+				</script>
+				
+				<!--SideBar-->
+				<div class="side_content">
+					<ul>
+						<li><a href="https://10mosttoday.com/10-most-famous-paintings-in-the-world/" target="_blank"><strong>Top 5 Paintings</strong></a></li>
+						<li><strong>Top 5 Painters</strong></li>
+						<div id="small-only">
+							<br>
+							<ol>
+								<li><a href="leonardo_da_vinci.html">Leonardo Da Vinci</a></li>
+								<li><a href="rembrandt.html">Rembrandt</a></li>
+								<li><a href="michelangelo.html">Michelangelo</a></li>
+								<li><a href="pablo_picasso.html">Pablo Picasso</a></li>
+								<li><a href="raphael.html">Raphael</a></li>
+							</ol>
+						</div>
+					</ul>
+					<div id="top_artist_list">
+						<div>
+							<a href="leonardo_da_vinci.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/leonardo_da_vinci/portrait.jpg" alt="leonardo_da_vinci">
+									<span>
+										<strong>Leonardo Da Vinci</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>
+							<a href="rembrandt.html">
+								<div class="horizontal_card">
+									<img src="images/baroque/rembrandt/portrait.jpg" alt="rembrandt">
+									<span>
+										<strong>Rembrandt</strong>
+										<br>
+										Dutch
+										<br>
+										Realist Painter
+									</span>
+								</div>
+							</a>
+							<a href="michelangelo.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/michelangelo/portrait.jpg" alt="michelangelo">
+									<span>
+										<strong>Michelangelo</strong>
+										<br>
+										French
+										<br>
+										Impressionist Painter
+									</span>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="pablo_picasso.html">
+								<div class="horizontal_card">
+									<img src="images/cubist/pablo_picasso/portrait.jpg" alt="pablo_picasso">
+									<span>
+										<strong>Pablo Picasso</strong>
+										<br>
+										Spanish
+										<br>
+										Cubist Painter
+									</span>
+								</div>
+							</a>
+							<a href="raphael.html">
+								<div class="horizontal_card">
+									<img src="images/renaissance/raphael/portrait.jpg" alt="raphael">
+									<span>
+										<strong>Raphael</strong>
+										<br>
+										Italian
+										<br>
+										Renaissance Painter
+									</span>
+								</div>
+							</a>	
+						</div>
+					</div>
+				</div>
+				<!--Sidebar Ends-->
+			</main>
+			<!--Footer Section-->
+			<footer style="background-color: #311B92;">
+				<a href="index.html">Home</a> | <a href="abstract_painters.html">Abstract Painters</a> | <a href="baroque_painters.html">Baroque Painters</a> | <a href="cubist_painters.html">Cubist Painters</a> | <a href="realist_painters.html">Realist Painters</a> | <a href="renaissance_painters.html">Renaissance Painters</a>
+				<br><br>
+				Copyright 2018 by Artistry World, May 2018, <a href="mailto:gilber.njq@gmail.com"><u>gilber.njq@gmail.com</u></a>
+			</footer>
+			<!--Footer Section ends-->
+		</div>
+	</body>
+</html>
